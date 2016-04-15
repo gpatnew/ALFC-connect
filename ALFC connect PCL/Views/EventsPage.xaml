@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:custom="clr-namespace:ALFCConnect.EventsPage;assembly=ALFCConnect"
+			 x:Class="ALFCConnect.EventsPage"
+       BackgroundColor="White"
+			 Title="ALFC Connect">
+  <ContentPage.Content>
+    <StackLayout>
+      
+      <Label Text="{Bind PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <ScrollView HorizontalOptions="FillAndExpand" Padding="5">
+        <BoxView Color="#808080"
+                 AbsoluteLayout.LayoutBounds="0.33, 0, 0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#AA8080"
+                 AbsoluteLayout.LayoutBounds="1,0,0.5, 0.5"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#FF8080"
+                 AbsoluteLayout.LayoutBounds="4,0,0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#808080"
+                 AbsoluteLayout.LayoutBounds="4, 0, 0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#FF8080"
+                 AbsoluteLayout.LayoutBounds="5,0,0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#808080"
+                 AbsoluteLayout.LayoutBounds="5, 0, 0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#FF8080"
+                 AbsoluteLayout.LayoutBounds="6,0,0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <BoxView Color="#808080"
+                 AbsoluteLayout.LayoutBounds="6, 0, 0.25, 0.25"
+                 AbsoluteLayout.LayoutFlags="All" />
+        
+      </ScrollView>
+      <Label Text="" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
