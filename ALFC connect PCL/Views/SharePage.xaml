@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ALFCConnect.Views.SharePage"
+             Title="{Binding Title}"
+             BackgroundColor="White">
+  <ScrollView>
+  
+  <StackLayout Padding="5,10,5,0" BackgroundColor="Maroon" MinimumHeightRequest="200">
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*" />
+        <ColumnDefinition Width="0.5*" />
+      </Grid.ColumnDefinitions>
+
+      
+    </Grid>
+  </StackLayout>
+ <StackLayout Padding="5,10,5,0" BackgroundColor="White" MinimumHeightRequest="300" >
+    <Grid  >
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*" />
+        <ColumnDefinition Width="0.25*" />
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*" />
+      </Grid.ColumnDefinitions>
+      <Label Grid.ColumnSpan="4" Grid.Row="0" Text="Share your sermon notes" FontSize="Large" TextColor="#303030" VerticalOptions="Center" HorizontalOptions="Center" />
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  Text="The Title" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="1" x:Name="shareTitleSwitch" HorizontalOptions="StartAndExpand" />
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="2" Text="The Message" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="2" x:Name="shareMessageSwitch"  HorizontalOptions="StartAndExpand"/>
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" Text="The Note" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="3" x:Name="shareMyNoteSwitch" HorizontalOptions="StartAndExpand" IsToggled="True"/>
+      
+      <Image Grid.Column="0" Grid.Row="4" Source="copyIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
+      <Image Grid.Column="1" Grid.Row="4" Source="FaceBookIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
+      <Image Grid.Column="2" Grid.Row="4" Source="GoogleDriveIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
+      <Image Grid.Column="0" Grid.Row="5" Source="twitterIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="30" MinimumWidthRequest="30"></Image>
+      <Image Grid.Column="1" Grid.Row="5" Source="messageIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
+      <Image Grid.Column="2" Grid.Row="5" Source="googleplusIcon.png" HorizontalOptions="StartAndExpand" MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
+      <Label  Grid.Column="0" Grid.Row="5" Text="" TextColor="#333333"  ></Label>
+      
+      
+      <Button  Grid.Column="3" Grid.Row="6" Image="returnIcon.png" HeightRequest="30" Clicked="OnReturnButtonClicked" BackgroundColor="White" />
+    </Grid>
+        
+    </StackLayout>
+   </ScrollView>
+</ContentPage>

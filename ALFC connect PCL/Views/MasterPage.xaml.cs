@@ -8,19 +8,21 @@ namespace ALFCConnect
 {
 	public partial class MasterPage : ContentPage
 	{
-		public ListView ListView { get { return listView; } }
+        
+        public ListView ListView { get { return listView; } }
 
 		public MasterPage ()
 		{
+            InitializeComponent ();
             this.BackgroundColor = AppColors.White;
-			InitializeComponent ();
+			
 
 			var masterPageItems = new List<MasterPageItem> ();
             
 			masterPageItems.Add (new MasterPageItem {
 				Title = "ALFC Connect",
 				IconSource = "events.png",
-				TargetType = typeof(EventsPage),
+				TargetType = typeof(EventsPage)
                 
 			});
 			masterPageItems.Add (new MasterPageItem {
@@ -55,7 +57,15 @@ namespace ALFCConnect
                 TargetType = typeof(WebPage),
                 CommandParameter = Constants.DonateUrl
             });
-			listView.ItemsSource = masterPageItems;
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Settings",
+                IconSource = "settings.png",
+                TargetType = typeof(SettingsPage),
+                CommandParameter = "settingsdata",
+                
+            });
+            listView.ItemsSource = masterPageItems;
             listView.BackgroundColor = AppColors.White;
 		}
 	}

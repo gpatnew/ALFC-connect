@@ -6,9 +6,9 @@ namespace ALFCConnect.Common
     public class AppColors
     {
 
-        public static Color AlfcBlue
+        public static string CurrentTextColor
         {
-            get { return Color.FromHex("059BD2"); }
+            get { return "#059BD2"; }
         }
         public static Color Black
         {
@@ -17,33 +17,25 @@ namespace ALFCConnect.Common
                 return Color.FromHex("010101");
             }
         }
-        public static Color AlfcOrange
+        
+        public static string TextPrimaryColor
         {
-            get { return Color.FromHex("FF6600"); }
-        }
-        public static Color AlfcOrangeLight
-        {
-            get { return Color.FromHex("FF8800"); }
+            get { return "#CC303030"; }
         }
 
-        public static Color AlfcGray
+        public static string TextSecondaryColor
         {
-            get { return Color.FromRgb(104, 104, 104); }
-        }
-        public static Color AlfcTextGray
-        {
-            get { return Color.FromHex("5F6062"); }
+            get { return "#CC7F6A00"; }
         }
 
-        public static Color AlfcBgGray
+        public static string SectionBGColor
         {
-            get { return Color.FromHex("EAEAEA"); }
+            get { return "#FBF9FF"; }
         }
 
-
-        public static Color BlueBarBG
+        public static string BlueBarBG
         {
-            get { return Color.FromRgba(5, 155, 210, 182); }
+            get { return "#1F87D1"; }
         }
 
         public static Color White
@@ -55,5 +47,10 @@ namespace ALFCConnect.Common
         {
             get { return Color.Transparent; }
         }
-    }
+
+        public static Color ALFCBGBlue { get { return Color.FromRgba(5, 155, 210, 182); } }
+        public static Color ALFCBGPurple { get { return Color.FromRgba(5, 155, 210, 182); } }
+
+        public static Color AlfcTextRed { get { return Color.Red; } }
+}
 }

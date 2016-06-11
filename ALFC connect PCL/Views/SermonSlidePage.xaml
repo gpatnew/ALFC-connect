@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helper="clr-namespace:ALFCConnect.Helpers;assembly=ALFCConnect"
+             x:Class="ALFCConnect.SermonSlidePage"
+             ItemsSource="{Binding Slides}"
+             Title="{Binding SermonName}"
+             BackgroundColor="White"
+  >
+  <CarouselPage.ItemTemplate>
+    <DataTemplate>
+      <ContentPage  Padding="0,10,0,0">
+        <StackLayout>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.2*" />
+              <ColumnDefinition Width="0.6*" />
+              <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="0.1*"/>
+              <RowDefinition Height="0.3*" />
+              <RowDefinition Height="0.2*"/>
+              <RowDefinition Height="0.2*"/>
+              <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <StackLayout  Grid.Row="0" Grid.Column="1">
+              <Label  Text="{Binding Title}" HeightRequest="30" FontSize="12" TextColor="#303030"  HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout BackgroundColor="Yellow"  Grid.Row="1" Grid.ColumnSpan="3" >
+              <helper:PinchToZoomContainer>
+                <helper:PinchToZoomContainer.Content>
+                  <Image Source="{Binding ImageUrl}" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="400" MinimumWidthRequest="300" IsVisible="{Binding ImageIsVisible}" />
+                </helper:PinchToZoomContainer.Content>
+              </helper:PinchToZoomContainer>
+            </StackLayout>
+            <Label  Grid.Row="2" Grid.ColumnSpan="3" Text="{Binding Message}" TextColor="#303030" HorizontalOptions="Center" />
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="3">
+              <Entry x:Name="slideNote" Text="{Binding Note, Mode=TwoWay}" Placeholder="enter note" PlaceholderColor="#909090" MinimumHeightRequest="200" MinimumWidthRequest="200" BackgroundColor="Silver" />
+            </StackLayout>
+            <Button Grid.Row="4" Grid.Column="0" Image="shareIcon.png" HeightRequest="30" Clicked="OnShareButtonClicked" BackgroundColor="White" CommandParameter="{Binding Id}" />
+            <Button Grid.Row="4" Grid.Column="2" Image="returnIcon.png" HeightRequest="30" Clicked="OnSaveButtonClicked" BackgroundColor="White" />
+          </Grid>
+        </StackLayout>
+      </ContentPage>
+    </DataTemplate>
+  </CarouselPage.ItemTemplate>
+
+</CarouselPage>

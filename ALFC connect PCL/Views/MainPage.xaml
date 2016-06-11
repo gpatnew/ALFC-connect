@@ -9,7 +9,7 @@
 	<MasterDetailPage.Detail>
 		<NavigationPage>
 			<x:Arguments>
-				<local:EventsPage />
+				<local:SermonsPage />
 			</x:Arguments>
 		</NavigationPage>
 	</MasterDetailPage.Detail>

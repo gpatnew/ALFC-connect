@@ -1,4 +1,5 @@
 ﻿using ALFCConnect.Models;
+using ALFCConnect.ViewModels;
 using ALFCConnect.Views;
 using System;
 using Xamarin.Forms;
@@ -32,8 +33,17 @@ namespace ALFCConnect
                     Page page = new WebPage(item.CommandParameter);
                     Detail = new NavigationPage(page);
                 }
-                else { 
-                    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                else
+                {
+                    var detailPage  = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));; 
+                    switch (item.Title.ToLower())
+                        {
+                            case "settings":
+                            detailPage.BindingContext = new SettingsViewModel();
+                            break;
+                            
+                        }
+                    Detail = detailPage;
                 }
                 masterPage.ListView.SelectedItem = null;
                 IsPresented = false;

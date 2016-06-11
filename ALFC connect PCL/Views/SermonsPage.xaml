@@ -2,10 +2,86 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="ALFCConnect.SermonsPage"
-			 Title="Sermons Page">
-	<ContentPage.Content>
-		<StackLayout>
-			<Label Text="Todo list data goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-		</StackLayout>
-	</ContentPage.Content>
+       xmlns:customVM="clr-namespace:ALFCConnect.ViewModels;assembly=ALFCConnect"
+       BackgroundColor="White"
+			 Title="Sermons">
+  <ContentPage.BindingContext>
+    <customVM:SermonsViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="sermonRegularTemplate">
+        <ViewCell>
+          <Grid >
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.5*"/>
+              <ColumnDefinition Width="0.3*"/>
+              <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding SermonName}"  TextColor="#303030" FontSize="12" VerticalOptions="StartAndExpand" />
+            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#303030" FontSize="10" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}"  Grid.Column="2" FontSize="9" TextColor="#303030" HorizontalTextAlignment="End"  />
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+      <DataTemplate x:Key="sermonCurrentTemplate">
+        <ViewCell >
+          <Grid  BackgroundColor="#33346B80">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.5*"/>
+              <ColumnDefinition Width="0.3*"/>
+              <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding SermonName}" TextColor="#059BD2" FontSize="12"  VerticalOptions="StartAndExpand" />
+            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#303030" FontSize="10" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#059BD2"  HorizontalTextAlignment="End" />
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+      <DataTemplate x:Key="sermonDoneTemplate">
+        <ViewCell >
+          <Grid BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.5*"/>
+              <ColumnDefinition Width="0.3*"/>
+              <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding SermonName}" TextColor="#059BD2" FontSize="12" VerticalOptions="StartAndExpand" />
+            <Image Grid.Column="1"  Source="notesIcon.png" HorizontalOptions="StartAndExpand" MinimumHeightRequest="20" MinimumWidthRequest="20"></Image>
+
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#059BD2"  HorizontalTextAlignment="End" />
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+      <customVM:SermonDataTemplateSelector x:Key="SermonDataTemplateSelector" RegularTemplate="{StaticResource sermonRegularTemplate}" DoneTemplate="{StaticResource sermonDoneTemplate}" CurrentTemplate="{StaticResource sermonCurrentTemplate}" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <ScrollView>
+    <StackLayout Padding="0,0,0,0">
+      <StackLayout Padding="10,0,10,0">
+        <Label Text="{Binding PageTitle}"  TextColor="#303030" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <ListView x:Name="SermonsList" ItemTemplate="{StaticResource SermonDataTemplateSelector}" ItemsSource="{Binding SermonsListItems}" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" Refreshing="OnRefreshSermons" ></ListView>     
+      </StackLayout>
+      
+      <StackLayout Padding="0,0,0,0">
+          <Grid BackgroundColor="#346B80">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.8*"/>
+              <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Padding="5,0,5,0" Grid.Column="0">
+              <Label Text="If you don't see a particular sermon, you can take notes on a blank" FontSize="9" TextColor="#F1F1F1" VerticalOptions="Center" HorizontalOptions="Center" ></Label>
+            </StackLayout>
+              <StackLayout Padding="2,0,2,0" Grid.Column="1">
+            <Button x:Name="addBlank" FontSize="9"  Text="ADD" TextColor="#010101" WidthRequest="30" HeightRequest="36" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Clicked="Add_Clicked" />
+            </StackLayout>
+              </Grid>
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
 </ContentPage>

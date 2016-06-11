@@ -2,6 +2,7 @@
 using ALFCConnect.Models;
 using System;
 using Xamarin.Forms;
+using ALFCConnect.ViewModels;
 
 namespace ALFCConnect
 {
@@ -29,9 +30,11 @@ namespace ALFCConnect
                 }
                 else
                 {
-                    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    var detailPage = new NavigationPage((Page)Activator.CreateInstance(item.TargetType)); ;
+                    
+                    Detail = detailPage;
                 }
-                masterPage.ListView.SelectedItem = null;
+                    masterPage.ListView.SelectedItem = null;
 				IsPresented = false;
 			}
 		}

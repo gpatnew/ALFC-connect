@@ -1,9 +1,4 @@
 ﻿using ALFCConnect.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -21,11 +16,11 @@ namespace ALFCConnect.Views
         }
         public WebPage(string searchString)
         {
-            //this.BindingContext = new UrlsViewModel(url);
+           
             InitializeComponent();
             if (searchString != string.Empty && !searchString.Contains("http"))
             {
-                WebUrl = string.Concat(baseURL, searchTerm);
+                WebUrl = string.Concat(baseURL, searchString);
             }
             else if(searchString.Contains("http"))
             {

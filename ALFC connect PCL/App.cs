@@ -9,7 +9,7 @@ namespace ALFCConnect
 	public class App : Application
 	{
         private string eventsMessage = "";
-
+        static SermonsData database;
         public string EventsMessage
         {
             get { return eventsMessage; }
@@ -20,6 +20,7 @@ namespace ALFCConnect
         public App ()
 		{
             MainPage = new ALFCConnect.MainPage();
+
 		}
 
 		protected override void OnStart ()
@@ -27,7 +28,7 @@ namespace ALFCConnect
             // Handle when your app starts
 
             EventsMessage = "Loading...";
-            BuildCachedSlides();
+            BuildCaches();
 		}
 
 		protected override void OnSleep ()
@@ -40,12 +41,29 @@ namespace ALFCConnect
 			// Handle when your app resumes
 		}
 
-        private async void BuildCachedSlides()
+        private async void BuildCaches()
         {
             var dataStore = new DataStoreHelper();
-            EventsMessage = await dataStore.LoadEventsAsync();
+            SlidesMessage = await dataStore.LoadSlidesAsync();
+            SlidesMessage = await dataStore.LoadEventsAsync();
+            EventsMessage = await dataStore.LoadSermonsAsync();
+            
         }
 
+        public static SermonsData Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new SermonsData();
+                }
+                return database;
+
+
+
+            }
+        }
     }
 }
 

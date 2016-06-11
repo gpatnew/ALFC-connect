@@ -1,42 +1,65 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:custom="clr-namespace:ALFCConnect.EventsPage;assembly=ALFCConnect"
+       xmlns:custom="clr-namespace:ALFCConnect.EventsPage;assembly=ALFCConnect"    
+       xmlns:customVM="clr-namespace:ALFCConnect.ViewModels;assembly=ALFCConnect"
 			 x:Class="ALFCConnect.EventsPage"
        BackgroundColor="White"
 			 Title="ALFC Connect">
+  <ContentPage.BindingContext>
+    <customVM:EventsViewModel />
+    </ContentPage.BindingContext>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="mainEventsTemplate">
+        <ViewCell>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.6*"/>
+              <ColumnDefinition Width="0.4*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#303030" BackgroundColor="White" FontSize="12" HeightRequest="80"   Clicked="EventClicked" CommandParameter="{Binding Link}"  />
+            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#303030"  BackgroundColor="White" FontSize="10" />
+              </Grid>
+        </ViewCell>
+      </DataTemplate>
+      <DataTemplate x:Key="featureEventTemplate">
+        <ViewCell >
+          <Grid BackgroundColor="Silver">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="0.6*"/>
+              <ColumnDefinition Width="0.4*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#059BD2" BackgroundColor="White" FontSize="12" HeightRequest="80" Clicked="EventClicked" CommandParameter="{Binding Link}"  />
+            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#059BD2" FontSize="10"  />
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+      <customVM:EventsDataTemplateSelector x:Key="EventDataTemplateSelector" ValidTemplate="{StaticResource mainEventsTemplate}" CurrentTemplate="{StaticResource featureEventTemplate}" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
   <ContentPage.Content>
+    <ScrollView  Padding="0,10,0,0">
     <StackLayout>
       
-      <Label Text="{Bind PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-      <ScrollView HorizontalOptions="FillAndExpand" Padding="5">
-        <BoxView Color="#808080"
-                 AbsoluteLayout.LayoutBounds="0.33, 0, 0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#AA8080"
-                 AbsoluteLayout.LayoutBounds="1,0,0.5, 0.5"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#FF8080"
-                 AbsoluteLayout.LayoutBounds="4,0,0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#808080"
-                 AbsoluteLayout.LayoutBounds="4, 0, 0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#FF8080"
-                 AbsoluteLayout.LayoutBounds="5,0,0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#808080"
-                 AbsoluteLayout.LayoutBounds="5, 0, 0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#FF8080"
-                 AbsoluteLayout.LayoutBounds="6,0,0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        <BoxView Color="#808080"
-                 AbsoluteLayout.LayoutBounds="6, 0, 0.25, 0.25"
-                 AbsoluteLayout.LayoutFlags="All" />
-        
-      </ScrollView>
-      <Label Text="" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <StackLayout Padding="0,5,0,0" HeightRequest="200" BackgroundColor="{Binding SectionBGColor}">
+          <Label  Text="{Binding CurrentSlideTitle}"  TextColor="Black" HorizontalOptions="Center" />
+          <Image  Source="{Binding CurrentSlideImageUrl}" MinimumHeightRequest="200" HeightRequest="200" MinimumWidthRequest="400"   >
+            <Image.GestureRecognizers>
+              <PanGestureRecognizer  PanUpdated="OnPanUpdated" />
+              <TapGestureRecognizer Tapped="OnImageTapped"  />
+            </Image.GestureRecognizers>
+          </Image>    
+        </StackLayout> 
+     
+      <StackLayout Padding="10,5,10,0" VerticalOptions="FillAndExpand" >
+        <Label Text="{Binding PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <ListView x:Name="FeatureList" ItemTemplate="{StaticResource EventDataTemplateSelector}" ItemsSource="{Binding EventsListItems}" ></ListView>
+      </StackLayout>
+      <StackLayout Padding="0,5,0,0" BackgroundColor="Purple">
+        <Label Text="{Binding FeaturedItem}"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      </StackLayout>
+      </StackLayout>
+    </ScrollView>
   </ContentPage.Content>
 </ContentPage>
