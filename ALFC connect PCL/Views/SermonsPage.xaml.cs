@@ -19,7 +19,6 @@ namespace ALFCConnect
             { 
                 var svm = (SermonsViewModel)this.BindingContext;
                 svm.LoadSermons();
-
                 list.IsRefreshing = false;
             }
         }

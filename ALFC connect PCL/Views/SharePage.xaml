@@ -26,23 +26,24 @@
         <ColumnDefinition Width="0.25*" />
       </Grid.ColumnDefinitions>
       <Label Grid.ColumnSpan="4" Grid.Row="0" Text="Share your sermon notes" FontSize="Large" TextColor="#303030" VerticalOptions="Center" HorizontalOptions="Center" />
-      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  Text="The Title" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
-      <Switch Grid.Column="2" Grid.Row="1" x:Name="shareTitleSwitch" HorizontalOptions="StartAndExpand" />
-      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="2" Text="The Message" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
-      <Switch Grid.Column="2" Grid.Row="2" x:Name="shareMessageSwitch"  HorizontalOptions="StartAndExpand"/>
-      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" Text="The Note" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
-      <Switch Grid.Column="2" Grid.Row="3" x:Name="shareMyNoteSwitch" HorizontalOptions="StartAndExpand" IsToggled="True"/>
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1" Text="Slide Title" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="1" x:Name="shareTitleSwitch" HorizontalOptions="StartAndExpand" Toggled="MakeMessage" />
       
-      <Image Grid.Column="0" Grid.Row="4" Source="copyIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
-      <Image Grid.Column="1" Grid.Row="4" Source="FaceBookIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
-      <Image Grid.Column="2" Grid.Row="4" Source="GoogleDriveIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
-      <Image Grid.Column="0" Grid.Row="5" Source="twitterIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="30" MinimumWidthRequest="30"></Image>
-      <Image Grid.Column="1" Grid.Row="5" Source="messageIcon.png" HorizontalOptions="StartAndExpand"  MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
-      <Image Grid.Column="2" Grid.Row="5" Source="googleplusIcon.png" HorizontalOptions="StartAndExpand" MinimumHeightRequest="40" MinimumWidthRequest="40"></Image>
-      <Label  Grid.Column="0" Grid.Row="5" Text="" TextColor="#333333"  ></Label>
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="2" Text="Slide Message" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="2" x:Name="shareMessageSwitch"  HorizontalOptions="StartAndExpand" Toggled="MakeMessage"/>
       
+      <Label Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" Text="Slide Note" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Switch Grid.Column="2" Grid.Row="3" x:Name="shareMyNoteSwitch" HorizontalOptions="StartAndExpand" IsToggled="True"  Toggled="MakeMessage"/>
+
+      <Label Grid.Column="0" Grid.Row="4" Text="Title" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Entry x:Name="MessageTitle" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="4" Text="" TextColor="#333333" BackgroundColor="Silver" ></Entry>
       
-      <Button  Grid.Column="3" Grid.Row="6" Image="returnIcon.png" HeightRequest="30" Clicked="OnReturnButtonClicked" BackgroundColor="White" />
+      <Label Grid.Column="0" Grid.Row="5" Text="Body" TextColor="#303030" HorizontalOptions="EndAndExpand"></Label>
+      <Entry x:Name="MessageText" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="5" Text="" TextColor="#333333" BackgroundColor="Silver" ></Entry>
+      
+      <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="6"   BorderColor="Black" BackgroundColor="Silver"  Image="shareButton.png" HeightRequest="80" WidthRequest="200" Clicked="OnShareButtonClicked"/>
+              <Button  Grid.Column="3" Grid.Row="6" Image="returnIcon.png" HeightRequest="30" Clicked="OnReturnButtonClicked" BackgroundColor="White" />
+    
     </Grid>
         
     </StackLayout>

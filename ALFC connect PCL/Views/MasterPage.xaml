@@ -7,10 +7,10 @@
 			 Title="ALFC">
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand">
-			<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
-				<ListView.ItemTemplate>
+			<ListView x:Name="listView" VerticalOptions="FillAndExpand"   >
+				<ListView.ItemTemplate SeparatorColor="#FFDBF0FF" SeparatorVisibility="1" >
 					<DataTemplate>
-						<ImageCell   ImageSource="{Binding IconSource}" />
+						<ImageCell ImageSource="{Binding IconSource}"  />
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>

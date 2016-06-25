@@ -3,8 +3,6 @@ using Xamarin.Forms;
 
 namespace ALFCConnect.Common
 {
-    
        public class Settings
        {}
-    
 }

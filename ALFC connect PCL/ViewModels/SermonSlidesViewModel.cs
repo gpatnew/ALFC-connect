@@ -1,10 +1,6 @@
 ﻿using ALFCConnect.Data;
 using ALFCConnect.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ALFCConnect.ViewModels
 {
@@ -41,7 +37,7 @@ namespace ALFCConnect.ViewModels
         private async void  FetchSlides(int sermonId, string sermonName)
         {
             slides = new List<SermonSlide>();
-            slides.Add(new SermonSlide { Id = 1, SermonId = sermonId, Message = sermonName, Title = "Loading...", ImageUrl = "http://www.quotesforthemind.com/wp-content/uploads/2013/02/Inspirational-Daily-Quotes-Scriptures-Verses-and-passages-from-the-Holy-Bible-Online.jpg" });
+            slides.Add(new SermonSlide { Id = 1, SermonId = sermonId, Message = sermonName, Title = "Loading...", ImageUrl = "loading.gif" });
 
             SermonsData sd = new SermonsData();
             Slides = await sd.LoadSlidesAsync(sermonId, sermonName);

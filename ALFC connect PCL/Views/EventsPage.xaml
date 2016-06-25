@@ -18,8 +18,8 @@
               <ColumnDefinition Width="0.6*"/>
               <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
-            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#303030" BackgroundColor="White" FontSize="12" HeightRequest="80"   Clicked="EventClicked" CommandParameter="{Binding Link}"  />
-            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#303030"  BackgroundColor="White" FontSize="10" />
+            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#303030" BackgroundColor="#FFDBF0FF" FontSize="10"    Clicked="EventClicked" CommandParameter="{Binding Link}" VerticalOptions="StartAndExpand"  />
+            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#303030"  BackgroundColor="#FFDBF0FF" FontSize="10" VerticalOptions="CenterAndExpand"  />
               </Grid>
         </ViewCell>
       </DataTemplate>
@@ -30,7 +30,7 @@
               <ColumnDefinition Width="0.6*"/>
               <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
-            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#059BD2" BackgroundColor="White" FontSize="12" HeightRequest="80" Clicked="EventClicked" CommandParameter="{Binding Link}"  />
+            <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#059BD2" BackgroundColor="White" FontSize="12"  Clicked="EventClicked" CommandParameter="{Binding Link}"  />
             <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#059BD2" FontSize="10"  />
           </Grid>
         </ViewCell>
@@ -41,10 +41,9 @@
   <ContentPage.Content>
     <ScrollView  Padding="0,10,0,0">
     <StackLayout>
-      
-        <StackLayout Padding="0,5,0,0" HeightRequest="200" BackgroundColor="{Binding SectionBGColor}">
-          <Label  Text="{Binding CurrentSlideTitle}"  TextColor="Black" HorizontalOptions="Center" />
-          <Image  Source="{Binding CurrentSlideImageUrl}" MinimumHeightRequest="200" HeightRequest="200" MinimumWidthRequest="400"   >
+        <StackLayout Padding="0,0,0,0" HeightRequest="160">
+          <Label  Text="{Binding CurrentSlideTitle}" TextColor="Black"  MinimumHeightRequest="40" HorizontalOptions="Center" />
+          <Image  Source="{Binding CurrentSlideImageUrl}" MinimumHeightRequest="200"  MinimumWidthRequest="400"   >
             <Image.GestureRecognizers>
               <PanGestureRecognizer  PanUpdated="OnPanUpdated" />
               <TapGestureRecognizer Tapped="OnImageTapped"  />
@@ -52,12 +51,14 @@
           </Image>    
         </StackLayout> 
      
-      <StackLayout Padding="10,5,10,0" VerticalOptions="FillAndExpand" >
-        <Label Text="{Binding PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <ListView x:Name="FeatureList" ItemTemplate="{StaticResource EventDataTemplateSelector}" ItemsSource="{Binding EventsListItems}" ></ListView>
+      <StackLayout Padding="10,5,10,0" VerticalOptions="StartAndExpand" >
+        <Label Text="{Binding PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#303030" />
+        <ListView x:Name="FeatureList" ItemTemplate="{StaticResource EventDataTemplateSelector}" ItemsSource="{Binding EventsListItems}" BackgroundColor="#DBF0FF" ></ListView>
       </StackLayout>
-      <StackLayout Padding="0,5,0,0" BackgroundColor="Purple">
-        <Label Text="{Binding FeaturedItem}"  TextColor="Black" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <StackLayout Padding="0,5,0,0" BackgroundColor="Black"  MinimumHeightRequest="300" >
+        <Image  Source="{Binding FeaturedImageUrl}" HeightRequest="200"   />
+        <Label x:Name="FeatureEventLabel" Text="{Binding FeaturedItem}"  TextColor="Silver" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button x:Name="shareButton" BorderColor="Black" BackgroundColor="Silver"  Image="shareButton.png" HeightRequest="60" WidthRequest="180" Clicked="shareButtonClicked"></Button>
       </StackLayout>
       </StackLayout>
     </ScrollView>

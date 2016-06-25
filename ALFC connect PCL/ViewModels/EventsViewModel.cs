@@ -1,8 +1,8 @@
 ﻿using ALFCConnect.Common;
 using ALFCConnect.Data;
 using ALFCConnect.Models;
+using System;
 using System.Collections.Generic;
-using Xamarin.Forms;
 
 namespace ALFCConnect.ViewModels
 {
@@ -82,26 +82,48 @@ namespace ALFCConnect.ViewModels
                 CurrentSlide = Slides[CurrentSlideId];
             }
         }
-
+        private string featuredImageUrl;
+        public string FeaturedImageUrl
+        {
+            get { return featuredImageUrl; }
+            set { Set("FeaturedImageUrl", ref featuredImageUrl, value); }
+        }
         private string featuredItem;
         public string FeaturedItem
         {
             get { return featuredItem; }
-            set { featuredItem = value; }
+            set {  Set("FeaturedItem", ref featuredItem, value); }
         }
 
+        private string featuredShare;
+        public string FeaturedShare
+        {
+            get { return featuredItem; }
+            set { Set("FeaturedShare", ref featuredShare, value); }
+        }
         public EventsViewModel()
         {
-            PageTitle = "Events"; 
+            PageTitle = "Upcoming Events"; 
             currentSlideId = 0;
             var slidesData = new SlidesData();
             Slides = (List<EventSlide>)slidesData.GetItems();
             var eventsData = new EventsData();
             EventsListItems = eventsData.GetItems() as List<FeatureEvent>;
             CurrentSlide = Slides[currentSlideId];
-            FeaturedItem = "This is a Feature to like";
 
-            
+            if((DateTime.Now.Minute % 2) == 0)
+            {
+                FeaturedImageUrl = "Featured02.png";
+                FeaturedItem = "Operation GO contact Pastor Graig";
+                FeaturedShare = "I'm helping with Operation GO! find out more @ www.alfc.us";
+            }
+            else
+            {
+                FeaturedImageUrl = "Featured01.png";
+                FeaturedItem = " contact Pat Newsome gpatnew@hotmail.com";
+                FeaturedShare = "Join Essential Truths this Wed 6:30pm find out more @ www.alfc.us";
+
+            }
         }
 
         public void ChangeSlide()

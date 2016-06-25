@@ -2,7 +2,6 @@
 using GalaSoft.MvvmLight;
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
-using Xamarin.Forms;
 
 namespace ALFCConnect.ViewModels
 {

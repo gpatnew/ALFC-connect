@@ -1,10 +1,10 @@
-﻿using ALFCConnect.Common;
-using Plugin.Connectivity;
-using ALFCConnect.ViewModels;
-using Xamarin.Forms;
-using System;
+﻿using ALFCConnect.ViewModels;
 using ALFCConnect.Views;
+using Plugin.Connectivity;
+using System;
 using System.Threading.Tasks;
+using Plugin.Share;
+using Xamarin.Forms;
 
 namespace ALFCConnect
 {
@@ -81,7 +81,11 @@ namespace ALFCConnect
             await Navigation.PushModalAsync(eventWebPage);
         }
 
-
+        public async void shareButtonClicked(object sender, EventArgs e)
+        {
+            EventsViewModel evm = (EventsViewModel)this.BindingContext;
+            await CrossShare.Current.Share(evm.FeaturedShare, "ALFC Feature Event");
+        }
     }
 }
 

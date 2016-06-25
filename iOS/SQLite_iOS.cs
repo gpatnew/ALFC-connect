@@ -20,7 +20,7 @@ namespace ALFCconnect.iOS
         public SQLiteConnection GetConnection()
         {
             var sqliteFilename = "ALFCSQLite.db3";
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
+            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData); // Documents folder
             string libraryPath = Path.Combine(documentsPath, "..", "Library"); // Library folder
             var path = Path.Combine(libraryPath, sqliteFilename);
 

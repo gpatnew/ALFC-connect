@@ -10,7 +10,7 @@ namespace ALFCConnect
 	{
 		public MainPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 			masterPage.ListView.ItemSelected += OnItemSelected;
 
 			if (Device.OS == TargetPlatform.Windows) {

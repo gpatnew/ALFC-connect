@@ -1,18 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using SQLite.Net;
 using System.IO;
 using Xamarin.Forms;
-using SQLite.Net.Interop;
 using SQLite.Net.Platform.XamarinAndroid;
 using ALFCConnect.Droid;
 
@@ -36,12 +28,8 @@ namespace ALFCConnect.Droid
             //Console.WriteLine(path);
             if (!File.Exists(path))
             {
-                //var s = new FileStream( //Forms.Context.Resources.OpenRawResource();  // RESOURCE NAME ###
-
                 // create a write stream
-                FileStream writeStream = new FileStream(path, FileMode.CreateNew, FileAccess.Write);
-                // write to the stream
-                //ReadWriteStream(s, writeStream);
+                FileStream writeStream = new FileStream(path, FileMode.CreateNew, FileAccess.Write); 
             }
 
              

@@ -15,7 +15,7 @@ namespace ALFCConnect.iOS
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-            CrossPushNotification.Initialize<CrossPushNotificationListner>();
+            //CrossPushNotification.Initialize<CrossPushNotificationListner>();
 			LoadApplication (new App ());
 
 			return base.FinishedLaunching (app, options);

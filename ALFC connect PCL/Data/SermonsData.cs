@@ -1,17 +1,12 @@
-﻿using System;
-using SQLite;
+﻿using ALFCConnect.Common;
+using ALFCConnect.Helpers;
+using ALFCConnect.Models;
+using HtmlAgilityPack;
+using SQLite.Net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
-using ALFCConnect.Models;
-
-using ALFCConnect;
-using SQLite.Net;
-using Xamarin.Forms;
-using ALFCConnect.Helpers;
-using ALFCConnect.Common;
-using HtmlAgilityPack;
 
 namespace ALFCConnect.Data
 {
@@ -125,7 +120,7 @@ namespace ALFCConnect.Data
             }
             catch (Exception e)
             {
-                FetchErrorSlides(sermonId);
+                FetchFalseSlides(sermonId);
             }
                 return slides;
         }
@@ -188,6 +183,7 @@ namespace ALFCConnect.Data
                 return database.Table<Sermon>().FirstOrDefault(x => x.Id == id);
             }
         }
+
         public int Upsert(Sermon item)
         {
             lock (locker)
@@ -231,36 +227,20 @@ namespace ALFCConnect.Data
 
         private void FetchFalseSlides(int sermonId)
         {
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 1", ImageUrl = "http://www.quotesforthemind.com/wp-content/uploads/2013/02/Inspirational-Daily-Quotes-Scriptures-Verses-and-passages-from-the-Holy-Bible-Online.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 2", ImageUrl = "http://freebibleverses.org/bible_verses/image/Romans_8.39_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 3", ImageUrl = "http://freebibleverses.org/bible_verses/image/Romans_8.34_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 4", ImageUrl = "http://freebibleverses.org/bible_verses/image/1_Peter_5.6-7_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 5", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 6", ImageUrl = "http://freebibleverses.org/bible_verses/image/2_Timothy_4.8_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 7", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 8", ImageUrl = "http://freebibleverses.org/bible_verses/image/Ephesians_17_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 9", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 10", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 11", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 12", ImageUrl = "" });
-        }
-
-        private void FetchErrorSlides(int sermonId)
-        {
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 1", ImageUrl = "http://www.turnbacktogod.com/wp-content/uploads/2008/09/cross-of-christ-0101.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 2", ImageUrl = "http://4.bp.blogspot.com/-nqlRlQkLpmA/T9tzmJCVMNI/AAAAAAAABlc/FyQMyDegG-k/s1600/Jesus+em+medita%C3%A7%C3%A3o.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 3", ImageUrl = "http://freebibleverses.org/bible_verses/image/Romans_8.34_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 4", ImageUrl = "http://freebibleverses.org/bible_verses/image/1_Peter_5.6-7_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 5", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 6", ImageUrl = "http://freebibleverses.org/bible_verses/image/2_Timothy_4.8_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 7", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 8", ImageUrl = "http://freebibleverses.org/bible_verses/image/Ephesians_17_Bible_Verse.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 9", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 10", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 11", ImageUrl = "" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 12", ImageUrl = "" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 1", ImageUrl = "slide01.png" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 2", ImageUrl = "slide02.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 3", ImageUrl = "slide03.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 4", ImageUrl = "slide04.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 5", ImageUrl = "slide05.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 6", ImageUrl = "slide06.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 7", ImageUrl = "slide07.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 8", ImageUrl = "slide08.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 9", ImageUrl = "slide09.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 10", ImageUrl = "slide10.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 11", ImageUrl = "slide11.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 12", ImageUrl = "slide12.jpg" });
 
         }
-
+        
     }
 }

@@ -1,5 +1,4 @@
 ﻿using ALFCConnect.Models;
-using System;
 using Xamarin.Forms;
 
 namespace ALFCConnect.ViewModels
