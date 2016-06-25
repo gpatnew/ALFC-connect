@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 
-namespace ALFCConnect.Helpers
+namespace ALFCconnect.Helpers
 {
     public class HtmlParser
     {

@@ -1,10 +1,10 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Data;
-using ALFCConnect.ViewModels;
+﻿using ALFCconnect.Common;
+using ALFCconnect.Data;
+using ALFCconnect.ViewModels;
 using System;
 using System.Collections;
 using Xamarin.Forms;
-namespace ALFCConnect.Models
+namespace ALFCconnect.Models
 {
     public class BookListView : ListView
     {

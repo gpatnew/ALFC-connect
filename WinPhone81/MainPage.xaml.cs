@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
-namespace ALFCConnect.WinPhone81
+namespace ALFCconnect.WinPhone81
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -26,7 +26,7 @@ namespace ALFCConnect.WinPhone81
         {
             this.InitializeComponent();
 
-            LoadApplication(new ALFCConnect.App());
+            LoadApplication(new ALFCconnect.App());
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }

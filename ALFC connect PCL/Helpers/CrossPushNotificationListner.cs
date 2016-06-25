@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using PushNotification.Plugin.Abstractions;
 
-namespace ALFCConnect.Helpers
+namespace ALFCconnect.Helpers
 {
     public class CrossPushNotificationListner : IPushNotificationListener
     {

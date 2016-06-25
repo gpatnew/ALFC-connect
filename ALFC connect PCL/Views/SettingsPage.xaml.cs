@@ -1,5 +1,5 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.ViewModels;
+﻿using ALFCconnect.Common;
+using ALFCconnect.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace ALFCConnect.Views
+namespace ALFCconnect.Views
 {
     public partial class SettingsPage : ContentPage
     {

@@ -249,9 +249,9 @@
     <BundleResource Include="Resources\slide06.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ALFC connect PCL\ALFCConnect.csproj">
+    <ProjectReference Include="..\ALFC connect PCL\ALFCconnect.csproj">
       <Project>{9a1ed959-56be-48db-bd07-545b00242318}</Project>
-      <Name>ALFCConnect</Name>
+      <Name>ALFCconnect</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

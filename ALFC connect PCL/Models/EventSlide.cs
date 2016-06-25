@@ -1,7 +1,7 @@
 ﻿using SQLite.Net.Attributes;
 
 
-namespace ALFCConnect.Models
+namespace ALFCconnect.Models
 {
     public class EventSlide
     {

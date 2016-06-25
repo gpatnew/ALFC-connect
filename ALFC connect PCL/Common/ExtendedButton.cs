@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ALFCConnect.Common
+namespace ALFCconnect.Common
 {
     public class ExtendedButton : Button
     {

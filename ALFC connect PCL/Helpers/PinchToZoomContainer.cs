@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace ALFCConnect.Helpers
+namespace ALFCconnect.Helpers
 {
     public class PinchToZoomContainer : ContentView
     {

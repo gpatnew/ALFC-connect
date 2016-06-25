@@ -1,9 +1,9 @@
 ﻿using Xamarin.Forms;
-using ALFCConnect.ViewModels;
-using ALFCConnect.Models;
+using ALFCconnect.ViewModels;
+using ALFCconnect.Models;
 using System;
 
-namespace ALFCConnect
+namespace ALFCconnect
 {
 	public partial class SermonsPage : ContentPage
 	{

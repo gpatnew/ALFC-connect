@@ -1,8 +1,8 @@
-﻿using ALFCConnect.Data;
-using ALFCConnect.Models;
+﻿using ALFCconnect.Data;
+using ALFCconnect.Models;
 using System.Collections.Generic;
 
-namespace ALFCConnect.ViewModels
+namespace ALFCconnect.ViewModels
 {
     public class SermonSlidesViewModel : BasePageViewModel
     {

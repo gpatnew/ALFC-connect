@@ -1,9 +1,9 @@
-﻿using ALFCConnect.Common;
+﻿using ALFCconnect.Common;
 using GalaSoft.MvvmLight;
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
-namespace ALFCConnect.ViewModels
+namespace ALFCconnect.ViewModels
 {
     public class BasePageViewModel : ViewModelBase
     {

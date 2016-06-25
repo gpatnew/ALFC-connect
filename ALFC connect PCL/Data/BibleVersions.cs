@@ -1,8 +1,8 @@
-﻿using ALFCConnect.Interfaces;
-using ALFCConnect.Models;
+﻿using ALFCconnect.Interfaces;
+using ALFCconnect.Models;
 using System.Collections.Generic;
 
-namespace ALFCConnect.Data
+namespace ALFCconnect.Data
 {
     class BibleVersions : IDataInfo
     {

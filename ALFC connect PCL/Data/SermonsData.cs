@@ -1,6 +1,6 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Helpers;
-using ALFCConnect.Models;
+﻿using ALFCconnect.Common;
+using ALFCconnect.Helpers;
+using ALFCconnect.Models;
 using HtmlAgilityPack;
 using SQLite.Net;
 using System;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ALFCConnect.Data
+namespace ALFCconnect.Data
 {
     public class SermonsData 
     {

@@ -2,7 +2,7 @@
 using System;
 
 
-namespace ALFCConnect.Models
+namespace ALFCconnect.Models
 {
     public class FeatureEvent
     {

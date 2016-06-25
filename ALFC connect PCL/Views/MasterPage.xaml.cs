@@ -1,10 +1,10 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Models;
-using ALFCConnect.Views;
+﻿using ALFCconnect.Common;
+using ALFCconnect.Models;
+using ALFCconnect.Views;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace ALFCConnect
+namespace ALFCconnect
 {
 	public partial class MasterPage : ContentPage
 	{

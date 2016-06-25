@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALFCConnect
+namespace ALFCconnect
 {
     public interface ISQLite
     {

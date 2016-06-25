@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALFCConnect.Data
+namespace ALFCconnect.Data
 {
     public class DataStoreHelper
     {

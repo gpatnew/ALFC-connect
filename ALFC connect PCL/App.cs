@@ -1,9 +1,9 @@
-﻿using ALFCConnect.Data;
+﻿using ALFCconnect.Data;
 using Xamarin.Forms;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ALFCConnect
+namespace ALFCconnect
 {
     
 	public class App : Application
@@ -19,7 +19,7 @@ namespace ALFCConnect
 
         public App ()
 		{
-            MainPage = new ALFCConnect.MainPage();
+            MainPage = new ALFCconnect.MainPage();
 
 		}
 

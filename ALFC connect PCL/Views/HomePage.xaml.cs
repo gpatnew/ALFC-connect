@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace ALFCConnect.Views
+namespace ALFCconnect.Views
 {
     public partial class HomePage : ContentPage
     {

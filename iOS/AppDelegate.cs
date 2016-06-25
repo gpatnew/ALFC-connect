@@ -5,9 +5,9 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using PushNotification.Plugin;
-using ALFCConnect.Helpers;
+using ALFCconnect.Helpers;
 
-namespace ALFCConnect.iOS
+namespace ALFCconnect.iOS
 {
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate

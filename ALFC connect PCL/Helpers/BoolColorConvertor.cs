@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
-using ALFCConnect.Common;
-namespace ALFCConnect.Helpers
+using ALFCconnect.Common;
+namespace ALFCconnect.Helpers
 {
     public class BoolColorConvertor : IValueConverter
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace ALFCConnect.Common
+namespace ALFCconnect.Common
 {
        public class Settings
        {}

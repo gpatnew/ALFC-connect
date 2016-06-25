@@ -1,8 +1,8 @@
-﻿using ALFCConnect.Models;
+﻿using ALFCconnect.Models;
 using System;
 using Xamarin.Forms;
 
-namespace ALFCConnect.ViewModels
+namespace ALFCconnect.ViewModels
 {
     public class SermonDataTemplateSelector : DataTemplateSelector
     {

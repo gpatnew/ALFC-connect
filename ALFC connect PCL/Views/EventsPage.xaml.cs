@@ -1,12 +1,12 @@
-﻿using ALFCConnect.ViewModels;
-using ALFCConnect.Views;
+﻿using ALFCconnect.ViewModels;
+using ALFCconnect.Views;
 using Plugin.Connectivity;
 using System;
 using System.Threading.Tasks;
 using Plugin.Share;
 using Xamarin.Forms;
 
-namespace ALFCConnect
+namespace ALFCconnect
 {
     public partial class EventsPage : ContentPage
     {

@@ -2,7 +2,7 @@
 
 using Xamarin.Forms;
 
-namespace ALFCConnect.Common
+namespace ALFCconnect.Common
 {
     public class Constants
     {

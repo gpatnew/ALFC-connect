@@ -1,8 +1,8 @@
-﻿using ALFCConnect.Common;
+﻿using ALFCconnect.Common;
 
 using Xamarin.Forms;
 
-namespace ALFCConnect.Views
+namespace ALFCconnect.Views
 {
     public partial class WebPage : ContentPage
     {

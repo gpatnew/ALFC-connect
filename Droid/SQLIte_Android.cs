@@ -6,10 +6,10 @@ using SQLite.Net;
 using System.IO;
 using Xamarin.Forms;
 using SQLite.Net.Platform.XamarinAndroid;
-using ALFCConnect.Droid;
+using ALFCconnect.Droid;
 
 [assembly: Dependency (typeof (SQLite_Android))]
-namespace ALFCConnect.Droid
+namespace ALFCconnect.Droid
 {
     public class SQLite_Android : ISQLite
     {

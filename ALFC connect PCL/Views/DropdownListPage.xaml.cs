@@ -1,6 +1,6 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Interfaces;
-using ALFCConnect.ViewModels;
+﻿using ALFCconnect.Common;
+using ALFCconnect.Interfaces;
+using ALFCconnect.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace ALFCConnect.Views
+namespace ALFCconnect.Views
 {
     public partial class DropdownListPage : ContentPage
     {

@@ -1,14 +1,14 @@
-﻿using ALFCConnect.Models;
+﻿using ALFCconnect.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ALFCConnect.Common;
-using ALFCConnect.Helpers;
+using ALFCconnect.Common;
+using ALFCconnect.Helpers;
 using SQLite.Net;
 using HtmlAgilityPack;
 using System;
 using System.Linq;
 
-namespace ALFCConnect.Data
+namespace ALFCconnect.Data
 {
     public class EventsData 
     {

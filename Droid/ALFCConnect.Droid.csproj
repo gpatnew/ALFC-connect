@@ -195,12 +195,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ALFC connect PCL\ALFCConnect.csproj">
-      <Project>{9A1ED959-56BE-48DB-BD07-545B00242318}</Project>
-      <Name>ALFCConnect</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
@@ -285,6 +279,12 @@
     <AndroidResource Include="Resources\drawable\shareButton.png" />
     <AndroidResource Include="Resources\drawable\Featured02.png" />
     <AndroidResource Include="Resources\drawable\Featured01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ALFC connect PCL\ALFCconnect.csproj">
+      <Project>{9a1ed959-56be-48db-bd07-545b00242318}</Project>
+      <Name>ALFCconnect</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

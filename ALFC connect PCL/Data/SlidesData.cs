@@ -1,6 +1,6 @@
-﻿using ALFCConnect.Helpers;
-using ALFCConnect.Common;
-using ALFCConnect.Models;
+﻿using ALFCconnect.Helpers;
+using ALFCconnect.Common;
+using ALFCconnect.Models;
 
 using SQLite.Net;
 using System;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using HtmlAgilityPack;
 using Xamarin.Forms;
 
-namespace ALFCConnect.Data
+namespace ALFCconnect.Data
 {
     public class SlidesData
     {

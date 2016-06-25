@@ -1,10 +1,10 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Data;
-using ALFCConnect.Models;
+﻿using ALFCconnect.Common;
+using ALFCconnect.Data;
+using ALFCconnect.Models;
 using System;
 using System.Collections.Generic;
 
-namespace ALFCConnect.ViewModels
+namespace ALFCconnect.ViewModels
 {
     public class EventsViewModel : BasePageViewModel
     {
