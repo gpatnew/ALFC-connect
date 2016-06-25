@@ -17,6 +17,8 @@ namespace ALFCConnect.Models
 
         public string SermonName { get; set; }
 
+        public string SlideLink { get; set; }
+
         public string Passage { get; set; }
 
         public int Done { get; set; }

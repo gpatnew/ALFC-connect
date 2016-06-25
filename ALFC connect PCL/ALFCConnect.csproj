@@ -7,7 +7,7 @@
     <ProjectGuid>{9A1ED959-56BE-48DB-BD07-545B00242318}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ALFCConnect</RootNamespace>
-    <AssemblyName>ALFCconnect</AssemblyName>
+    <AssemblyName>ALFCConnect</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>

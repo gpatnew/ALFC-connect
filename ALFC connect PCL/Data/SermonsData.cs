@@ -55,6 +55,7 @@ namespace ALFCConnect.Data
                                 var postId = article.Attributes["id"].Value;
                                 var h1Node = article.ChildNodes.FindFirst("h1");
                                 var titleNode = h1Node.ChildNodes.FindFirst("a");
+                                var slideLink = titleNode != null ? titleNode.Attributes["href"].Value : "";
                                 var title = titleNode != null ? titleNode.Attributes["title"].Value : "ALFC Info Sermon";
                                 var dateNode = article.ChildNodes.FindFirst("span");
                                 var sermonDate = dateNode != null ? dateNode.InnerText : "1/1/2016";
@@ -80,6 +81,7 @@ namespace ALFCConnect.Data
                                 sermon.PostId = postId;
                                 sermon.Passage = passage;
                                 sermon.AudioUrl = audioUrl;
+                                sermon.SlideLink = slideLink;
                                 
                                 try
                                 {
@@ -103,24 +105,39 @@ namespace ALFCConnect.Data
             return message;
         }
 
-        public async Task<List<SermonSlide>> LoadSlidesAsync(int sermonId, string sermonName)
+        public async Task<List<SermonSlide>> LoadSlidesAsync(int sermonId, string link)
         {
 
-            slides = (List<SermonSlide>)GetSlides(sermonId);
-            if(slides.Count > 0)
-            {
-                return slides;
-            }
             try
             {
-                var webUrl = string.Format("{0}/sermons/{1}/", Constants.BaseUrl, sermonName.Replace(' ', '-'));
+                var webUrl = link;//string.Format("{0}/sermons/{1}/", Constants.BaseUrl, sermonName.Replace(' ', '-'));
                 HtmlParser parser = new HtmlParser();
                 var nodesTask = await parser.ParsingSermonSlides(webUrl.ToLower());
-                FetchFalseSlides(sermonId); 
+                if(nodesTask.Count > 0)
+                    slides = new List<SermonSlide>();
+                foreach (HtmlNode node in nodesTask)
+                {
+                    var s = new SermonSlide();
+                    s.SermonId = sermonId;
+                    s.ImageUrl = string.IsNullOrEmpty(node.Attributes["data-app_slide"].Value) ? "" : node.Attributes["data-app_slide"].Value;
+                    var titleNode = node.ChildNodes.FindFirst("h3");
+                    s.Title = titleNode != null ? titleNode.InnerText : "Slide";
+                    s.Message = node.InnerText;
+
+                    s.Id = SaveSlideItem(s);
+                    slides.Add(s);
+                }
+
+                if (slides.Count <= 0)
+                {
+                    FetchPackageSlides(sermonId);
+                }
+                return slides;
+                
             }
             catch (Exception e)
             {
-                FetchFalseSlides(sermonId);
+                FetchPackageSlides(sermonId);
             }
                 return slides;
         }
@@ -155,8 +172,6 @@ namespace ALFCConnect.Data
                 direction = "asc";
             }
             return list;
-
-
         }
         public Sermon GetByPostId(string postId)
         {
@@ -225,7 +240,7 @@ namespace ALFCConnect.Data
             }
         }
 
-        private void FetchFalseSlides(int sermonId)
+        private void FetchPackageSlides(int sermonId)
         {
             slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 1", ImageUrl = "slide01.png" });
             slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 2", ImageUrl = "slide02.jpg" });

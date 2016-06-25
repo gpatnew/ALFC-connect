@@ -40,7 +40,9 @@ namespace ALFCConnect.ViewModels
             slides.Add(new SermonSlide { Id = 1, SermonId = sermonId, Message = sermonName, Title = "Loading...", ImageUrl = "loading.gif" });
 
             SermonsData sd = new SermonsData();
-            Slides = await sd.LoadSlidesAsync(sermonId, sermonName);
+            var ser = sd.GetItem(sermonId);
+            if(ser != null)
+                Slides = await sd.LoadSlidesAsync(sermonId, ser.SlideLink);
         }
 
 
