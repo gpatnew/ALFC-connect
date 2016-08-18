@@ -28,7 +28,7 @@ namespace ALFCconnect.WinPhone81
 
             LoadApplication(new ALFCconnect.App());
 
-            this.NavigationCacheMode = NavigationCacheMode.Required;
+            //this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>

@@ -110,22 +110,23 @@ namespace ALFCconnect.Data
 
             try
             {
-                var webUrl = link;//string.Format("{0}/sermons/{1}/", Constants.BaseUrl, sermonName.Replace(' ', '-'));
+                var webUrl = link;
                 HtmlParser parser = new HtmlParser();
                 var nodesTask = await parser.ParsingSermonSlides(webUrl.ToLower());
                 if(nodesTask.Count > 0)
                     slides = new List<SermonSlide>();
+                var n = 0;
                 foreach (HtmlNode node in nodesTask)
                 {
-                    var s = new SermonSlide();
+                    var s = GetSlide(sermonId, n);
                     s.SermonId = sermonId;
                     s.ImageUrl = string.IsNullOrEmpty(node.Attributes["data-app_slide"].Value) ? "" : node.Attributes["data-app_slide"].Value;
                     var titleNode = node.ChildNodes.FindFirst("h3");
                     s.Title = titleNode != null ? titleNode.InnerText : "Slide";
                     s.Message = node.InnerText;
-
                     s.Id = SaveSlideItem(s);
                     slides.Add(s);
+                    n++;
                 }
 
                 if (slides.Count <= 0)
@@ -183,6 +184,15 @@ namespace ALFCconnect.Data
             return sermon != null ? sermon : new Sermon();
         }
 
+        public SermonSlide GetSlide(int sermonId, int index)
+        {
+            var sermonSlide = new SermonSlide();
+            lock (locker)
+            {
+                sermonSlide = database.FindWithQuery<SermonSlide>(string.Format("SELECT * FROM [SermonSlide] WHERE [SermonId] = {0} and SlideIndex = {1}", sermonId, index));
+            }
+            return sermonSlide != null ? sermonSlide : new SermonSlide();
+        }
         public IEnumerable<SermonSlide> GetSlides(int sermonId)
         {
             lock (locker)
@@ -190,6 +200,8 @@ namespace ALFCconnect.Data
                 return database.Query<SermonSlide>(string.Format("SELECT * FROM [SermonSlide] WHERE [SermonId] = {0}", sermonId));
             }
         }
+
+
 
         public Sermon GetItem(int id)
         {
@@ -220,7 +232,8 @@ namespace ALFCconnect.Data
 
         public int SaveSlideItem(SermonSlide item)
         {
-            
+            /// Check if slide exists
+            /// 
             if (item.Id != 0)
             {
                 database.Update(item);
@@ -242,18 +255,19 @@ namespace ALFCconnect.Data
 
         private void FetchPackageSlides(int sermonId)
         {
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 1", ImageUrl = "slide01.png" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 2", ImageUrl = "slide02.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 3", ImageUrl = "slide03.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 4", ImageUrl = "slide04.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 5", ImageUrl = "slide05.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 6", ImageUrl = "slide06.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 7", ImageUrl = "slide07.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 8", ImageUrl = "slide08.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 9", ImageUrl = "slide09.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 10", ImageUrl = "slide10.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 11", ImageUrl = "slide11.jpg" });
-            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, Message = "", Title = "Slide 12", ImageUrl = "slide12.jpg" });
+            slides = new List<SermonSlide>();
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 0, Message = "", Title = "Slide 1", ImageUrl = "slide01.png" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 1, Message = "", Title = "Slide 2", ImageUrl = "slide02.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 2, Message = "", Title = "Slide 3", ImageUrl = "slide03.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 3, Message = "", Title = "Slide 4", ImageUrl = "slide04.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 4, Message = "", Title = "Slide 5", ImageUrl = "slide05.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 5, Message = "", Title = "Slide 6", ImageUrl = "slide06.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 6, Message = "", Title = "Slide 7", ImageUrl = "slide07.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 7, Message = "", Title = "Slide 8", ImageUrl = "slide08.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 8, Message = "", Title = "Slide 9", ImageUrl = "slide09.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 9, Message = "", Title = "Slide 10", ImageUrl = "slide10.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 10, Message = "", Title = "Slide 11", ImageUrl = "slide11.jpg" });
+            slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 11, Message = "", Title = "Slide 12", ImageUrl = "slide12.jpg" });
 
         }
         

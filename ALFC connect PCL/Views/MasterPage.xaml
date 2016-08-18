@@ -8,7 +8,7 @@
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand">
 			<ListView x:Name="listView" VerticalOptions="FillAndExpand"   >
-				<ListView.ItemTemplate SeparatorColor="#FFDBF0FF" SeparatorVisibility="1" >
+				<ListView.ItemTemplate SeparatorColor="#FBB040" SeparatorVisibility="1" >
 					<DataTemplate>
 						<ImageCell ImageSource="{Binding IconSource}"  />
 					</DataTemplate>

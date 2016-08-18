@@ -5,13 +5,14 @@ using Xamarin.Forms;
 using ALFCconnect.ViewModels;
 
 namespace ALFCconnect
-{
+{ 
 	public partial class MainPage : MasterDetailPage
 	{
 		public MainPage ()
 		{
-			InitializeComponent();
-			masterPage.ListView.ItemSelected += OnItemSelected;
+            InitializeComponent();
+            var mp = this.FindByName<MasterPage>("masterPage");
+			mp.ListView.ItemSelected += OnItemSelected;
 
 			if (Device.OS == TargetPlatform.Windows) {
 				Master.Icon = "swap.png";

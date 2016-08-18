@@ -11,13 +11,15 @@ namespace ALFCconnect.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+
         [Indexed]
         public int SermonId { get; set; }
+
+        public int SlideIndex { get; set; }
 
         public string Title { get; set; }
 
         public string Scripture { get; set; }
-        
 
         public string Message { get; set; }
 
@@ -32,9 +34,5 @@ namespace ALFCconnect.Models
           
         }
 
-        //    public bool ScriptureIsVisible
-        //    {
-        //        get { return !string.IsNullOrEmpty(Scripture); }
-        //    }
     }
 }

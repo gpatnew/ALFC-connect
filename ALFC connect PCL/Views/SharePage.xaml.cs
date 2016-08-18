@@ -28,6 +28,7 @@ namespace ALFCconnect.Views
 
             MessageTitle.Text = shareTitleSwitch.IsToggled ? slide.Title : "I want to share my ALFC note:";
 
+            
             if (shareMessageSwitch.IsToggled && shareMyNoteSwitch.IsToggled)
             {
                 MessageText.Text = string.Format("{0}  {1}", slide.Message, slide.Note);
@@ -39,6 +40,9 @@ namespace ALFCconnect.Views
                 MessageText.Text = slide.Note;
             }
             else { MessageText.Text = "write a message"; }
+
+            if (shareImageSwitch.IsToggled)
+                MessageText.Text += slide.ImageUrl;
         }
         async void OnReturnButtonClicked(object sender, EventArgs e)
         {

@@ -7,9 +7,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("ALFCconnect")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("Phil413 Media")]
 [assembly: AssemblyProduct("ALFC connect")]
-[assembly: AssemblyCopyright("Pat Newsome")]
+[assembly: AssemblyCopyright("@2016")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

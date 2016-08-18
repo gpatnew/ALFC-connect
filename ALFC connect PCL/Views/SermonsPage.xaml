@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="ALFCconnect.SermonsPage"
-       xmlns:customVM="clr-namespace:ALFCconnect.ViewModels;assembly=ALFCconnect"
+       xmlns:customVM="clr-namespace:ALFCconnect.ViewModels;assembly=ALFCConnectPCL"
        BackgroundColor="White"
-			 Title="Sermons">
+			 Title="Sermons"
+             >
   <ContentPage.BindingContext>
     <customVM:SermonsViewModel />
   </ContentPage.BindingContext>
@@ -19,9 +20,9 @@
               <ColumnDefinition Width="0.2*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="{Binding SermonName}"  TextColor="#303030" FontSize="12" VerticalOptions="StartAndExpand" />
-            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#303030" FontSize="10" HorizontalTextAlignment="End"/>
-            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}"  Grid.Column="2" FontSize="9" TextColor="#303030" HorizontalTextAlignment="End"  />
+            <Label Text="{Binding SermonName}"  TextColor="#2973BA" FontSize="12" VerticalOptions="StartAndExpand" />
+            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#2973BA" FontSize="10" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}"  Grid.Column="2" FontSize="9" TextColor="#2973BA" HorizontalTextAlignment="End"  />
           </Grid>
         </ViewCell>
       </DataTemplate>
@@ -35,8 +36,8 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="{Binding SermonName}" TextColor="#059BD2" FontSize="12"  VerticalOptions="StartAndExpand" />
-            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#303030" FontSize="10" HorizontalTextAlignment="End"/>
-            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#059BD2"  HorizontalTextAlignment="End" />
+            <Label Text="{Binding Author}"   Grid.Column="1" TextColor="#00A79D" FontSize="10" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#00A79D"  HorizontalTextAlignment="End" />
           </Grid>
         </ViewCell>
       </DataTemplate>
@@ -49,10 +50,10 @@
               <ColumnDefinition Width="0.2*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="{Binding SermonName}" TextColor="#059BD2" FontSize="12" VerticalOptions="StartAndExpand" />
+            <Label Text="{Binding SermonName}" TextColor="#00A79D" FontSize="12" VerticalOptions="StartAndExpand" />
             <Image Grid.Column="1"  Source="notesIcon.png" HorizontalOptions="StartAndExpand" MinimumHeightRequest="20" MinimumWidthRequest="20"></Image>
-
-            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#059BD2"  HorizontalTextAlignment="End" />
+            
+            <Label Text="{Binding PresentationDate, StringFormat='{0:d}'}" Grid.Column="2" FontSize="9" TextColor="#2973BA"  HorizontalTextAlignment="End" />
           </Grid>
         </ViewCell>
       </DataTemplate>
@@ -62,7 +63,7 @@
   <ContentPage.Content>
     <ScrollView>
     <StackLayout Padding="0,0,0,0">
-      <StackLayout Padding="10,0,10,0">
+      <StackLayout Padding="10,0,10,0" VerticalOptions="StartAndExpand">
         <Label Text="{Binding PageTitle}"  TextColor="#303030" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <ListView x:Name="SermonsList" ItemTemplate="{StaticResource SermonDataTemplateSelector}" ItemsSource="{Binding SermonsListItems}" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" Refreshing="OnRefreshSermons" ></ListView>     
       </StackLayout>

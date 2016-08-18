@@ -19,6 +19,7 @@ namespace ALFCconnect
         public EventsPage()
         {
             InitializeComponent();
+            DisplayAlert();
             Timer();
         }
 
@@ -27,7 +28,10 @@ namespace ALFCconnect
             var connected = CrossConnectivity.Current.IsConnected;
         }
 
-
+        async void DisplayAlert()
+        {
+            var result = await this.DisplayAlert("q", "move forward", "ok", "no");
+        }
         public void OnPanUpdated(object sender, PanUpdatedEventArgs e)
         {
             return;

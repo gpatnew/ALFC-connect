@@ -15,8 +15,6 @@ namespace ALFCconnect
 		{
             InitializeComponent ();
             this.BackgroundColor = AppColors.White;
-			
-
 			var masterPageItems = new List<MasterPageItem> ();
             
 			masterPageItems.Add (new MasterPageItem {

@@ -20,6 +20,7 @@ namespace ALFCconnect
         public App ()
 		{
             MainPage = new ALFCconnect.MainPage();
+            
 
 		}
 
@@ -59,8 +60,6 @@ namespace ALFCconnect
                     database = new SermonsData();
                 }
                 return database;
-
-
 
             }
         }

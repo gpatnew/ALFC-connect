@@ -20,7 +20,7 @@ namespace ALFCconnect.Common
         
         public static string TextPrimaryColor
         {
-            get { return "#CC303030"; }
+            get { return "#CC2973BA"; }
         }
 
         public static string TextSecondaryColor
