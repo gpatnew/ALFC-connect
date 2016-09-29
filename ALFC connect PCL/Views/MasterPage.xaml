@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			 x:Class="ALFCconnect.MasterPage"
+			 x:Class="ALConnect.MasterPage"
 			 Padding="0,40,0,0"
 			 Icon="hamburger.png"
 			 Title="ALFC">
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand">
 			<ListView x:Name="listView" VerticalOptions="FillAndExpand"   >
-				<ListView.ItemTemplate SeparatorColor="#FBB040" SeparatorVisibility="1" >
+				<ListView.ItemTemplate SeparatorColor="#FBB040" SeparatorVisibility="0" >
 					<DataTemplate>
 						<ImageCell ImageSource="{Binding IconSource}"  />
 					</DataTemplate>

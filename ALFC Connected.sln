@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALFCConnectPCL", "ALFC connect PCL\ALFCConnectPCL.csproj", "{9A1ED959-56BE-48DB-BD07-545B00242318}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALConnectPCL", "ALFC connect PCL\ALConnectPCL.csproj", "{9A1ED959-56BE-48DB-BD07-545B00242318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALFCConnect.iOS", "iOS\ALFCConnect.iOS.csproj", "{3D54620E-23F2-462B-A824-B074D41BD507}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALConnect.iOS", "iOS\ALConnect.iOS.csproj", "{3D54620E-23F2-462B-A824-B074D41BD507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALFCConnect.Droid", "Droid\ALFCConnect.Droid.csproj", "{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALConnect.Droid", "Droid\ALConnect.Droid.csproj", "{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,8 +35,8 @@ Global
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|ARM.ActiveCfg = Release|Any CPU
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{9A1ED959-56BE-48DB-BD07-545B00242318}.Release|iPhone.Build.0 = Release|Any CPU
@@ -55,8 +55,8 @@ Global
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Debug|x86.ActiveCfg = Debug|iPhone
-		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|Any CPU.Build.0 = Release|iPhone
+		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|Any CPU.ActiveCfg = Debug|iPhone
+		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|Any CPU.Build.0 = Debug|iPhone
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|ARM.ActiveCfg = Release|iPhoneSimulator
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|iPhone.ActiveCfg = Release|iPhone
 		{3D54620E-23F2-462B-A824-B074D41BD507}.Release|iPhone.Build.0 = Release|iPhone
@@ -77,9 +77,9 @@ Global
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|Any CPU.Deploy.0 = Debug|Any CPU
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|ARM.ActiveCfg = Release|Any CPU
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{94BA3405-8AC9-47A8-90B4-59DBF2D56EF0}.Release|iPhone.Build.0 = Release|Any CPU

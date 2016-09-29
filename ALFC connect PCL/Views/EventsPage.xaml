@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:custom="clr-namespace:ALFCconnect.EventsPage;assembly=ALFCConnectPCL"    
-       xmlns:customVM="clr-namespace:ALFCconnect.ViewModels;assembly=ALFCConnectPCL"
-			 x:Class="ALFCconnect.EventsPage"
+       xmlns:custom="clr-namespace:ALConnect.EventsPage;assembly=ALConnectPCL"    
+       xmlns:customVM="clr-namespace:ALConnect.ViewModels;assembly=ALConnectPCL"
+			 x:Class="ALConnect.EventsPage"
        BackgroundColor="White"
 			 Title="ALFC Connect">
   <ContentPage.BindingContext>
@@ -51,14 +51,15 @@
           </Image>    
         </StackLayout> 
      
-      <StackLayout Padding="0,0,0,0" BackgroundColor="#FBB040" VerticalOptions="StartAndExpand"  >
+      <StackLayout Padding="0,0,0,0"  VerticalOptions="StartAndExpand"  >
         <StackLayout Padding="10,5,10,0" VerticalOptions="StartAndExpand"  >
         <Label Text="{Binding PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#303030" />
         <ListView x:Name="FeatureList" ItemTemplate="{StaticResource EventDataTemplateSelector}" ItemsSource="{Binding EventsListItems}" BackgroundColor="#DBF0FF" ></ListView>
         </StackLayout>
       
       <StackLayout Padding="0,5,0,5" BackgroundColor="#FBB040"  MinimumHeightRequest="300" >
-        <Image  Source="{Binding FeaturedImageUrl}" HeightRequest="200"   />
+        <WebView x:Name="featuredWebView" Source="{Binding FeaturedImageUrl}" HeightRequest="200" ></WebView>
+        
         <Label x:Name="FeatureEventLabel" Text="{Binding FeaturedItem}"  TextColor="#4B68A2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <Button x:Name="shareButton" BorderColor="Black" BackgroundColor="White"  Image="shareButton.png" HeightRequest="60" WidthRequest="180" Clicked="shareButtonClicked"></Button>
       </StackLayout>

@@ -1,9 +1,9 @@
-﻿using ALFCconnect.ViewModels;
-using ALFCconnect.Views;
+﻿using ALConnect.ViewModels;
+using ALConnect.Views;
 using System;
 using Xamarin.Forms;
 
-namespace ALFCconnect
+namespace ALConnect
 {
     public partial class SermonSlidePage : CarouselPage
     {

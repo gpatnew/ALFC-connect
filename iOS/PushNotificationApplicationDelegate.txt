@@ -12,7 +12,7 @@ using MonoTouch.UIKit;
 using PushNotification.Plugin.Abstractions;
 using PushNotification.Plugin;
 
-namespace ALFCconnect.iOS
+namespace ALConnect.iOS
 {
     /*
       This class is to handle push notifications on iOS so that can be delegated to a class that implements IPushNotificationListener

@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace ALFCconnect.Common
+namespace ALConnect.Common
 {
     public class AppColors
     {

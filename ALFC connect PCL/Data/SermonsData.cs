@@ -1,14 +1,17 @@
-﻿using ALFCconnect.Common;
-using ALFCconnect.Helpers;
-using ALFCconnect.Models;
+﻿using ALConnect.Common;
+using ALConnect.Helpers;
+using ALConnect.Models;
 using HtmlAgilityPack;
 using SQLite.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Xml;
+//using Windows.Web.Syndication;
 
-namespace ALFCconnect.Data
+namespace ALConnect.Data
 {
     public class SermonsData 
     {
@@ -35,67 +38,75 @@ namespace ALFCconnect.Data
         {
             var message = "Loading Sermons complete";
 
+            //var aws = new AWSHelper();
+            //var list = aws.SQSReader();
+            var processor = new MessageProcessor();
+            var token = new CancellationToken();
+            var tl = processor.StartListener(token);
             try
             {
+                string url = string.Concat(Constants.DevBaseUrl, Constants.SermonsPath);
+                RssHelper helper = new RssHelper(url);
+                await helper.Update();
+
+                var sermon = new Sermon();
+                //reader.Close();
+                foreach (RssItem item in helper.Feed.Channel.Items)
+                {
+                    sermon.SermonName = item.Title;
+                    var permalink = item.Guid.Split('&');
+                    sermon.PostId = permalink.Length > 0 ? permalink[1].Replace("p=", "") : string.Empty;
+                    sermon.SlideLink = item.Link;
+                    sermon.PresentationDate = item.PubDate;
+                    sermon.AudioUrl = item.Enclosure.Url;
+                    var r = item.Enclosure.Type;
+
+
+                var sermonExist = GetByPostId(sermon.PostId);
+                    sermon.Id = sermonExist.Id;
+
                 HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingSermons(Constants.BaseUrl  + Constants.SermonsPath);
-                //if (nodesTask.Count > 0) ClearData();
+                var nodesTask = await parser.ParsingSermons(sermon.SlideLink);
+
                 foreach (HtmlNode node in nodesTask)
                 {
                     if (node.HasChildNodes)
                     {
                         var st = node.InnerHtml;
-                        var articlesNodes = node.Descendants().Where(x => (x.Name == "article" && x.Attributes["id"] != null && x.Attributes["id"].Value.Contains("post"))).ToList();
-                        if(articlesNodes.Count > 0)
+
+                        var articlesNodes = node.Descendants().Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("entry-content"))).ToList();
+                        if (articlesNodes.Count > 0)
                         {
 
                             for (int i = 0; i < articlesNodes.Count; i++)
                             {
-                                var article = articlesNodes[i];
-                                var postId = article.Attributes["id"].Value;
-                                var h1Node = article.ChildNodes.FindFirst("h1");
-                                var titleNode = h1Node.ChildNodes.FindFirst("a");
-                                var slideLink = titleNode != null ? titleNode.Attributes["href"].Value : "";
-                                var title = titleNode != null ? titleNode.Attributes["title"].Value : "ALFC Info Sermon";
-                                var dateNode = article.ChildNodes.FindFirst("span");
-                                var sermonDate = dateNode != null ? dateNode.InnerText : "1/1/2016";
+                                                var article = articlesNodes[i];
+                                //                var postId = article.Attributes["id"].Value;
+                                //                var h1Node = article.ChildNodes.FindFirst("h1");
+                                var passageNode = article.Descendants().Where(s => (s.Name == "span" && s.Attributes["class"] != null && s.Attributes["class"].Value == "bible_passage")).ToList();
+                                var biblePassage = passageNode[0].InnerText.Replace("Bible Text:", "");
+                                    //                var titleNode = h1Node.ChildNodes.FindFirst("a");
+                                    //                var slideLink = titleNode != null ? titleNode.Attributes["href"].Value : "";
+                                    //                var title = titleNode != null ? titleNode.Attributes["title"].Value : "ALFC Info Sermon";
+                                    //                var dateNode = article.ChildNodes.FindFirst("span");
+                                    //                var sermonDate = dateNode != null ? dateNode.InnerText : "1/1/2016";
                                 var authorNodes = article.Descendants().Where(s => (s.Name == "span" && s.Attributes["class"] != null && s.Attributes["class"].Value == "preacher_name")).ToList();
                                 var authorNode = authorNodes[0].ChildNodes.FindFirst("a");
                                 var author = authorNode != null ? authorNode.InnerText : "pastor";
-                                var listenNode = article.Descendants().Where(li => (li.Name == "li" && li.Attributes["class"] != null && li.Attributes["class"].Value == "listen")).ToList();
-                                var audioUrl = listenNode != null && listenNode.Count > 0 ? listenNode[0].ChildNodes.FindFirst("a").Attributes["href"].Value : "";
-                                var passageNode = article.Descendants().Where(sp => (sp.Name == "span" && sp.Attributes["class"] != null && sp.Attributes["class"].Value == "bible_passage")).ToList();
-                                var passage = passageNode != null && passageNode.Count > 0 ? passageNode[0].InnerText.Remove(0, 12) : "";
+                                    //                var listenNode = article.Descendants().Where(li => (li.Name == "li" && li.Attributes["class"] != null && li.Attributes["class"].Value == "listen")).ToList();
+                                    //                var audioUrl = listenNode != null && listenNode.Count > 0 ? listenNode[0].ChildNodes.FindFirst("a").Attributes["href"].Value : "";
+                                    //                var passageNode = article.Descendants().Where(sp => (sp.Name == "span" && sp.Attributes["class"] != null && sp.Attributes["class"].Value == "bible_passage")).ToList();
+                                    //                var passage = passageNode != null && passageNode.Count > 0 ? passageNode[0].InnerText.Remove(0, 12) : "";
 
-                                var sermon = GetByPostId(postId);
+              
 
-
-                                string[] dateparts = sermonDate.Split('/');
-                                int dateYear = Convert.ToInt16(dateparts[2].Substring(0, 2));
-                                int dateMonth = Convert.ToInt16(dateparts[0]);
-                                int dateDay = Convert.ToInt16(dateparts[1]);
-                                dateYear += 2000;
-
-                                sermon.SermonName = title;
-                                sermon.Author = author;
-                                sermon.PostId = postId;
-                                sermon.Passage = passage;
-                                sermon.AudioUrl = audioUrl;
-                                sermon.SlideLink = slideLink;
-                                
-                                try
-                                {
-                                    sermon.PresentationDate = new DateTime(dateYear, dateMonth, dateDay);
                                 }
-                                catch { }
-                                //Put this Sermon into DB
-                                var sermonId = Upsert(sermon);
-
-                            }
                         }
-                    }
+                            //Put this Sermon into DB
+                            var sermonId = Upsert(sermon);
+                        }
                 }
-
+                }
             }
             catch (Exception e)
             {

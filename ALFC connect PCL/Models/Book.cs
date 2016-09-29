@@ -1,9 +1,9 @@
 ﻿
-using ALFCconnect.Common;
-using ALFCconnect.Interfaces;
+using ALConnect.Common;
+using ALConnect.Interfaces;
 using SQLite.Net.Attributes;
 
-namespace ALFCconnect.Model
+namespace ALConnect.Model
 {
     public class Book : IDataListItem
     {

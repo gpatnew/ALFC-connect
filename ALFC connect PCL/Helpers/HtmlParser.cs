@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 
-namespace ALFCconnect.Helpers
+namespace ALConnect.Helpers
 {
     public class HtmlParser
     {
@@ -40,7 +40,7 @@ namespace ALFCconnect.Helpers
             var page = await FetchPage(websiteUrl);
             HtmlDocument doc = new HtmlDocument();
             doc.LoadHtml(page);
-            return doc.DocumentNode.Descendants().Where(x => (x.Name == "div" && x.Attributes["id"] != null && x.Attributes["id"].Value.Contains("content"))).ToList();
+            return doc.DocumentNode.Descendants().Where(x => (x.Name == "article" && x.Attributes["id"] != null && x.Attributes["id"].Value.Contains("post-"))).ToList();
         }
 
         /// <summary>

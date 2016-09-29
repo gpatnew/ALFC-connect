@@ -1,14 +1,14 @@
-﻿using ALFCconnect.Models;
+﻿using ALConnect.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ALFCconnect.Common;
-using ALFCconnect.Helpers;
+using ALConnect.Common;
+using ALConnect.Helpers;
 using SQLite.Net;
 using HtmlAgilityPack;
 using System;
 using System.Linq;
 
-namespace ALFCconnect.Data
+namespace ALConnect.Data
 {
     public class EventsData 
     {
@@ -31,7 +31,7 @@ namespace ALFCconnect.Data
             try
             {
                 HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingFeatured(Constants.BaseUrl);
+                var nodesTask = await parser.ParsingFeatured(Constants.DevBaseUrl);
                 if (nodesTask.Count > 0) ClearData();
                 foreach (HtmlNode nodeEvents in nodesTask)
                 {
@@ -52,13 +52,10 @@ namespace ALFCconnect.Data
                                 
                                 var desc = string.Empty;
                                 //Put this feature into DB
-                                AddFeatureEvent(title, link, dateTimeparts[1], desc);
+                                AddFeatureEvent(title, link, dateTimeparts[1], desc, 0);
                             }
                             catch (Exception e)
                             { }
-                        
-                        
-
                         }
                     }
                 }
@@ -72,7 +69,7 @@ namespace ALFCconnect.Data
             return message;
         }
 
-        private void AddFeatureEvent(string title, string link, string eventDate, string desc)
+        private void AddFeatureEvent(string title, string link, string eventDate, string desc, int isFeatured)
         {
             var item = new FeatureEvent();
             item.Id = 0;
@@ -80,6 +77,7 @@ namespace ALFCconnect.Data
             item.EventDate = eventDate;
             item.Link = link;
             item.Description = desc;
+            item.IsFeatured = isFeatured;
             database.Insert(item);
         }
 
@@ -106,5 +104,14 @@ namespace ALFCconnect.Data
             }
         }
 
+        internal FeatureEvent GetFeaturedItem()
+        {
+            var feature = new FeatureEvent();
+            lock (locker)
+            {
+                feature = database.FindWithQuery<FeatureEvent>(string.Format("SELECT * FROM [FeatureEvent] WHERE [isFeatured] = 1 and EventDate > '{0}' Limit 1", DateTime.Now.ToString() ));
+            }
+            return feature != null ? feature : new FeatureEvent();
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using SQLite.Net;
 using Xamarin.Forms;
 
-namespace ALFCconnect.Data
+namespace ALConnect.Data
 {
     public class DataConnection
     {

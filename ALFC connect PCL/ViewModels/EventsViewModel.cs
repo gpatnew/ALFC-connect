@@ -1,10 +1,11 @@
-﻿using ALFCconnect.Common;
-using ALFCconnect.Data;
-using ALFCconnect.Models;
+﻿using ALConnect.Common;
+using ALConnect.Data;
+using ALConnect.Models;
 using System;
 using System.Collections.Generic;
+using Xamarin.Forms;
 
-namespace ALFCconnect.ViewModels
+namespace ALConnect.ViewModels
 {
     public class EventsViewModel : BasePageViewModel
     {
@@ -24,9 +25,10 @@ namespace ALFCconnect.ViewModels
         }
 
         private EventSlide currentSlide;
-        public EventSlide CurrentSlide {
+        public EventSlide CurrentSlide
+        {
             get
-            { return currentSlide;}
+            { return currentSlide; }
 
             set
             {
@@ -45,17 +47,17 @@ namespace ALFCconnect.ViewModels
                 return eventList;
             }
             set
-            { 
+            {
                 Set<List<FeatureEvent>>("EventsListItems", ref eventList, value);
             }
         }
 
         private string currentSlideImageUrl;
         public string CurrentSlideImageUrl
-            {
+        {
             get { return currentSlideImageUrl; }
-            set { Set("CurrentSlideImageUrl", ref currentSlideImageUrl,  value); }
-            }
+            set { Set("CurrentSlideImageUrl", ref currentSlideImageUrl, value); }
+        }
 
         private string currentSlideLink;
         public string CurrentSlideLink
@@ -70,6 +72,7 @@ namespace ALFCconnect.ViewModels
             get { return currentSlideTitle; }
             set { Set("CurrentSlideTitle", ref currentSlideTitle, value); }
         }
+
         private int currentSlideId;
         public int CurrentSlideId
         {
@@ -88,11 +91,21 @@ namespace ALFCconnect.ViewModels
             get { return featuredImageUrl; }
             set { Set("FeaturedImageUrl", ref featuredImageUrl, value); }
         }
+
+        private HtmlWebViewSource featuredSource;
+
+        public HtmlWebViewSource FeatureSource
+        {
+            get { return featuredSource; }
+
+            set { Set("FeatureSource", ref featuredSource, value); }
+        }
+
         private string featuredItem;
         public string FeaturedItem
         {
             get { return featuredItem; }
-            set {  Set("FeaturedItem", ref featuredItem, value); }
+            set { Set("FeaturedItem", ref featuredItem, value); }
         }
 
         private string featuredShare;
@@ -103,35 +116,92 @@ namespace ALFCconnect.ViewModels
         }
         public EventsViewModel()
         {
-            PageTitle = "Upcoming Events"; 
+            PageTitle = "Upcoming Events";
             currentSlideId = 0;
             var slidesData = new SlidesData();
             Slides = (List<EventSlide>)slidesData.GetItems();
-            var eventsData = new EventsData();
-            EventsListItems = eventsData.GetItems() as List<FeatureEvent>;
             CurrentSlide = Slides[currentSlideId];
 
-            if((DateTime.Now.Minute % 2) == 0)
+             SetEventsFeaturedItem();
+
+
+        }
+
+        private void SetEventsFeaturedItem()
+        {
+            var eventsData = new EventsData();
+            EventsListItems = eventsData.GetItems() as List<FeatureEvent>;
+
+            var featuredEvent = eventsData.GetFeaturedItem();
+            FeatureSource = BuildHtmlSource(featuredEvent);
+        }
+
+        private HtmlWebViewSource BuildHtmlSource(FeatureEvent featuredEvent)
+        {
+            var source = new HtmlWebViewSource();
+            var innerHtml = "";
+            if (featuredEvent.Id != 0)
             {
-                FeaturedImageUrl = "Featured02.png";
-                FeaturedItem = "Operation GO contact Pastor Graig";
-                FeaturedShare = "I'm helping with Operation GO! find out more @ www.alfc.us";
+                if (featuredEvent.Link.Contains("youtube.com"))
+                    innerHtml = CreateYouTubeFrame(featuredEvent.Link);
+                else
+                    innerHtml = CreateLabel(featuredEvent);
+                
+            }
+            else if ((DateTime.Now.Minute % 2) == 0)
+            {
+                innerHtml = CreateYouTubeFrame("https://www.youtube.com/watch?v=kCHEXXLeVCE");
+
+                FeaturedItem = "Men's Advance";
+                FeaturedShare = "SEAL Training find out more @ www.alfc.us/ministry/men/";
             }
             else
             {
+
                 FeaturedImageUrl = "Featured01.png";
                 FeaturedItem = " contact Pat Newsome gpatnew@hotmail.com";
                 FeaturedShare = "Join Essential Truths this Wed 6:30pm find out more @ www.alfc.us";
-
             }
+
+            source.Html = string.Format("<html><body><div>{0}</div></body></html>", innerHtml);
+            return source;
+        }
+
+        private string CreateLabel(FeatureEvent featuredItem)
+        {
+            var label = "";
+            if (featuredItem.Link.Contains("http") && IsImageLink(featuredItem.Link))
+            {
+                label = "<img src='{0}' />";
+            }
+            else
+            {
+                label = string.Format("<a href='{0}'>{1}</a> <span class='smallText>{2}</span><div>{3}</div>'", featuredItem.Link, featuredItem.Title, featuredItem.Time, featuredItem.Description);
+             }
+            return label;
+        }
+
+        private bool IsImageLink(string link)
+        {
+            bool result = link.Contains(".png");
+            if (link.Contains(".gif")) result = true;
+            if (link.Contains(".jpg")) result = true;
+            if (link.Contains(".jpeg")) result = true;
+            return result;
+
+        }
+
+        private string CreateYouTubeFrame(string link)
+        {
+            return string.Format("<iframe width=\"320\" height=\"600\" src=\"{0}\" frameborder=\"0\" allowfullscreen><iframe>", link);
         }
 
         public void ChangeSlide()
         {
-            CurrentSlideId = CurrentSlideId == Slides.Count-1 ?  0 : CurrentSlideId += 1;
+            CurrentSlideId = CurrentSlideId == Slides.Count - 1 ? 0 : CurrentSlideId += 1;
         }
 
-       
-      
+
+
     }
 }

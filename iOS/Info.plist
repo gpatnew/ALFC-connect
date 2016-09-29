@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>ALFCconnect</string>
+	<string>ALConnect</string>
 	<key>CFBundleIdentifier</key>
 	<string>us.alfc.connect</string>
 	<key>CFBundleShortVersionString</key>
@@ -37,7 +37,7 @@
 	</array>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>Icon.png</string>
+		<string>icon.png</string>
 		<string>Icon-60@2x.png</string>
 		<string>Icon-Small@2x.png</string>
 		<string>Icon-Small.png</string>

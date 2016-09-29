@@ -2,7 +2,7 @@
 using System;
 
 
-namespace ALFCconnect.Models
+namespace ALConnect.Models
 {
     public class FeatureEvent
     {
@@ -13,5 +13,7 @@ namespace ALFCconnect.Models
         public string Link { get; set; }
         public string Time { get; set; }
         public string Description { get; set; }
+
+        public int IsFeatured { get; set; }
     }
 }

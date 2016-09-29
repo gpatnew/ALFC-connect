@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using SQLite.Net.Attributes;
 
-namespace ALFCconnect.Models
+namespace ALConnect.Models
 {
     public class Sermon
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using ALFCConnect;
+using ALConnect;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -8,9 +8,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace ALFCconnect.Droid
+namespace ALConnect.Droid
 {
-	[Activity (Label = "ALFC Connect", Icon = "@drawable/icon")]
+	[Activity (Label = "ALConnect", Icon = "@drawable/icon")]
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
 	{
 		protected override void OnCreate (Bundle bundle)

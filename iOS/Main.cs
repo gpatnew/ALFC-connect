@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ALFCconnect.iOS
+namespace ALConnect.iOS
 {
 	public class Application
 	{

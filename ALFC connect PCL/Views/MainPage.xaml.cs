@@ -1,10 +1,10 @@
-﻿using ALFCconnect.Views;
-using ALFCconnect.Models;
+﻿using ALConnect.Views;
+using ALConnect.Models;
 using System;
 using Xamarin.Forms;
-using ALFCconnect.ViewModels;
+using ALConnect.ViewModels;
 
-namespace ALFCconnect
+namespace ALConnect
 { 
 	public partial class MainPage : MasterDetailPage
 	{

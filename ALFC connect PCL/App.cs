@@ -1,9 +1,10 @@
-﻿using ALFCconnect.Data;
+﻿using ALConnect.Data;
 using Xamarin.Forms;
 using System.Threading;
 using System.Threading.Tasks;
+using System;
 
-namespace ALFCconnect
+namespace ALConnect
 {
     
 	public class App : Application
@@ -19,9 +20,7 @@ namespace ALFCconnect
 
         public App ()
 		{
-            MainPage = new ALFCconnect.MainPage();
-            
-
+            MainPage = new ALConnect.MainPage();
 		}
 
 		protected override void OnStart ()
@@ -44,11 +43,17 @@ namespace ALFCconnect
 
         private async void BuildCaches()
         {
+            try
+            { 
             var dataStore = new DataStoreHelper();
             SlidesMessage = await dataStore.LoadSlidesAsync();
             SlidesMessage = await dataStore.LoadEventsAsync();
             EventsMessage = await dataStore.LoadSermonsAsync();
-            
+            }
+            catch(Exception e)
+            {
+                var strMSG = e.Message;
+            }
         }
 
         public static SermonsData Database

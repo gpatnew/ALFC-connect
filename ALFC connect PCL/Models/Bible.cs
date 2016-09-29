@@ -1,4 +1,4 @@
-﻿using ALFCconnect.Interfaces;
+﻿using ALConnect.Interfaces;
 using SQLite.Net.Attributes;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALFCconnect.Models
+namespace ALConnect.Models
 {
     public class Bible : IDataListItem
     {

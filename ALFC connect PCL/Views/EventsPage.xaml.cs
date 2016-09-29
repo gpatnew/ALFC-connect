@@ -1,12 +1,12 @@
-﻿using ALFCconnect.ViewModels;
-using ALFCconnect.Views;
+﻿using ALConnect.ViewModels;
+using ALConnect.Views;
 using Plugin.Connectivity;
 using System;
 using System.Threading.Tasks;
 using Plugin.Share;
 using Xamarin.Forms;
 
-namespace ALFCconnect
+namespace ALConnect
 {
     public partial class EventsPage : ContentPage
     {
@@ -30,7 +30,7 @@ namespace ALFCconnect
 
         async void DisplayAlert()
         {
-            var result = await this.DisplayAlert("q", "move forward", "ok", "no");
+            //var result = await this.DisplayAlert("q", "move forward", "ok", "no");
         }
         public void OnPanUpdated(object sender, PanUpdatedEventArgs e)
         {

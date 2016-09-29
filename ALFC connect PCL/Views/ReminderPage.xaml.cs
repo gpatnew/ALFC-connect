@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace ALFCconnect
+namespace ALConnect
 {
 	public partial class ReminderPage : ContentPage
 	{

@@ -1,4 +1,4 @@
-﻿using ALFCconnect.iOS;
+﻿using ALConnect.iOS;
 
 using SQLite.Net;
 using SQLite.Net.Platform.XamarinIOS;
@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 [assembly: Dependency(typeof(SQLite_iOS))]
 
-namespace ALFCconnect.iOS
+namespace ALConnect.iOS
 {
     public class SQLite_iOS : ISQLite
     {
@@ -19,7 +19,7 @@ namespace ALFCconnect.iOS
         #region ISQLite implementation
         public SQLiteConnection GetConnection()
         {
-            var sqliteFilename = "ALFCSQLite.db3";
+            var sqliteFilename = "ALConnect.db3";
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
             string libraryPath = Path.Combine(documentsPath, "..", "Library"); // Library folder
             var path = Path.Combine(libraryPath, sqliteFilename);

@@ -1,79 +1,41 @@
-﻿using ALFCConnect.Common;
-using ALFCConnect.Interfaces;
-using ALFCConnect.Models;
+﻿using ALConnect.Common;
+using ALConnect.Interfaces;
+using ALConnect.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
-using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using System.Xml;
+using System.Xml.Serialization;
 using Xamarin.Forms;
 
-namespace ALFCConnect.Helpers
+namespace ALConnect.Helpers
 {
-    public class RssHelper
+    public class RssHelper : IFeedService
     {
         HttpClient client;
 
-        public List<RssPost> EventItems { get; private set; }
-        public List<RssSlide> SlideItems { get; private set; }
-        public List<RssPost> PostItems { get; private set; }
-
-
-        public RssHelper()
+        public string EndPoint { get; set; }
+        public Rss Feed { get; set; }
+        public RssHelper(string url)
 		{
 			client = new HttpClient ();
-		}
-
-        public async Task<List<RssPost>> RefreshEventsAsync()
-        {
-            EventItems = new List<RssPost>();
-            DataContractSerializer dcs = new DataContractSerializer(typeof(List<RssPost>));
-            
-            var uri = new Uri(string.Concat(Constants.BaseUrl, Constants.EventsPath));
-
-            try
-            {
-               StringContent reqContent = new StringContent("");
-                var response = await client.PostAsync(uri, reqContent);
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    XmlReader reader = XmlReader.Create(uri.ToString());
-
-                    EventItems = (List<RssPost>)dcs.ReadObject(reader);
-                }
-            }
-            catch (Exception ex)
-            {
-                //Debug.WriteLine(@"				ERROR {0}", ex.Message);
-            }
-
-            return EventItems;
+            this.Feed = new Rss();
+            this.EndPoint = url;
         }
-
-        public async Task<List<RssSlide>> RefreshSlidesAsync()
+        
+        public async Task Update()
         {
-            SlideItems = new List<RssSlide>();
+            Rss currentFeed;
 
-            var uri = new Uri(string.Concat(Constants.BaseUrl, Constants.SlidesPath));
-
-            try
+            using (var reader = new StringReader(await client.GetStringAsync(EndPoint)))
             {
-                var response = await client.GetAsync(uri);
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    SlideItems = JsonConvert.DeserializeObject<List<RssSlide>>(content);
-                }
+                
+                var serializer = new XmlSerializer(typeof(Rss));
+                currentFeed = serializer.Deserialize(reader) as Rss;
             }
-            catch (Exception ex)
-            {
-                //Debug.WriteLine(@"				ERROR {0}", ex.Message);
-            }
-
-            return SlideItems;
+            if (currentFeed != null) Feed = currentFeed;
         }
     }
 }

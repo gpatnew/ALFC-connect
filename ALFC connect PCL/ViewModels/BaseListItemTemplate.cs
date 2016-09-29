@@ -1,5 +1,5 @@
-﻿using ALFCconnect.Common;
-using ALFCconnect.Helpers;
+﻿using ALConnect.Common;
+using ALConnect.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ALFCconnect.ViewModels
+namespace ALConnect.ViewModels
 {
     public class BaseListItemTemplate
     {

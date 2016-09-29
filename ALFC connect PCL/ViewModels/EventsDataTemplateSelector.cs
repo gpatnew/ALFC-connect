@@ -1,7 +1,7 @@
-﻿using ALFCconnect.Models;
+﻿using ALConnect.Models;
 using Xamarin.Forms;
 
-namespace ALFCconnect.ViewModels
+namespace ALConnect.ViewModels
 {
     public class EventsDataTemplateSelector : DataTemplateSelector
     {

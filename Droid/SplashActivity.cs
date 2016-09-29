@@ -3,7 +3,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 
-namespace ALFCconnect.Droid
+namespace ALConnect.Droid
 {
     [Activity(Theme = "@style/Theme.Splash", NoHistory = true, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class SplashActivity : Activity

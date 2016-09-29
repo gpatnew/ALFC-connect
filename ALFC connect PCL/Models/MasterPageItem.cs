@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ALFCconnect.Models
+namespace ALConnect.Models
 {
 	public class MasterPageItem
 	{

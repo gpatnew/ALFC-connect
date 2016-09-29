@@ -1,9 +1,9 @@
-﻿using ALFCconnect.Data;
-using ALFCconnect.Interfaces;
+﻿using ALConnect.Data;
+using ALConnect.Interfaces;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace ALFCconnect.ViewModels
+namespace ALConnect.ViewModels
 {
     public class BiblesListView : ListView
     {

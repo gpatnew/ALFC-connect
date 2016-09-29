@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using ALFCconnect.Models;
+using ALConnect.Models;
 
-namespace ALFCconnect.Views
+namespace ALConnect.Views
 {
     public partial class SharePage : ContentPage
     {

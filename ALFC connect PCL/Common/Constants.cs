@@ -2,15 +2,16 @@
 
 using Xamarin.Forms;
 
-namespace ALFCconnect.Common
+namespace ALConnect.Common
 {
     public class Constants
     {
         public const string BaseUrl = "http://www.alfc.us/";
+        public const string DevBaseUrl = "http://dev.alfc.us/";
         public const string EventsPath = "events/feed/?post_type=slide";
         public const string FeaturedPath = "feed/?post_type=slide&type=featured";
         public const string SlidesPath = "feed/?post_type=slide";
-        public const string SermonsPath = "sermons/";
+        public const string SermonsPath = "sermons/feed";
 
         public const string SearchURLbase = "http://www.biblegateway.com/";
         public const string BibleGatewayURL = "http://www.biblegateway.com/";
@@ -34,5 +35,8 @@ namespace ALFCconnect.Common
         public  const string BibleVersionNameKey = "bibleName";
         public  const string UserNameKey = "alfc_user";
         public  const string UserIntKey = "alfc_int";
+
+        public const string CognitoPoolId = "us-west-2:7024f61e-9663-4dbb-8786-b96e8a65c8b1";
+        public const string SQSSermonQueue = "https://sqs.us-west-1.amazonaws.com/650481127744/MyQueue";
     }
 }

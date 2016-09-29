@@ -6,10 +6,10 @@ using SQLite.Net;
 using System.IO;
 using Xamarin.Forms;
 using SQLite.Net.Platform.XamarinAndroid;
-using ALFCconnect.Droid;
+using ALConnect.Droid;
 
 [assembly: Dependency (typeof (SQLite_Android))]
-namespace ALFCconnect.Droid
+namespace ALConnect.Droid
 {
     public class SQLite_Android : ISQLite
     {
@@ -20,7 +20,7 @@ namespace ALFCconnect.Droid
         public SQLiteConnection GetConnection()
         {
 
-            var sqliteFilename = "AlfcDbSQLite.db3";
+            var sqliteFilename = "ALConnect.db3";
             string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); // Documents folder
             var path = Path.Combine(documentsPath, sqliteFilename);
 
