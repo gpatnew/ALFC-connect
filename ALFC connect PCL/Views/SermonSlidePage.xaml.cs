@@ -1,4 +1,5 @@
-﻿using ALConnect.ViewModels;
+﻿using ALConnect.Data;
+using ALConnect.ViewModels;
 using ALConnect.Views;
 using System;
 using Xamarin.Forms;
@@ -41,10 +42,20 @@ namespace ALConnect
             await Navigation.PushModalAsync(sharePage);
         }
 
+        public void OnSermonTapped(object sender, EventArgs arg)
+        {
+            SermonSlidesViewModel ssvm = (SermonSlidesViewModel)this.BindingContext;
+            SermonsData sd = new SermonsData();
+            var sermon = sd.GetItem(ssvm.SermonId);
+            DisplayAlert(ssvm.SermonName, sermon.Passage, "OK");
+
+        }
+        
         private void SaveSlides()
         {
             var sermonSlides = (SermonSlidesViewModel)BindingContext;
             sermonSlides.Save();
+            
         }
     }
 }

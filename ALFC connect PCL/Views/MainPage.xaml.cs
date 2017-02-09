@@ -19,9 +19,15 @@ namespace ALConnect
 			}
 		}
 
-		void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+        }
+        void OnItemSelected (object sender, SelectedItemChangedEventArgs e)
 		{
-			var item = e.SelectedItem as MasterPageItem;
+           // SelectedPageIndex = 
+            var item = e.SelectedItem as MasterPageItem;
 			if (item != null)
             {
                 if (item.TargetType == typeof(WebPage))
@@ -35,7 +41,7 @@ namespace ALConnect
                     
                     Detail = detailPage;
                 }
-                    masterPage.ListView.SelectedItem = null;
+                masterPage.ListView.SelectedItem = null;
 				IsPresented = false;
 			}
 		}

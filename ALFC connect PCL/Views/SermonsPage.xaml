@@ -4,8 +4,7 @@
 			 x:Class="ALConnect.SermonsPage"
        xmlns:customVM="clr-namespace:ALConnect.ViewModels;assembly=ALConnectPCL"
        BackgroundColor="White"
-			 Title="Sermons"
-             >
+			 Title="Sermons">
   <ContentPage.BindingContext>
     <customVM:SermonsViewModel />
   </ContentPage.BindingContext>

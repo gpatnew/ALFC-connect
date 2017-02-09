@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
-//using Windows.Web.Syndication;
+
 
 namespace ALConnect.Data
 {
@@ -36,86 +36,71 @@ namespace ALConnect.Data
 
         public async Task<string> LoadAsync()
         {
-            var message = "Loading Sermons complete";
+            var message = "Loading sermons complete";
+            AWSHelper awshelper = new AWSHelper();
 
-            //var aws = new AWSHelper();
-            //var list = aws.SQSReader();
-            var processor = new MessageProcessor();
-            var token = new CancellationToken();
-            var tl = processor.StartListener(token);
-            try
+            var isBucket = await awshelper.BucketExist();
+            if(isBucket)
             {
-                string url = string.Concat(Constants.DevBaseUrl, Constants.SermonsPath);
-                RssHelper helper = new RssHelper(url);
-                await helper.Update();
-
-                var sermon = new Sermon();
-                //reader.Close();
-                foreach (RssItem item in helper.Feed.Channel.Items)
-                {
-                    sermon.SermonName = item.Title;
-                    var permalink = item.Guid.Split('&');
-                    sermon.PostId = permalink.Length > 0 ? permalink[1].Replace("p=", "") : string.Empty;
-                    sermon.SlideLink = item.Link;
-                    sermon.PresentationDate = item.PubDate;
-                    sermon.AudioUrl = item.Enclosure.Url;
-                    var r = item.Enclosure.Type;
-
-
-                var sermonExist = GetByPostId(sermon.PostId);
-                    sermon.Id = sermonExist.Id;
-
-                HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingSermons(sermon.SlideLink);
-
-                foreach (HtmlNode node in nodesTask)
-                {
-                    if (node.HasChildNodes)
-                    {
-                        var st = node.InnerHtml;
-
-                        var articlesNodes = node.Descendants().Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("entry-content"))).ToList();
-                        if (articlesNodes.Count > 0)
-                        {
-
-                            for (int i = 0; i < articlesNodes.Count; i++)
-                            {
-                                                var article = articlesNodes[i];
-                                //                var postId = article.Attributes["id"].Value;
-                                //                var h1Node = article.ChildNodes.FindFirst("h1");
-                                var passageNode = article.Descendants().Where(s => (s.Name == "span" && s.Attributes["class"] != null && s.Attributes["class"].Value == "bible_passage")).ToList();
-                                var biblePassage = passageNode[0].InnerText.Replace("Bible Text:", "");
-                                    //                var titleNode = h1Node.ChildNodes.FindFirst("a");
-                                    //                var slideLink = titleNode != null ? titleNode.Attributes["href"].Value : "";
-                                    //                var title = titleNode != null ? titleNode.Attributes["title"].Value : "ALFC Info Sermon";
-                                    //                var dateNode = article.ChildNodes.FindFirst("span");
-                                    //                var sermonDate = dateNode != null ? dateNode.InnerText : "1/1/2016";
-                                var authorNodes = article.Descendants().Where(s => (s.Name == "span" && s.Attributes["class"] != null && s.Attributes["class"].Value == "preacher_name")).ToList();
-                                var authorNode = authorNodes[0].ChildNodes.FindFirst("a");
-                                var author = authorNode != null ? authorNode.InnerText : "pastor";
-                                    //                var listenNode = article.Descendants().Where(li => (li.Name == "li" && li.Attributes["class"] != null && li.Attributes["class"].Value == "listen")).ToList();
-                                    //                var audioUrl = listenNode != null && listenNode.Count > 0 ? listenNode[0].ChildNodes.FindFirst("a").Attributes["href"].Value : "";
-                                    //                var passageNode = article.Descendants().Where(sp => (sp.Name == "span" && sp.Attributes["class"] != null && sp.Attributes["class"].Value == "bible_passage")).ToList();
-                                    //                var passage = passageNode != null && passageNode.Count > 0 ? passageNode[0].InnerText.Remove(0, 12) : "";
-
-              
-
-                                }
-                        }
-                            //Put this Sermon into DB
-                            var sermonId = Upsert(sermon);
-                        }
-                }
-                }
+                var notices = await awshelper.LoadNotifications();
+                if(notices.Count > 0)
+                    message = await ParseNotifications(notices);
             }
-            catch (Exception e)
-            {
-                message = e.Message;
-            }
-
-            return message;
+             return message;
         }
 
+        private async Task<string> ParseNotifications(List<AWSNotification> notifications)
+        {
+            var result = ""; 
+            foreach (var note in notifications)
+            {
+                if(note.Type.ToLower() == Constants.Featured)
+                {
+                    SaveFeaturedItem(note);
+                }
+                if(note.Type.ToLower() == Constants.Message)
+                {
+                    SaveWeeklyMessage(note);
+                }
+            }
+
+            return result;
+        }
+
+
+        private void SaveFeaturedItem(AWSNotification note)
+        {
+            var eventData = new EventsData();
+            eventData.AddFeatureEvent(note);
+        }
+
+
+        private void SaveWeeklyMessage(AWSNotification note)
+        {
+            var sermon = GetItem(note.Title);
+
+            sermon.AudioUrl = note.AudioUrl;
+            sermon.Author = note.Author;
+            sermon.Passage = note.Message;
+            sermon.PresentationDate = note.StartDate;
+            sermon.SermonName = note.Title;
+
+            var id = Upsert(sermon);
+            var slideIndex = 1;
+            foreach (var item in note.FileNames)
+            {
+                var imageuri = string.Format("{0}{1}/{2}/{3}/{4}", Constants.S3Path, Constants.Bucket, Constants.MessagePath, sermon.SermonName, item);
+                var slide = GetSlide(id, slideIndex);
+                slide.SermonId = id;
+                slide.ImageUrl = imageuri;
+                slide.Scripture = sermon.Passage;
+                slide.SlideIndex = slideIndex;
+                slide.Title = string.Format("{0} slide {1}", sermon.SermonName, slideIndex);
+                SaveSlideItem(slide);
+                slideIndex++;
+            }
+
+        }
         public async Task<List<SermonSlide>> LoadSlidesAsync(int sermonId, string link)
         {
 
@@ -135,6 +120,7 @@ namespace ALConnect.Data
                     var titleNode = node.ChildNodes.FindFirst("h3");
                     s.Title = titleNode != null ? titleNode.InnerText : "Slide";
                     s.Message = node.InnerText;
+   
                     s.Id = SaveSlideItem(s);
                     slides.Add(s);
                     n++;
@@ -153,12 +139,11 @@ namespace ALConnect.Data
             }
                 return slides;
         }
-
-        
+  
         internal List<Sermon> GetList(DateTime dateTime)
         {
             sermonList =  (List<Sermon>)GetItems();
-
+            //LoadMessages();
             return Sort(sermonList, s => s.PresentationDate, ref sortDir);
             
         }
@@ -200,8 +185,14 @@ namespace ALConnect.Data
             var sermonSlide = new SermonSlide();
             lock (locker)
             {
-                sermonSlide = database.FindWithQuery<SermonSlide>(string.Format("SELECT * FROM [SermonSlide] WHERE [SermonId] = {0} and SlideIndex = {1}", sermonId, index));
+               
+                var query = string.Format("SELECT * FROM [SermonSlide] WHERE SermonId = ?", sermonId);
+                List<SermonSlide> sermonSlides = database.Query<SermonSlide>(query, sermonId);
+
+                if (sermonSlides.Count > 0)
+                    sermonSlide = sermonSlides.Find(ss => ss.SlideIndex == index);
             }
+
             return sermonSlide != null ? sermonSlide : new SermonSlide();
         }
         public IEnumerable<SermonSlide> GetSlides(int sermonId)
@@ -212,14 +203,23 @@ namespace ALConnect.Data
             }
         }
 
-
-
         public Sermon GetItem(int id)
         {
             lock (locker)
             {
                 return database.Table<Sermon>().FirstOrDefault(x => x.Id == id);
             }
+        }
+
+        public Sermon GetItem(string title)
+        {
+            var sermon = new Sermon();
+            lock (locker)
+            {
+                sermon = database.Table<Sermon>().FirstOrDefault(x => x.SermonName == title);
+            }
+
+            return sermon != null ? sermon : new Sermon();
         }
 
         public int Upsert(Sermon item)
@@ -281,6 +281,8 @@ namespace ALConnect.Data
             slides.Add(new SermonSlide { Id = 0, SermonId = sermonId, SlideIndex = 11, Message = "", Title = "Slide 12", ImageUrl = "slide12.jpg" });
 
         }
+
+        
         
     }
 }

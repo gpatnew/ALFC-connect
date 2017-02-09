@@ -17,57 +17,24 @@ namespace ALConnect.Data
     {
         static object locker = new object();
         SQLiteConnection database;
-        private static List<EventSlide> sermonList = new List<EventSlide>();
+        private static List<FeatureEvent> eventList = new List<FeatureEvent>();
 
         public SlidesData()
         {
             database = DataConnection.Instance().DataBase;
-            database.CreateTable<EventSlide>();
+            
         }
-        public async Task<string> LoadAsync()
-        {
-            var message = "loaded slides";
-
-            try
-            {
-                HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingSlides(Constants.BaseUrl);
-                if (nodesTask.Count > 0) ClearData();
-                foreach (HtmlNode node in nodesTask)
-                {
-                    if (node.HasChildNodes)
-                    {
-                        
-                        var slideId = node.Attributes["id"].Value;
-                        var linkNode = node.ChildNodes.FindFirst("a");
-                        var link = linkNode != null ? linkNode.Attributes["href"].Value : Constants.BaseUrl;
-                        var imageNode = node.ChildNodes.FindFirst("img");
-                        var imageUrl = imageNode != null ? imageNode.Attributes["src"].Value : "";
-                        var title = imageNode != null ? imageNode.Attributes["alt"].Value : "ALFC Info";
-                        //Put this slide into DB
-                        AddEventSlide(slideId, imageUrl, link, title);
-                    }
-                }
-
-            }
-            catch (Exception e)
-            {
-                message = e.Message;
-            }
-
-              return message;
-        }
-
-        public IEnumerable<EventSlide> GetItems()
+      
+        public IEnumerable<FeatureEvent> GetItems()
         {
             lock (locker)
             {
-                var slides = (from i in database.Table<EventSlide>() select i).ToList();
+                var slides = (from i in database.Table<FeatureEvent>() select i).ToList();
 
                 if(slides.Count == 0)
                 {
-                    slides.Add(new EventSlide { Title = "Welcome", Id = 0, ImageUrl = "http://4.bp.blogspot.com/-nqlRlQkLpmA/T9tzmJCVMNI/AAAAAAAABlc/FyQMyDegG-k/s1600/Jesus+em+medita%C3%A7%C3%A3o.jpg", Link = "http://www.alfc.us" });
-                    }
+                    slides.Add(new FeatureEvent { Title = "Welcome", Id = 0,  IsVideo= false,   Url = "http://4.bp.blogspot.com/-nqlRlQkLpmA/T9tzmJCVMNI/AAAAAAAABlc/FyQMyDegG-k/s1600/Jesus+em+medita%C3%A7%C3%A3o.jpg", Link = "http://www.alfc.us" });
+                }
                 return slides;
             }
         }

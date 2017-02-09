@@ -19,7 +19,7 @@
               <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
             <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#303030" BackgroundColor="#FFDBF0FF" FontSize="10"    Clicked="EventClicked" CommandParameter="{Binding Link}" VerticalOptions="StartAndExpand"  />
-            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#303030"  BackgroundColor="#FFDBF0FF" FontSize="10" VerticalOptions="CenterAndExpand"  />
+            <Label Text="{Binding DisplayDate}" Grid.Column="1" TextColor="#303030"  BackgroundColor="#FFDBF0FF" FontSize="10" VerticalOptions="CenterAndExpand"  />
               </Grid>
         </ViewCell>
       </DataTemplate>
@@ -31,7 +31,7 @@
               <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
             <Button Text="{Binding Title}"  Grid.Column="0" TextColor="#059BD2" BackgroundColor="White" FontSize="12"  Clicked="EventClicked" CommandParameter="{Binding Link}"  />
-            <Label Text="{Binding EventDate}" Grid.Column="1" TextColor="#059BD2" FontSize="10"  />
+            <Label Text="{Binding DisplayDate}" Grid.Column="1" TextColor="#059BD2" FontSize="10"  />
           </Grid>
         </ViewCell>
       </DataTemplate>
@@ -49,20 +49,22 @@
               <TapGestureRecognizer Tapped="OnImageTapped"  />
             </Image.GestureRecognizers>
           </Image>    
-        </StackLayout> 
-     
+        </StackLayout>
+      <StackLayout Padding="0,0,0,5"  MinimumHeightRequest="400"  BackgroundColor="#DBF0FF"  >
+        <Image  Aspect="AspectFit"  Source="{Binding FeaturedImageUrl}" MinimumHeightRequest="400"  MinimumWidthRequest="600">
+          <Image.GestureRecognizers>
+            <PanGestureRecognizer  PanUpdated="OnPanUpdated" />
+            <TapGestureRecognizer Tapped="OnFeaturedTapped"  />
+          </Image.GestureRecognizers>
+        </Image>
+
+        <Button x:Name="shareButton" BorderColor="Black" BackgroundColor="White"  Image="shareButton.png" HeightRequest="60" WidthRequest="180" Clicked="shareButtonClicked"></Button>
+      </StackLayout>
       <StackLayout Padding="0,0,0,0"  VerticalOptions="StartAndExpand"  >
         <StackLayout Padding="10,5,10,0" VerticalOptions="StartAndExpand"  >
         <Label Text="{Binding PageTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#303030" />
         <ListView x:Name="FeatureList" ItemTemplate="{StaticResource EventDataTemplateSelector}" ItemsSource="{Binding EventsListItems}" BackgroundColor="#DBF0FF" ></ListView>
         </StackLayout>
-      
-      <StackLayout Padding="0,5,0,5" BackgroundColor="#FBB040"  MinimumHeightRequest="300" >
-        <WebView x:Name="featuredWebView" Source="{Binding FeaturedImageUrl}" HeightRequest="200" ></WebView>
-        
-        <Label x:Name="FeatureEventLabel" Text="{Binding FeaturedItem}"  TextColor="#4B68A2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        <Button x:Name="shareButton" BorderColor="Black" BackgroundColor="White"  Image="shareButton.png" HeightRequest="60" WidthRequest="180" Clicked="shareButtonClicked"></Button>
-      </StackLayout>
       </StackLayout>
       </StackLayout>
     </ScrollView>

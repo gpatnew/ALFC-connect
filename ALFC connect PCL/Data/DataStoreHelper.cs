@@ -14,11 +14,7 @@ namespace ALConnect.Data
             return ed.LoadAsync();
         }
 
-        public Task<string> LoadSlidesAsync()
-        {
-            SlidesData sd = new SlidesData();
-            return sd.LoadAsync();
-        }
+        
 
         public Task<string> LoadSermonsAsync()
         {

@@ -30,7 +30,11 @@
             <StackLayout Padding="0,0,0,5" Grid.Row="1" Grid.ColumnSpan="3" >
               <helper:PinchToZoomContainer>
                 <helper:PinchToZoomContainer.Content>
-                  <Image Source="{Binding ImageUrl}" HorizontalOptions="CenterAndExpand"  MinimumHeightRequest="300" MinimumWidthRequest="450" IsVisible="{Binding ImageIsVisible}"  />
+                  <Image Source="{Binding ImageUrl}" HorizontalOptions="CenterAndExpand"  MinimumHeightRequest="300" MinimumWidthRequest="450" IsVisible="{Binding ImageIsVisible}">
+                    <Image.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="OnSermonTapped"  />
+                    </Image.GestureRecognizers>
+                  </Image>
                 </helper:PinchToZoomContainer.Content>
               </helper:PinchToZoomContainer>
             </StackLayout>

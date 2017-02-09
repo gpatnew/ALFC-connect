@@ -1,6 +1,8 @@
-﻿using ALConnect.Data;
+﻿using ALConnect.Common;
+using ALConnect.Data;
 using ALConnect.Models;
 using System.Collections.Generic;
+using System;
 
 namespace ALConnect.ViewModels
 {
@@ -17,6 +19,8 @@ namespace ALConnect.ViewModels
 
         public int SermonId { get; private set; }
 
+        public string Passage { get; private set; }
+
         public void Save()
         {
             var sermonData = new SermonsData();
@@ -32,6 +36,12 @@ namespace ALConnect.ViewModels
             FetchSlides(sermonId, sermonName);
             SermonName = sermonName;
             SermonId = sermonId;
+            Passage = FetchPassage();
+        }
+
+        private string FetchPassage()
+        {
+            return "Passage";
         }
 
         private async void  FetchSlides(int sermonId, string sermonName)
@@ -45,7 +55,9 @@ namespace ALConnect.ViewModels
             if (sermonSlides.Count <= 0)
                 Slides = await sd.LoadSlidesAsync(sermonId, sermon.SlideLink);
             else
+            {
                 slides = sermonSlides;
+            }
         }
 
 

@@ -9,31 +9,23 @@ namespace ALConnect.ViewModels
 {
     public class EventsViewModel : BasePageViewModel
     {
-        public string TextPrimaryColor
-        {
-            get
-            {
-                return AppColors.TextPrimaryColor;
-            }
-        }
-
-        private List<EventSlide> slidesList;
-        public List<EventSlide> Slides
+        private List<FeatureEvent> slidesList;
+        public List<FeatureEvent> Slides
         {
             get { return slidesList; }
-            set { Set<List<EventSlide>>("EventsListItems", ref slidesList, value); }
+            set { Set<List<FeatureEvent>>("EventsListItems", ref slidesList, value); }
         }
 
-        private EventSlide currentSlide;
-        public EventSlide CurrentSlide
+        private FeatureEvent currentSlide;
+        public FeatureEvent CurrentSlide
         {
             get
             { return currentSlide; }
 
             set
             {
-                Set<EventSlide>("CurrentSlide", ref currentSlide, value);
-                CurrentSlideImageUrl = currentSlide.ImageUrl;
+                Set<FeatureEvent>("CurrentSlide", ref currentSlide, value);
+                CurrentSlideImageUrl = currentSlide.Url;
                 CurrentSlideTitle = currentSlide.Title;
                 CurrentSlideLink = currentSlide.Link;
             }
@@ -85,6 +77,7 @@ namespace ALConnect.ViewModels
                 CurrentSlide = Slides[CurrentSlideId];
             }
         }
+
         private string featuredImageUrl;
         public string FeaturedImageUrl
         {
@@ -94,7 +87,7 @@ namespace ALConnect.ViewModels
 
         private HtmlWebViewSource featuredSource;
 
-        public HtmlWebViewSource FeatureSource
+        public HtmlWebViewSource FeaturedSource
         {
             get { return featuredSource; }
 
@@ -111,29 +104,26 @@ namespace ALConnect.ViewModels
         private string featuredShare;
         public string FeaturedShare
         {
-            get { return featuredItem; }
+            get { return featuredShare; }
             set { Set("FeaturedShare", ref featuredShare, value); }
         }
         public EventsViewModel()
         {
             PageTitle = "Upcoming Events";
-            currentSlideId = 0;
-            var slidesData = new SlidesData();
-            Slides = (List<EventSlide>)slidesData.GetItems();
-            CurrentSlide = Slides[currentSlideId];
-
-             SetEventsFeaturedItem();
-
-
+            
+            SetEventsFeaturedItem();
         }
 
         private void SetEventsFeaturedItem()
         {
             var eventsData = new EventsData();
-            EventsListItems = eventsData.GetItems() as List<FeatureEvent>;
+            EventsListItems = eventsData.GetEvents(false) as List<FeatureEvent>;
 
+            currentSlideId = 0;
+            Slides = (List<FeatureEvent>)eventsData.GetEvents(true);
+            CurrentSlide = Slides[currentSlideId];
             var featuredEvent = eventsData.GetFeaturedItem();
-            FeatureSource = BuildHtmlSource(featuredEvent);
+            FeaturedSource = BuildHtmlSource(featuredEvent);
         }
 
         private HtmlWebViewSource BuildHtmlSource(FeatureEvent featuredEvent)
@@ -142,41 +132,52 @@ namespace ALConnect.ViewModels
             var innerHtml = "";
             if (featuredEvent.Id != 0)
             {
-                if (featuredEvent.Link.Contains("youtube.com"))
+                if (featuredEvent.Link != null && featuredEvent.Link.Contains("youtube.com"))
                     innerHtml = CreateYouTubeFrame(featuredEvent.Link);
                 else
+                { 
                     innerHtml = CreateLabel(featuredEvent);
-                
+                    FeaturedImageUrl = featuredEvent.Url;
+                    FeaturedItem = featuredEvent.Title;
+                    FeaturedShare = string.Format("{0} {1} {2}", featuredEvent.Title,featuredEvent.Description,featuredEvent.Url);
+
+                }
             }
             else if ((DateTime.Now.Minute % 2) == 0)
             {
-                innerHtml = CreateYouTubeFrame("https://www.youtube.com/watch?v=kCHEXXLeVCE");
-
-                FeaturedItem = "Men's Advance";
-                FeaturedShare = "SEAL Training find out more @ www.alfc.us/ministry/men/";
+                FeaturedImageUrl = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/emc2.jpg";
+                FeaturedItem = "Join a community group now.";
+                FeaturedShare = "Join us as we learn more about EMC2 find out more @ www.alfc.us";
+                innerHtml = string.Format("<img src='{0}' ></img>", FeaturedImageUrl);
             }
             else
             {
-
-                FeaturedImageUrl = "Featured01.png";
-                FeaturedItem = " contact Pat Newsome gpatnew@hotmail.com";
-                FeaturedShare = "Join Essential Truths this Wed 6:30pm find out more @ www.alfc.us";
+                FeaturedImageUrl = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/ElectionPrayer.jpg";
+                FeaturedItem = "contact pastorkimo@alfc.com";
+                FeaturedShare = "Join us as we pray for our Nation and the Elections this Wed 6:30pm find out more @ www.alfc.us";
+                innerHtml = string.Format("<img src='{0}' width='100%' height='100%' ></img>", FeaturedImageUrl);
             }
 
-            source.Html = string.Format("<html><body><div>{0}</div></body></html>", innerHtml);
+            var wrapperHtml = string.Format(@"<html><body>
+<img src='{0}' />
+</body>
+</html>", FeaturedImageUrl);
+            source.Html = wrapperHtml;
+
+            //source.Html = string.Format(@"<html><head><title>ALC Featured</title></head><body><div></div> {0} here ya go</body></html>", innerHtml);
             return source;
         }
 
         private string CreateLabel(FeatureEvent featuredItem)
         {
             var label = "";
-            if (featuredItem.Link.Contains("http") && IsImageLink(featuredItem.Link))
+            if (featuredItem.Url.Contains("http") && IsImageLink(featuredItem.Url))
             {
-                label = "<img src='{0}' />";
+                label = string.Format(@"<img src='{0}'  width='100%' height='100%' title='{1}'></img>", featuredItem.Url, featuredItem.Title);
             }
             else
             {
-                label = string.Format("<a href='{0}'>{1}</a> <span class='smallText>{2}</span><div>{3}</div>'", featuredItem.Link, featuredItem.Title, featuredItem.Time, featuredItem.Description);
+                label = string.Format(@"<a href='{0}'>{1}</a> <span class='smallText>{2}</span><div>{3}</div>'", featuredItem.Url, featuredItem.Title, featuredItem.Time, featuredItem.Description);
              }
             return label;
         }

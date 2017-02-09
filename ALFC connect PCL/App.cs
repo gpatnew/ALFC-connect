@@ -1,13 +1,12 @@
 ﻿using ALConnect.Data;
-using Xamarin.Forms;
-using System.Threading;
-using System.Threading.Tasks;
 using System;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ALConnect
 {
-    
-	public class App : Application
+
+    public class App : Application
 	{
         private string eventsMessage = "";
         static SermonsData database;
@@ -16,11 +15,12 @@ namespace ALConnect
             get { return eventsMessage; }
             set { eventsMessage = value; OnPropertyChanged(); }
         }
-        public string SlidesMessage { get; set; }
-
+        
+        public int SelectedPageIndex { get; set; }
         public App ()
 		{
             MainPage = new ALConnect.MainPage();
+            
 		}
 
 		protected override void OnStart ()
@@ -45,15 +45,20 @@ namespace ALConnect
         {
             try
             { 
-            var dataStore = new DataStoreHelper();
-            SlidesMessage = await dataStore.LoadSlidesAsync();
-            SlidesMessage = await dataStore.LoadEventsAsync();
-            EventsMessage = await dataStore.LoadSermonsAsync();
+                var dataStore = new DataStoreHelper();
+                EventsMessage = await dataStore.LoadEventsAsync();
+                EventsMessage = await dataStore.LoadSermonsAsync();
             }
             catch(Exception e)
             {
                 var strMSG = e.Message;
             }
+        }
+
+        private async Task ClearEventMessage()
+        {
+            await Task.Delay(4000);
+            EventsMessage = string.Empty;
         }
 
         public static SermonsData Database

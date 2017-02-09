@@ -1,6 +1,6 @@
 ﻿using ALConnect.ViewModels;
 using ALConnect.Views;
-using Plugin.Connectivity;
+
 using System;
 using System.Threading.Tasks;
 using Plugin.Share;
@@ -19,14 +19,10 @@ namespace ALConnect
         public EventsPage()
         {
             InitializeComponent();
-            DisplayAlert();
             Timer();
         }
 
-        private void CheckConnectivityStatus()
-        {
-            var connected = CrossConnectivity.Current.IsConnected;
-        }
+        
 
         async void DisplayAlert()
         {
@@ -36,25 +32,7 @@ namespace ALConnect
         {
             return;
             
-            var img = sender as Image;
-            switch (e.StatusType)
-            {
-                case GestureStatus.Started:
-                    xRotate = 0;
-                    yRotate = 20;
-                    RotateImage(img, xRotate, yRotate);
-                    break;
-                case GestureStatus.Running:
-                    yRotate += 20;
-                    RotateImage(img, xRotate, yRotate);
-                    break;
-
-                case GestureStatus.Completed:
-                    EventsViewModel evm = (EventsViewModel)this.BindingContext;
-                    evm.ChangeSlide();
-                    
-                    break;
-            }
+          
         }
 
         private async void Timer()
@@ -70,6 +48,14 @@ namespace ALConnect
             
                 var eventWebPage = new WebPage(evm.CurrentSlideLink);
                 Navigation.PushModalAsync(eventWebPage);
+        }
+
+        public void OnFeaturedTapped(object sender, EventArgs arg)
+        {
+            EventsViewModel evm = (EventsViewModel)this.BindingContext;
+
+            DisplayAlert("Featured", evm.FeaturedShare, "OK");
+
         }
         private void RotateImage(Image img, double xRotate, uint yRotate)
         {
@@ -88,7 +74,7 @@ namespace ALConnect
         public async void shareButtonClicked(object sender, EventArgs e)
         {
             EventsViewModel evm = (EventsViewModel)this.BindingContext;
-            await CrossShare.Current.Share(evm.FeaturedShare, "ALFC Feature Event");
+            await CrossShare.Current.Share(evm.FeaturedShare, "ALC Feature Event");
         }
     }
 }

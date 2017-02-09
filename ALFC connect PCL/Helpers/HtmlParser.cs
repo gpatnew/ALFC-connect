@@ -56,11 +56,34 @@ namespace ALConnect.Helpers
             return doc.DocumentNode.Descendants().Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("app_slide"))).ToList();
         }
 
-        public async Task<List<HtmlNode>> ParsingFeatured(string websiteUrl)
+        internal DateTime ParseStartDate(string eventDate)
+        {
+            char tab = '\u0009';
+            var cleanEventDate = eventDate.Replace(tab.ToString(), "").Replace(Environment.NewLine,"");
+            var start = DateTime.Now;
+            if (string.IsNullOrEmpty(eventDate))
+                return start;
+
+            var year = DateTime.Now.Year;
+            var month = String.Format("{0:MMM}", DateTime.Now);
+            var nextMonth = String.Format("{0:MMM}", DateTime.Now.AddMonths(1));
+            var isCurrentMonth = cleanEventDate.Contains(month);
+            var day = isCurrentMonth ? cleanEventDate.Replace(month, "") : nextMonth.Replace(month, "");
+
+            if (month == "Dec" && !isCurrentMonth)
+            {
+                year += 1;
+            }
+
+            DateTime.TryParse(string.Format("{0} {1} {2}", day, month, year), out start);
+            return start;
+        }
+
+        public async Task<List<HtmlNode>> ParsingEvents(string websiteUrl)
         {
             var page = await FetchPage(websiteUrl);
             HtmlDocument doc = new HtmlDocument();
-            doc.LoadHtml(page);
+            doc.LoadHtml(page);//churchpack-column churchpack-one-third churchpack-column-last   churchpack-all
             return doc.DocumentNode.Descendants().Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("churchpack-column-last"))).ToList();
         }
         private async Task<string> FetchPage(string websiteUrl)

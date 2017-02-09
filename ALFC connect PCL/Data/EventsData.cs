@@ -16,7 +16,6 @@ namespace ALConnect.Data
         static object locker = new object();
         SQLiteConnection database;
         private static List<FeatureEvent> events = new List<FeatureEvent>();
-
         
         public EventsData()
         {
@@ -31,31 +30,35 @@ namespace ALConnect.Data
             try
             {
                 HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingFeatured(Constants.DevBaseUrl);
+                var nodesTask = await parser.ParsingEvents(Constants.BaseUrl);
                 if (nodesTask.Count > 0) ClearData();
                 foreach (HtmlNode nodeEvents in nodesTask)
                 {
                     foreach (HtmlNode node in nodeEvents.ChildNodes)
                     {
-
-                        if(node.Name == "p")
+                        if(node.Name == "ul")
                         {
-                            try
+                            var listNode = node;
+                            foreach (var cn in listNode.ChildNodes)
                             {
-                                var linkNode = node.ChildNodes.FindFirst("a");
-                                var link = linkNode != null ? linkNode.Attributes["href"].Value : Constants.BaseUrl;
-                                var title = linkNode != null ? linkNode.Attributes["title"].Value : "ALFC Event";
+                                try
+                                {
+                                    var linkNode = cn.ChildNodes.FindFirst("a");
+                                    var link = linkNode != null ? linkNode.Attributes["href"].Value : Constants.BaseUrl;
+                                    var title = linkNode != null ? linkNode.InnerText : "ALFC Event";
                                 
-                                var eventdate = node.InnerText.Replace("\n", "|");
-                                string[] dateTimeparts = eventdate.Split('|');
-                                string  dateparts = dateTimeparts[1].Replace("at", "");
-                                
-                                var desc = string.Empty;
-                                //Put this feature into DB
-                                AddFeatureEvent(title, link, dateTimeparts[1], desc, 0);
+                                    var eventdateNode = cn.ChildNodes.FindFirst("div");
+                                    var eventDate = eventdateNode.InnerText;
+                                    var startDate = parser.ParseStartDate(eventDate);
+                                    var desc = string.Empty;
+                                    //Put this feature into DB
+                                    AddFeatureEvent(title, link, eventDate,  desc, startDate, 0);
+                                }
+                                catch (Exception e)
+                                {
+                                        var msg = e.Message;
+                                }
                             }
-                            catch (Exception e)
-                            { }
                         }
                     }
                 }
@@ -69,39 +72,94 @@ namespace ALConnect.Data
             return message;
         }
 
-        private void AddFeatureEvent(string title, string link, string eventDate, string desc, int isFeatured)
+        internal void AddFeatureEvent(AWSNotification note)
         {
-            var item = new FeatureEvent();
-            item.Id = 0;
+            var filename = string.Format("{0}{1}/{2}/{3}", Constants.S3Path,Constants.Bucket, Constants.FeaturePath, note.FileNames[0]);
+            var item = GetEventByName(note.Title, note.StartDate);
+            item.IsFeatured = 1;
+            item.Description = note.Message;
+            item.DisplayDate = note.EndDate != null ? note.EndDate.ToString() : note.StartDate.ToString();
+            item.EndDate = note.EndDate != null ? (DateTime)note.EndDate : note.StartDate;
+            item.IsFeatured = 1;
+           
+            item.IsVideo = note.IsVideo;
+            item.Url = !note.IsVideo ? filename : note.FileNames[0];
+            item.Link = note.AudioUrl;
+            item.StartDate = note.StartDate;
+            item.Title = note.Title;
+            database.Insert(item);
+        }
+
+       
+        public void AddFeatureEvent(string title, string link, string endDate, string desc, DateTime startDate, int isFeatured)
+        {
+            var item = GetEventByName(title, startDate);
+            
             item.Title = title;
-            item.EventDate = eventDate;
+            item.DisplayDate = endDate;
+            item.EndDate = startDate;
             item.Link = link;
             item.Description = desc;
+            item.IsVideo = false;
             item.IsFeatured = isFeatured;
-            database.Insert(item);
+            item.StartDate = startDate;
+            var id = database.Insert(item);
         }
 
         private void ClearData()
         {
             lock (locker)
             {
-                database.DeleteAll<FeatureEvent>();
+                database.Execute("DELETE FROM FeatureEvent WHERE IsFeatured = 0");
             }
         }
 
-        public IEnumerable<FeatureEvent> GetItems()
+        public IEnumerable<FeatureEvent> GetEvents(bool featured)
         {
             lock (locker)
             {
-                var listFeatures = (from i in database.Table<FeatureEvent>() select i).ToList();
-                if( listFeatures.Count == 0)
+                var fi = featured ?  1: 0;
+                var currentDate = DateTime.Now;
+                var listFeatures = new List<FeatureEvent>();
+                var listFeatureResults = (from i in database.Table<FeatureEvent>() select i).ToList(); 
+                
+                foreach (var item in listFeatureResults)
                 {
-                    listFeatures = new List<FeatureEvent>();
-                    listFeatures.Add(new FeatureEvent { Title = "Welcome", Id = 0, Link = "http://www.alfc.us", EventDate=DateTime.Now.ToString() });
-                    return listFeatures as IEnumerable<FeatureEvent>;
+                    if (!item.IsVideo && item.IsFeatured == fi && item.EndDate >= currentDate && item.StartDate >= currentDate)
+                    {
+                        listFeatures.Add(item);
+                    }
+                }
+                if( listFeatures.Count == 0 && !featured)
+                {
+                    listFeatures.Add(new FeatureEvent { Title = "Welcome", Id = 0, Link = "http://www.alfc.us", EndDate=DateTime.Now, DisplayDate= string.Format("{0}", DateTime.Now.ToString("MMM dd")) });
+                }
+                if (listFeatures.Count == 0 && featured)
+                {
+                    listFeatures.Add(new FeatureEvent { Title = "Welcome", Id = 0, Link = "http://www.alfc.us", EndDate = DateTime.Now.AddMonths(1), DisplayDate = string.Format("{0}", DateTime.Now.ToString("MMM dd")), Url = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/newlogopacGreen.png"   });   
                 }
                 return listFeatures;
             }
+        }
+
+        private FeatureEvent GetEventByName(string title, DateTime startDate)
+        {
+            var fe = new FeatureEvent();
+            lock (locker)
+            {
+                
+                var dbList = database.Query<FeatureEvent>("SELECT * FROM [FeatureEvent] WHERE Title = ? AND StartDate = ?", title, startDate);
+                var dbListCount = dbList.Count;
+
+                if(dbListCount > 0)
+                {
+                    fe = dbList[0];
+                }
+                //fe = database.Table<FeatureEvent>().FirstOrDefault(x => (x.Title == title && x.StartDate == startDate));
+                 //database.FindWithQuery<FeatureEvent>(string.Format("SELECT * FROM [FeatureEvent] WHERE Title = '{0}' AND StartDate ='{1}'", title, startDate));
+            }
+            
+            return fe!= null ? fe : new FeatureEvent();
         }
 
         internal FeatureEvent GetFeaturedItem()
@@ -109,7 +167,9 @@ namespace ALConnect.Data
             var feature = new FeatureEvent();
             lock (locker)
             {
-                feature = database.FindWithQuery<FeatureEvent>(string.Format("SELECT * FROM [FeatureEvent] WHERE [isFeatured] = 1 and EventDate > '{0}' Limit 1", DateTime.Now.ToString() ));
+                var fts = (from i in database.Table<FeatureEvent>() select i).OrderBy(x => x.DisplayDate).ToList();
+                //database.Find<FeatureEvent>("SELECT * FROM [FeatureEvent] WHERE [isFeatured] = 1 ");
+                feature = database.FindWithQuery<FeatureEvent>(string.Format("SELECT * FROM [FeatureEvent] WHERE [isFeatured] = 1 and StartDate <= '{0}' Order by EndDate Limit 1", DateTime.Now.AddDays(-1).ToString() ));
             }
             return feature != null ? feature : new FeatureEvent();
         }

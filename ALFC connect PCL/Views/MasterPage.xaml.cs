@@ -14,6 +14,7 @@ namespace ALConnect
 		public MasterPage ()
 		{
             InitializeComponent ();
+            
             this.BackgroundColor = AppColors.White;
 			var masterPageItems = new List<MasterPageItem> ();
             
