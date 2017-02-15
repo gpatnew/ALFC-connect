@@ -1,6 +1,7 @@
 ﻿using ALConnect.Common;
 using ALConnect.Data;
 using ALConnect.Models;
+using Octane.Xam.VideoPlayer;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -44,6 +45,18 @@ namespace ALConnect.ViewModels
             }
         }
 
+        private bool featuredIsVideo;
+        public bool IsVideo
+        {
+            get { return featuredIsVideo; }
+            set { Set("IsVideo", ref featuredIsVideo, value); }
+        }
+
+        public bool IsImage
+        {
+            get { return !featuredIsVideo; }
+        }
+
         private string currentSlideImageUrl;
         public string CurrentSlideImageUrl
         {
@@ -85,8 +98,14 @@ namespace ALConnect.ViewModels
             set { Set("FeaturedImageUrl", ref featuredImageUrl, value); }
         }
 
+        private VideoSource featuredVideoSource;
+        public  VideoSource FeaturedVideoSource
+        {
+            get { return featuredVideoSource; }
+            set { Set("FeatureVideoSource", ref featuredVideoSource, value); }
+        }
         private HtmlWebViewSource featuredSource;
-
+        
         public HtmlWebViewSource FeaturedSource
         {
             get { return featuredSource; }
@@ -110,7 +129,6 @@ namespace ALConnect.ViewModels
         public EventsViewModel()
         {
             PageTitle = "Upcoming Events";
-            
             SetEventsFeaturedItem();
         }
 
@@ -123,48 +141,45 @@ namespace ALConnect.ViewModels
             Slides = (List<FeatureEvent>)eventsData.GetEvents(true);
             CurrentSlide = Slides[currentSlideId];
             var featuredEvent = eventsData.GetFeaturedItem();
-            FeaturedSource = BuildHtmlSource(featuredEvent);
+            IsVideo = featuredEvent.IsVideo;
+            if(IsVideo)
+            {
+                SetVideoSource(featuredEvent);
+            }
+            else
+            { 
+                FeaturedSource = BuildHtmlSource(featuredEvent);
+            }
+        }
+
+        private void SetVideoSource(FeatureEvent featuredEvent)
+        {
+            FeaturedVideoSource = featuredEvent.Url.Contains("youtube.com") ? YouTubeVideoIdExtension.Convert(featuredEvent.Url) : VimeoVideoIdExtension.Convert(featuredEvent.Url);
         }
 
         private HtmlWebViewSource BuildHtmlSource(FeatureEvent featuredEvent)
         {
             var source = new HtmlWebViewSource();
+            
             var innerHtml = "";
             if (featuredEvent.Id != 0)
             {
-                if (featuredEvent.Link != null && featuredEvent.Link.Contains("youtube.com"))
-                    innerHtml = CreateYouTubeFrame(featuredEvent.Link);
-                else
-                { 
                     innerHtml = CreateLabel(featuredEvent);
                     FeaturedImageUrl = featuredEvent.Url;
                     FeaturedItem = featuredEvent.Title;
                     FeaturedShare = string.Format("{0} {1} {2}", featuredEvent.Title,featuredEvent.Description,featuredEvent.Url);
-
-                }
+                
             }
-            else if ((DateTime.Now.Minute % 2) == 0)
+            else
             {
                 FeaturedImageUrl = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/emc2.jpg";
                 FeaturedItem = "Join a community group now.";
                 FeaturedShare = "Join us as we learn more about EMC2 find out more @ www.alfc.us";
                 innerHtml = string.Format("<img src='{0}' ></img>", FeaturedImageUrl);
             }
-            else
-            {
-                FeaturedImageUrl = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/ElectionPrayer.jpg";
-                FeaturedItem = "contact pastorkimo@alfc.com";
-                FeaturedShare = "Join us as we pray for our Nation and the Elections this Wed 6:30pm find out more @ www.alfc.us";
-                innerHtml = string.Format("<img src='{0}' width='100%' height='100%' ></img>", FeaturedImageUrl);
-            }
 
-            var wrapperHtml = string.Format(@"<html><body>
-<img src='{0}' />
-</body>
-</html>", FeaturedImageUrl);
-            source.Html = wrapperHtml;
 
-            //source.Html = string.Format(@"<html><head><title>ALC Featured</title></head><body><div></div> {0} here ya go</body></html>", innerHtml);
+            source.Html = string.Format(@"<html><head><title>ALC Featured</title></head><body><div></div> {0}</body></html>", innerHtml);
             return source;
         }
 
@@ -192,10 +207,7 @@ namespace ALConnect.ViewModels
 
         }
 
-        private string CreateYouTubeFrame(string link)
-        {
-            return string.Format("<iframe width=\"320\" height=\"600\" src=\"{0}\" frameborder=\"0\" allowfullscreen><iframe>", link);
-        }
+       
 
         public void ChangeSlide()
         {

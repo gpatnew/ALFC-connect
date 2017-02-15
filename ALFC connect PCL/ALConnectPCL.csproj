@@ -37,7 +37,12 @@
     <Compile Include="Common\AppColors.cs" />
     <Compile Include="Common\Constants.cs" />
     <Compile Include="Common\ExtendedButton.cs" />
+    <Compile Include="Common\ImageResourceExtension.cs" />
+    <Compile Include="Common\VideoResourceExtension.cs" />
     <Compile Include="Common\Settings.cs" />
+    <Compile Include="Common\VimeoVideo.cs" />
+    <Compile Include="Common\VimeoVideoIdExtension.cs" />
+    <Compile Include="Common\YouTubeVideoIdExtension.cs" />
     <Compile Include="Data\BibleDataInfo.cs" />
     <Compile Include="Data\BibleVersions.cs" />
     <Compile Include="Data\DataConnection.cs" />
@@ -48,6 +53,7 @@
     <Compile Include="Helpers\AWSHelper.cs" />
     <Compile Include="Helpers\BoolColorConvertor.cs" />
     <Compile Include="Helpers\HtmlParser.cs" />
+    <Compile Include="Helpers\HttpUtility.cs" />
     <Compile Include="Helpers\PinchToZoomContainer.cs" />
     <Compile Include="Helpers\RSSHelper.cs" />
     <Compile Include="Interfaces\IDataInfo.cs" />
@@ -73,6 +79,7 @@
     <Compile Include="ViewModels\SermonSlidesViewModel.cs" />
     <Compile Include="ViewModels\SermonsViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\VideoListViewModel.cs" />
     <Compile Include="Views\DropdownListPage.xaml.cs">
       <DependentUpon>DropdownListPage.xaml</DependentUpon>
     </Compile>
@@ -98,14 +105,14 @@
       <DependentUpon>ReminderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\MasterPageItem.cs" />
+    <Compile Include="Views\VideoListPage.xaml.cs">
+      <DependentUpon>VideoListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SharePage.xaml.cs">
       <DependentUpon>SharePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\VideoAndroid.xaml.cs">
-      <DependentUpon>VideoAndroid.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\WebPage.xaml.cs">
       <DependentUpon>WebPage.xaml</DependentUpon>
@@ -132,6 +139,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Octane.Xam.VideoPlayer">
+      <HintPath>..\..\..\video-player-1.2.2\video-player-1.2.2\lib\android\Octane.Xam.VideoPlayer.dll</HintPath>
+    </Reference>
     <Reference Include="Windows">
       <HintPath>..\..\..\..\Program Files (x86)\Windows Phone Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd</HintPath>
     </Reference>
@@ -177,7 +187,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\VideoAndroid.xaml">
+    <EmbeddedResource Include="Views\VideoListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

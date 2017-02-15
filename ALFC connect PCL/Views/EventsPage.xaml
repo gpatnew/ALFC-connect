@@ -3,6 +3,7 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:custom="clr-namespace:ALConnect.EventsPage;assembly=ALConnectPCL"    
        xmlns:customVM="clr-namespace:ALConnect.ViewModels;assembly=ALConnectPCL"
+       xmlns:o="clr-namespace:Octane.Xam.VideoPlayer;assembly=Octane.Xam.VideoPlayer"
 			 x:Class="ALConnect.EventsPage"
        BackgroundColor="White"
 			 Title="ALFC Connect">
@@ -50,14 +51,38 @@
             </Image.GestureRecognizers>
           </Image>    
         </StackLayout>
-      <StackLayout Padding="0,0,0,5"  MinimumHeightRequest="400"  BackgroundColor="#DBF0FF"  >
-        <Image  Aspect="AspectFit"  Source="{Binding FeaturedImageUrl}" MinimumHeightRequest="400"  MinimumWidthRequest="600">
-          <Image.GestureRecognizers>
-            <PanGestureRecognizer  PanUpdated="OnPanUpdated" />
-            <TapGestureRecognizer Tapped="OnFeaturedTapped"  />
-          </Image.GestureRecognizers>
-        </Image>
-
+      <StackLayout IsVisible ="{Binding IsVideo}"  Padding="0,0,0,5"  MinimumHeightRequest="400"  BackgroundColor="#DBF0FF"  >
+        <o:VideoPlayer
+        x:Name="VideoPlayer"
+        DisplayControls="False"
+        FillMode="ResizeAspectFill"
+        AutoPlay="False" 
+        Source="{Binding FeaturedVideoSource}"
+        PlayerStateChanged="VideoPlayer_OnPlayerStateChanged" />
+        <StackLayout  BindingContext="{x:Reference VideoPlayer}" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5">
+          <Image Source="button_seek_backward.png" HeightRequest="48" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding SeekCommand}" CommandParameter ="-3"/>
+            </Image.GestureRecognizers>
+          </Image>
+          <Image x:Name="PlayButton" Source="button_play.png" HeightRequest="48" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding PlayCommand}" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Image x:Name="PauseButton" Source="button_pause.png" IsVisible="False" HeightRequest="48" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding PauseCommand}" />
+            </Image.GestureRecognizers>
+          </Image>
+          <Image Source="button_seek_forward.png" HeightRequest="48" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding SeekCommand}" CommandParameter ="3"/>
+            </Image.GestureRecognizers>
+          </Image>
+        </StackLayout> 
+      </StackLayout>
+      <StackLayout  IsVisible ="{Binding IsImage}" Padding="0,0,0,0"  VerticalOptions="StartAndExpand"  >
         <Button x:Name="shareButton" BorderColor="Black" BackgroundColor="White"  Image="shareButton.png" HeightRequest="60" WidthRequest="180" Clicked="shareButtonClicked"></Button>
       </StackLayout>
       <StackLayout Padding="0,0,0,0"  VerticalOptions="StartAndExpand"  >

@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Octane.Xam.VideoPlayer.Android;
 
 namespace ALConnect.Droid
 {
@@ -18,8 +19,8 @@ namespace ALConnect.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
-
-			LoadApplication (new App ());
+            FormsVideoPlayer.Init("DE2DFE93F1197FA53842EC121B5171C754345C77");
+            LoadApplication (new App ());
 		}
 	}
 }

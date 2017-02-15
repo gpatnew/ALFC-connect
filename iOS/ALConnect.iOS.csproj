@@ -164,6 +164,12 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Octane.Xam.VideoPlayer">
+      <HintPath>..\..\..\video-player-1.2.2\video-player-1.2.2\lib\android\Octane.Xam.VideoPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Octane.Xam.VideoPlayer.iOS">
+      <HintPath>..\..\..\video-player-1.2.2\video-player-1.2.2\lib\ios-unified\Octane.Xam.VideoPlayer.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="PCLCrypto, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
       <HintPath>..\packages\PCLCrypto.2.0.147\lib\xamarinios10\PCLCrypto.dll</HintPath>
       <Private>True</Private>

@@ -26,6 +26,1786 @@ namespace ALConnect.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_fade_in = global::ALConnect.Droid.Resource.Animation.abc_fade_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_fade_out = global::ALConnect.Droid.Resource.Animation.abc_fade_out;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::ALConnect.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_popup_enter = global::ALConnect.Droid.Resource.Animation.abc_popup_enter;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_popup_exit = global::ALConnect.Droid.Resource.Animation.abc_popup_exit;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::ALConnect.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_slide_in_bottom = global::ALConnect.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_slide_in_top = global::ALConnect.Droid.Resource.Animation.abc_slide_in_top;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_slide_out_bottom = global::ALConnect.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.abc_slide_out_top = global::ALConnect.Droid.Resource.Animation.abc_slide_out_top;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_bottom_sheet_slide_in = global::ALConnect.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_bottom_sheet_slide_out = global::ALConnect.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_fab_in = global::ALConnect.Droid.Resource.Animation.design_fab_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_fab_out = global::ALConnect.Droid.Resource.Animation.design_fab_out;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_snackbar_in = global::ALConnect.Droid.Resource.Animation.design_snackbar_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Animation.design_snackbar_out = global::ALConnect.Droid.Resource.Animation.design_snackbar_out;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.MediaRouteControllerWindowBackground = global::ALConnect.Droid.Resource.Attribute.MediaRouteControllerWindowBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarDivider = global::ALConnect.Droid.Resource.Attribute.actionBarDivider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarItemBackground = global::ALConnect.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarPopupTheme = global::ALConnect.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarSize = global::ALConnect.Droid.Resource.Attribute.actionBarSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarSplitStyle = global::ALConnect.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarStyle = global::ALConnect.Droid.Resource.Attribute.actionBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarTabBarStyle = global::ALConnect.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarTabStyle = global::ALConnect.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarTabTextStyle = global::ALConnect.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarTheme = global::ALConnect.Droid.Resource.Attribute.actionBarTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionBarWidgetTheme = global::ALConnect.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionButtonStyle = global::ALConnect.Droid.Resource.Attribute.actionButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionDropDownStyle = global::ALConnect.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionLayout = global::ALConnect.Droid.Resource.Attribute.actionLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionMenuTextAppearance = global::ALConnect.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionMenuTextColor = global::ALConnect.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeBackground = global::ALConnect.Droid.Resource.Attribute.actionModeBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeCloseButtonStyle = global::ALConnect.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeCloseDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeCopyDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeCutDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeFindDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModePasteDrawable = global::ALConnect.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModePopupWindowStyle = global::ALConnect.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeSelectAllDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeShareDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeSplitBackground = global::ALConnect.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeStyle = global::ALConnect.Droid.Resource.Attribute.actionModeStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionModeWebSearchDrawable = global::ALConnect.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionOverflowButtonStyle = global::ALConnect.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionOverflowMenuStyle = global::ALConnect.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionProviderClass = global::ALConnect.Droid.Resource.Attribute.actionProviderClass;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.actionViewClass = global::ALConnect.Droid.Resource.Attribute.actionViewClass;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.activityChooserViewStyle = global::ALConnect.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::ALConnect.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.alertDialogCenterButtons = global::ALConnect.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.alertDialogStyle = global::ALConnect.Droid.Resource.Attribute.alertDialogStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.alertDialogTheme = global::ALConnect.Droid.Resource.Attribute.alertDialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.allowStacking = global::ALConnect.Droid.Resource.Attribute.allowStacking;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.arrowHeadLength = global::ALConnect.Droid.Resource.Attribute.arrowHeadLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.arrowShaftLength = global::ALConnect.Droid.Resource.Attribute.arrowShaftLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.autoCompleteTextViewStyle = global::ALConnect.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.background = global::ALConnect.Droid.Resource.Attribute.background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.backgroundSplit = global::ALConnect.Droid.Resource.Attribute.backgroundSplit;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.backgroundStacked = global::ALConnect.Droid.Resource.Attribute.backgroundStacked;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.backgroundTint = global::ALConnect.Droid.Resource.Attribute.backgroundTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.backgroundTintMode = global::ALConnect.Droid.Resource.Attribute.backgroundTintMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.barLength = global::ALConnect.Droid.Resource.Attribute.barLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.behavior_hideable = global::ALConnect.Droid.Resource.Attribute.behavior_hideable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.behavior_overlapTop = global::ALConnect.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.behavior_peekHeight = global::ALConnect.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.borderWidth = global::ALConnect.Droid.Resource.Attribute.borderWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.borderlessButtonStyle = global::ALConnect.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.bottomSheetDialogTheme = global::ALConnect.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.bottomSheetStyle = global::ALConnect.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonBarButtonStyle = global::ALConnect.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::ALConnect.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::ALConnect.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::ALConnect.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonBarStyle = global::ALConnect.Droid.Resource.Attribute.buttonBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonPanelSideLayout = global::ALConnect.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonStyle = global::ALConnect.Droid.Resource.Attribute.buttonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonStyleSmall = global::ALConnect.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonTint = global::ALConnect.Droid.Resource.Attribute.buttonTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.buttonTintMode = global::ALConnect.Droid.Resource.Attribute.buttonTintMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardBackgroundColor = global::ALConnect.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardCornerRadius = global::ALConnect.Droid.Resource.Attribute.cardCornerRadius;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardElevation = global::ALConnect.Droid.Resource.Attribute.cardElevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardMaxElevation = global::ALConnect.Droid.Resource.Attribute.cardMaxElevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardPreventCornerOverlap = global::ALConnect.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.cardUseCompatPadding = global::ALConnect.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.checkboxStyle = global::ALConnect.Droid.Resource.Attribute.checkboxStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.checkedTextViewStyle = global::ALConnect.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.closeIcon = global::ALConnect.Droid.Resource.Attribute.closeIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.closeItemLayout = global::ALConnect.Droid.Resource.Attribute.closeItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.collapseContentDescription = global::ALConnect.Droid.Resource.Attribute.collapseContentDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.collapseIcon = global::ALConnect.Droid.Resource.Attribute.collapseIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.collapsedTitleGravity = global::ALConnect.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.collapsedTitleTextAppearance = global::ALConnect.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.color = global::ALConnect.Droid.Resource.Attribute.color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorAccent = global::ALConnect.Droid.Resource.Attribute.colorAccent;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorButtonNormal = global::ALConnect.Droid.Resource.Attribute.colorButtonNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorControlActivated = global::ALConnect.Droid.Resource.Attribute.colorControlActivated;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorControlHighlight = global::ALConnect.Droid.Resource.Attribute.colorControlHighlight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorControlNormal = global::ALConnect.Droid.Resource.Attribute.colorControlNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorPrimary = global::ALConnect.Droid.Resource.Attribute.colorPrimary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorPrimaryDark = global::ALConnect.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.colorSwitchThumbNormal = global::ALConnect.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.commitIcon = global::ALConnect.Droid.Resource.Attribute.commitIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentInsetEnd = global::ALConnect.Droid.Resource.Attribute.contentInsetEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentInsetLeft = global::ALConnect.Droid.Resource.Attribute.contentInsetLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentInsetRight = global::ALConnect.Droid.Resource.Attribute.contentInsetRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentInsetStart = global::ALConnect.Droid.Resource.Attribute.contentInsetStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentPadding = global::ALConnect.Droid.Resource.Attribute.contentPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentPaddingBottom = global::ALConnect.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentPaddingLeft = global::ALConnect.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentPaddingRight = global::ALConnect.Droid.Resource.Attribute.contentPaddingRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentPaddingTop = global::ALConnect.Droid.Resource.Attribute.contentPaddingTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.contentScrim = global::ALConnect.Droid.Resource.Attribute.contentScrim;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.controlBackground = global::ALConnect.Droid.Resource.Attribute.controlBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.counterEnabled = global::ALConnect.Droid.Resource.Attribute.counterEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.counterMaxLength = global::ALConnect.Droid.Resource.Attribute.counterMaxLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.counterOverflowTextAppearance = global::ALConnect.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.counterTextAppearance = global::ALConnect.Droid.Resource.Attribute.counterTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.customNavigationLayout = global::ALConnect.Droid.Resource.Attribute.customNavigationLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.defaultQueryHint = global::ALConnect.Droid.Resource.Attribute.defaultQueryHint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dialogPreferredPadding = global::ALConnect.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dialogTheme = global::ALConnect.Droid.Resource.Attribute.dialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.displayOptions = global::ALConnect.Droid.Resource.Attribute.displayOptions;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.divider = global::ALConnect.Droid.Resource.Attribute.divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dividerHorizontal = global::ALConnect.Droid.Resource.Attribute.dividerHorizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dividerPadding = global::ALConnect.Droid.Resource.Attribute.dividerPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dividerVertical = global::ALConnect.Droid.Resource.Attribute.dividerVertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.drawableSize = global::ALConnect.Droid.Resource.Attribute.drawableSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.drawerArrowStyle = global::ALConnect.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dropDownListViewStyle = global::ALConnect.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::ALConnect.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.editTextBackground = global::ALConnect.Droid.Resource.Attribute.editTextBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.editTextColor = global::ALConnect.Droid.Resource.Attribute.editTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.editTextStyle = global::ALConnect.Droid.Resource.Attribute.editTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.elevation = global::ALConnect.Droid.Resource.Attribute.elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.errorEnabled = global::ALConnect.Droid.Resource.Attribute.errorEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.errorTextAppearance = global::ALConnect.Droid.Resource.Attribute.errorTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::ALConnect.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expanded = global::ALConnect.Droid.Resource.Attribute.expanded;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleGravity = global::ALConnect.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleMargin = global::ALConnect.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleMarginBottom = global::ALConnect.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleMarginEnd = global::ALConnect.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleMarginStart = global::ALConnect.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleMarginTop = global::ALConnect.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.expandedTitleTextAppearance = global::ALConnect.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.externalRouteEnabledDrawable = global::ALConnect.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.fabSize = global::ALConnect.Droid.Resource.Attribute.fabSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.foregroundInsidePadding = global::ALConnect.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.gapBetweenBars = global::ALConnect.Droid.Resource.Attribute.gapBetweenBars;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.goIcon = global::ALConnect.Droid.Resource.Attribute.goIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.headerLayout = global::ALConnect.Droid.Resource.Attribute.headerLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.height = global::ALConnect.Droid.Resource.Attribute.height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.hideOnContentScroll = global::ALConnect.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.hintAnimationEnabled = global::ALConnect.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.hintEnabled = global::ALConnect.Droid.Resource.Attribute.hintEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.hintTextAppearance = global::ALConnect.Droid.Resource.Attribute.hintTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.homeAsUpIndicator = global::ALConnect.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.homeLayout = global::ALConnect.Droid.Resource.Attribute.homeLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.icon = global::ALConnect.Droid.Resource.Attribute.icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.iconifiedByDefault = global::ALConnect.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.imageButtonStyle = global::ALConnect.Droid.Resource.Attribute.imageButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.indeterminateProgressStyle = global::ALConnect.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.initialActivityCount = global::ALConnect.Droid.Resource.Attribute.initialActivityCount;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.insetForeground = global::ALConnect.Droid.Resource.Attribute.insetForeground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.isLightTheme = global::ALConnect.Droid.Resource.Attribute.isLightTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.itemBackground = global::ALConnect.Droid.Resource.Attribute.itemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.itemIconTint = global::ALConnect.Droid.Resource.Attribute.itemIconTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.itemPadding = global::ALConnect.Droid.Resource.Attribute.itemPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.itemTextAppearance = global::ALConnect.Droid.Resource.Attribute.itemTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.itemTextColor = global::ALConnect.Droid.Resource.Attribute.itemTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.keylines = global::ALConnect.Droid.Resource.Attribute.keylines;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout = global::ALConnect.Droid.Resource.Attribute.layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layoutManager = global::ALConnect.Droid.Resource.Attribute.layoutManager;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_anchor = global::ALConnect.Droid.Resource.Attribute.layout_anchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_anchorGravity = global::ALConnect.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_behavior = global::ALConnect.Droid.Resource.Attribute.layout_behavior;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_collapseMode = global::ALConnect.Droid.Resource.Attribute.layout_collapseMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::ALConnect.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_keyline = global::ALConnect.Droid.Resource.Attribute.layout_keyline;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_scrollFlags = global::ALConnect.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.layout_scrollInterpolator = global::ALConnect.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::ALConnect.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listDividerAlertDialog = global::ALConnect.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listItemLayout = global::ALConnect.Droid.Resource.Attribute.listItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listLayout = global::ALConnect.Droid.Resource.Attribute.listLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPopupWindowStyle = global::ALConnect.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPreferredItemHeight = global::ALConnect.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPreferredItemHeightLarge = global::ALConnect.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPreferredItemHeightSmall = global::ALConnect.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::ALConnect.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.listPreferredItemPaddingRight = global::ALConnect.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.logo = global::ALConnect.Droid.Resource.Attribute.logo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.logoDescription = global::ALConnect.Droid.Resource.Attribute.logoDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.maxActionInlineWidth = global::ALConnect.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.maxButtonHeight = global::ALConnect.Droid.Resource.Attribute.maxButtonHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.measureWithLargestChild = global::ALConnect.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteBluetoothIconDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteBluetoothIconDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteButtonStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteCastDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteCastDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteChooserPrimaryTextStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteChooserPrimaryTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteChooserSecondaryTextStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteChooserSecondaryTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteCloseDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteCollapseGroupDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteCollapseGroupDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteConnectingDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteConnectingDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteControllerPrimaryTextStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteControllerPrimaryTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteControllerSecondaryTextStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteControllerSecondaryTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteControllerTitleTextStyle = global::ALConnect.Droid.Resource.Attribute.mediaRouteControllerTitleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteExpandGroupDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteExpandGroupDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteOffDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteOffDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteOnDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteOnDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRoutePauseDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRoutePlayDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::ALConnect.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.menu = global::ALConnect.Droid.Resource.Attribute.menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.multiChoiceItemLayout = global::ALConnect.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.navigationContentDescription = global::ALConnect.Droid.Resource.Attribute.navigationContentDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.navigationIcon = global::ALConnect.Droid.Resource.Attribute.navigationIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.navigationMode = global::ALConnect.Droid.Resource.Attribute.navigationMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.overlapAnchor = global::ALConnect.Droid.Resource.Attribute.overlapAnchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.paddingEnd = global::ALConnect.Droid.Resource.Attribute.paddingEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.paddingStart = global::ALConnect.Droid.Resource.Attribute.paddingStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.panelBackground = global::ALConnect.Droid.Resource.Attribute.panelBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.panelMenuListTheme = global::ALConnect.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.panelMenuListWidth = global::ALConnect.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.popupMenuStyle = global::ALConnect.Droid.Resource.Attribute.popupMenuStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.popupTheme = global::ALConnect.Droid.Resource.Attribute.popupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.popupWindowStyle = global::ALConnect.Droid.Resource.Attribute.popupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.preserveIconSpacing = global::ALConnect.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.pressedTranslationZ = global::ALConnect.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.progressBarPadding = global::ALConnect.Droid.Resource.Attribute.progressBarPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.progressBarStyle = global::ALConnect.Droid.Resource.Attribute.progressBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.queryBackground = global::ALConnect.Droid.Resource.Attribute.queryBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.queryHint = global::ALConnect.Droid.Resource.Attribute.queryHint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.radioButtonStyle = global::ALConnect.Droid.Resource.Attribute.radioButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.ratingBarStyle = global::ALConnect.Droid.Resource.Attribute.ratingBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.ratingBarStyleIndicator = global::ALConnect.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.ratingBarStyleSmall = global::ALConnect.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.reverseLayout = global::ALConnect.Droid.Resource.Attribute.reverseLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.rippleColor = global::ALConnect.Droid.Resource.Attribute.rippleColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.searchHintIcon = global::ALConnect.Droid.Resource.Attribute.searchHintIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.searchIcon = global::ALConnect.Droid.Resource.Attribute.searchIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.searchViewStyle = global::ALConnect.Droid.Resource.Attribute.searchViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.seekBarStyle = global::ALConnect.Droid.Resource.Attribute.seekBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.selectableItemBackground = global::ALConnect.Droid.Resource.Attribute.selectableItemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::ALConnect.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.showAsAction = global::ALConnect.Droid.Resource.Attribute.showAsAction;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.showDividers = global::ALConnect.Droid.Resource.Attribute.showDividers;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.showText = global::ALConnect.Droid.Resource.Attribute.showText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.singleChoiceItemLayout = global::ALConnect.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.spanCount = global::ALConnect.Droid.Resource.Attribute.spanCount;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.spinBars = global::ALConnect.Droid.Resource.Attribute.spinBars;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.spinnerDropDownItemStyle = global::ALConnect.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.spinnerStyle = global::ALConnect.Droid.Resource.Attribute.spinnerStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.splitTrack = global::ALConnect.Droid.Resource.Attribute.splitTrack;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.srcCompat = global::ALConnect.Droid.Resource.Attribute.srcCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.stackFromEnd = global::ALConnect.Droid.Resource.Attribute.stackFromEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.state_above_anchor = global::ALConnect.Droid.Resource.Attribute.state_above_anchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.statusBarBackground = global::ALConnect.Droid.Resource.Attribute.statusBarBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.statusBarScrim = global::ALConnect.Droid.Resource.Attribute.statusBarScrim;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.submitBackground = global::ALConnect.Droid.Resource.Attribute.submitBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.subtitle = global::ALConnect.Droid.Resource.Attribute.subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.subtitleTextAppearance = global::ALConnect.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.subtitleTextColor = global::ALConnect.Droid.Resource.Attribute.subtitleTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.subtitleTextStyle = global::ALConnect.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.suggestionRowLayout = global::ALConnect.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.switchMinWidth = global::ALConnect.Droid.Resource.Attribute.switchMinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.switchPadding = global::ALConnect.Droid.Resource.Attribute.switchPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.switchStyle = global::ALConnect.Droid.Resource.Attribute.switchStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.switchTextAppearance = global::ALConnect.Droid.Resource.Attribute.switchTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabBackground = global::ALConnect.Droid.Resource.Attribute.tabBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabContentStart = global::ALConnect.Droid.Resource.Attribute.tabContentStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabGravity = global::ALConnect.Droid.Resource.Attribute.tabGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabIndicatorColor = global::ALConnect.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabIndicatorHeight = global::ALConnect.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabMaxWidth = global::ALConnect.Droid.Resource.Attribute.tabMaxWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabMinWidth = global::ALConnect.Droid.Resource.Attribute.tabMinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabMode = global::ALConnect.Droid.Resource.Attribute.tabMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabPadding = global::ALConnect.Droid.Resource.Attribute.tabPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabPaddingBottom = global::ALConnect.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabPaddingEnd = global::ALConnect.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabPaddingStart = global::ALConnect.Droid.Resource.Attribute.tabPaddingStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabPaddingTop = global::ALConnect.Droid.Resource.Attribute.tabPaddingTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabSelectedTextColor = global::ALConnect.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabTextAppearance = global::ALConnect.Droid.Resource.Attribute.tabTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.tabTextColor = global::ALConnect.Droid.Resource.Attribute.tabTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAllCaps = global::ALConnect.Droid.Resource.Attribute.textAllCaps;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::ALConnect.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceListItem = global::ALConnect.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceListItemSmall = global::ALConnect.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::ALConnect.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::ALConnect.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::ALConnect.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textColorAlertDialogListItem = global::ALConnect.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textColorError = global::ALConnect.Droid.Resource.Attribute.textColorError;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.textColorSearchUrl = global::ALConnect.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.theme = global::ALConnect.Droid.Resource.Attribute.theme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.thickness = global::ALConnect.Droid.Resource.Attribute.thickness;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.thumbTextPadding = global::ALConnect.Droid.Resource.Attribute.thumbTextPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.title = global::ALConnect.Droid.Resource.Attribute.title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleEnabled = global::ALConnect.Droid.Resource.Attribute.titleEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleMarginBottom = global::ALConnect.Droid.Resource.Attribute.titleMarginBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleMarginEnd = global::ALConnect.Droid.Resource.Attribute.titleMarginEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleMarginStart = global::ALConnect.Droid.Resource.Attribute.titleMarginStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleMarginTop = global::ALConnect.Droid.Resource.Attribute.titleMarginTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleMargins = global::ALConnect.Droid.Resource.Attribute.titleMargins;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleTextAppearance = global::ALConnect.Droid.Resource.Attribute.titleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleTextColor = global::ALConnect.Droid.Resource.Attribute.titleTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.titleTextStyle = global::ALConnect.Droid.Resource.Attribute.titleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.toolbarId = global::ALConnect.Droid.Resource.Attribute.toolbarId;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::ALConnect.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.toolbarStyle = global::ALConnect.Droid.Resource.Attribute.toolbarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.track = global::ALConnect.Droid.Resource.Attribute.track;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.useCompatPadding = global::ALConnect.Droid.Resource.Attribute.useCompatPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.voiceIcon = global::ALConnect.Droid.Resource.Attribute.voiceIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowActionBar = global::ALConnect.Droid.Resource.Attribute.windowActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowActionBarOverlay = global::ALConnect.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowActionModeOverlay = global::ALConnect.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowFixedHeightMajor = global::ALConnect.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowFixedHeightMinor = global::ALConnect.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowFixedWidthMajor = global::ALConnect.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowFixedWidthMinor = global::ALConnect.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowMinWidthMajor = global::ALConnect.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowMinWidthMinor = global::ALConnect.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Attribute.windowNoTitle = global::ALConnect.Droid.Resource.Attribute.windowNoTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::ALConnect.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::ALConnect.Droid.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::ALConnect.Droid.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::ALConnect.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ALConnect.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::ALConnect.Droid.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::ALConnect.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::ALConnect.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ALConnect.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::ALConnect.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_input_method_navigation_guard = global::ALConnect.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::ALConnect.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::ALConnect.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_primary_text_material_dark = global::ALConnect.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_primary_text_material_light = global::ALConnect.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_search_url_text = global::ALConnect.Droid.Resource.Color.abc_search_url_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_search_url_text_normal = global::ALConnect.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_search_url_text_pressed = global::ALConnect.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_search_url_text_selected = global::ALConnect.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_secondary_text_material_dark = global::ALConnect.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.abc_secondary_text_material_light = global::ALConnect.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.accent_material_dark = global::ALConnect.Droid.Resource.Color.accent_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.accent_material_light = global::ALConnect.Droid.Resource.Color.accent_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.background_floating_material_dark = global::ALConnect.Droid.Resource.Color.background_floating_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.background_floating_material_light = global::ALConnect.Droid.Resource.Color.background_floating_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.background_material_dark = global::ALConnect.Droid.Resource.Color.background_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.background_material_light = global::ALConnect.Droid.Resource.Color.background_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_disabled_material_dark = global::ALConnect.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_disabled_material_light = global::ALConnect.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_inverse_material_dark = global::ALConnect.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_inverse_material_light = global::ALConnect.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_material_dark = global::ALConnect.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.bright_foreground_material_light = global::ALConnect.Droid.Resource.Color.bright_foreground_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.button_material_dark = global::ALConnect.Droid.Resource.Color.button_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.button_material_light = global::ALConnect.Droid.Resource.Color.button_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.cardview_dark_background = global::ALConnect.Droid.Resource.Color.cardview_dark_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.cardview_light_background = global::ALConnect.Droid.Resource.Color.cardview_light_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.cardview_shadow_end_color = global::ALConnect.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.cardview_shadow_start_color = global::ALConnect.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_shadow_end_color = global::ALConnect.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_shadow_mid_color = global::ALConnect.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_shadow_start_color = global::ALConnect.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_stroke_end_inner_color = global::ALConnect.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_stroke_end_outer_color = global::ALConnect.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_stroke_top_inner_color = global::ALConnect.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_fab_stroke_top_outer_color = global::ALConnect.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_snackbar_background_color = global::ALConnect.Droid.Resource.Color.design_snackbar_background_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_textinput_error_color_dark = global::ALConnect.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.design_textinput_error_color_light = global::ALConnect.Droid.Resource.Color.design_textinput_error_color_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.dim_foreground_disabled_material_dark = global::ALConnect.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.dim_foreground_disabled_material_light = global::ALConnect.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.dim_foreground_material_dark = global::ALConnect.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.dim_foreground_material_light = global::ALConnect.Droid.Resource.Color.dim_foreground_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.foreground_material_dark = global::ALConnect.Droid.Resource.Color.foreground_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.foreground_material_light = global::ALConnect.Droid.Resource.Color.foreground_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.highlighted_text_material_dark = global::ALConnect.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.highlighted_text_material_light = global::ALConnect.Droid.Resource.Color.highlighted_text_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.hint_foreground_material_dark = global::ALConnect.Droid.Resource.Color.hint_foreground_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.hint_foreground_material_light = global::ALConnect.Droid.Resource.Color.hint_foreground_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_blue_grey_800 = global::ALConnect.Droid.Resource.Color.material_blue_grey_800;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_blue_grey_900 = global::ALConnect.Droid.Resource.Color.material_blue_grey_900;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_blue_grey_950 = global::ALConnect.Droid.Resource.Color.material_blue_grey_950;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_deep_teal_200 = global::ALConnect.Droid.Resource.Color.material_deep_teal_200;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_deep_teal_500 = global::ALConnect.Droid.Resource.Color.material_deep_teal_500;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_100 = global::ALConnect.Droid.Resource.Color.material_grey_100;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_300 = global::ALConnect.Droid.Resource.Color.material_grey_300;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_50 = global::ALConnect.Droid.Resource.Color.material_grey_50;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_600 = global::ALConnect.Droid.Resource.Color.material_grey_600;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_800 = global::ALConnect.Droid.Resource.Color.material_grey_800;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_850 = global::ALConnect.Droid.Resource.Color.material_grey_850;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.material_grey_900 = global::ALConnect.Droid.Resource.Color.material_grey_900;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_dark_material_dark = global::ALConnect.Droid.Resource.Color.primary_dark_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_dark_material_light = global::ALConnect.Droid.Resource.Color.primary_dark_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_material_dark = global::ALConnect.Droid.Resource.Color.primary_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_material_light = global::ALConnect.Droid.Resource.Color.primary_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_text_default_material_dark = global::ALConnect.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_text_default_material_light = global::ALConnect.Droid.Resource.Color.primary_text_default_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_text_disabled_material_dark = global::ALConnect.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.primary_text_disabled_material_light = global::ALConnect.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.ripple_material_dark = global::ALConnect.Droid.Resource.Color.ripple_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.ripple_material_light = global::ALConnect.Droid.Resource.Color.ripple_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.secondary_text_default_material_dark = global::ALConnect.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.secondary_text_default_material_light = global::ALConnect.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.secondary_text_disabled_material_dark = global::ALConnect.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.secondary_text_disabled_material_light = global::ALConnect.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_disabled_material_dark = global::ALConnect.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_disabled_material_light = global::ALConnect.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_material_dark = global::ALConnect.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_material_light = global::ALConnect.Droid.Resource.Color.switch_thumb_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_normal_material_dark = global::ALConnect.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Color.switch_thumb_normal_material_light = global::ALConnect.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_default_height_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::ALConnect.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_button_min_height_material = global::ALConnect.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_button_min_width_material = global::ALConnect.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::ALConnect.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::ALConnect.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::ALConnect.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_button_inset_vertical_material = global::ALConnect.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::ALConnect.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_button_padding_vertical_material = global::ALConnect.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_config_prefDialogWidth = global::ALConnect.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_control_corner_material = global::ALConnect.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_control_inset_material = global::ALConnect.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_control_padding_material = global::ALConnect.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::ALConnect.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::ALConnect.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::ALConnect.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::ALConnect.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::ALConnect.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_min_width_major = global::ALConnect.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_min_width_minor = global::ALConnect.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_padding_material = global::ALConnect.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dialog_padding_top_material = global::ALConnect.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::ALConnect.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::ALConnect.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::ALConnect.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::ALConnect.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::ALConnect.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::ALConnect.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::ALConnect.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::ALConnect.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_floating_window_z = global::ALConnect.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::ALConnect.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_panel_menu_list_width = global::ALConnect.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_search_view_preferred_width = global::ALConnect.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_search_view_text_min_width = global::ALConnect.Droid.Resource.Dimension.abc_search_view_text_min_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::ALConnect.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::ALConnect.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::ALConnect.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_switch_padding = global::ALConnect.Droid.Resource.Dimension.abc_switch_padding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_body_1_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_body_2_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_button_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_caption_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_display_1_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_display_2_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_display_3_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_display_4_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_headline_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_large_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_medium_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_menu_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_small_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_subhead_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::ALConnect.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_title_material = global::ALConnect.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::ALConnect.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.cardview_compat_inset_shadow = global::ALConnect.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.cardview_default_elevation = global::ALConnect.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.cardview_default_radius = global::ALConnect.Droid.Resource.Dimension.cardview_default_radius;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_appbar_elevation = global::ALConnect.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::ALConnect.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_bottom_sheet_modal_peek_height = global::ALConnect.Droid.Resource.Dimension.design_bottom_sheet_modal_peek_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_border_width = global::ALConnect.Droid.Resource.Dimension.design_fab_border_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_elevation = global::ALConnect.Droid.Resource.Dimension.design_fab_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_image_size = global::ALConnect.Droid.Resource.Dimension.design_fab_image_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_size_mini = global::ALConnect.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_size_normal = global::ALConnect.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_fab_translation_z_pressed = global::ALConnect.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_elevation = global::ALConnect.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_icon_padding = global::ALConnect.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_icon_size = global::ALConnect.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_max_width = global::ALConnect.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_padding_bottom = global::ALConnect.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::ALConnect.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::ALConnect.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::ALConnect.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_elevation = global::ALConnect.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::ALConnect.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_max_width = global::ALConnect.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_min_width = global::ALConnect.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::ALConnect.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_padding_vertical = global::ALConnect.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::ALConnect.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_snackbar_text_size = global::ALConnect.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_tab_max_width = global::ALConnect.Droid.Resource.Dimension.design_tab_max_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_tab_scrollable_min_width = global::ALConnect.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_tab_text_size = global::ALConnect.Droid.Resource.Dimension.design_tab_text_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.design_tab_text_size_2line = global::ALConnect.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.disabled_alpha_material_dark = global::ALConnect.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.disabled_alpha_material_light = global::ALConnect.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.highlight_alpha_material_colored = global::ALConnect.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.highlight_alpha_material_dark = global::ALConnect.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.highlight_alpha_material_light = global::ALConnect.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::ALConnect.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::ALConnect.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::ALConnect.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::ALConnect.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::ALConnect.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::ALConnect.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::ALConnect.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::ALConnect.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::ALConnect.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.notification_large_icon_height = global::ALConnect.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.notification_large_icon_width = global::ALConnect.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Dimension.notification_subtext_size = global::ALConnect.Droid.Resource.Dimension.notification_subtext_size;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_action_bar_item_background_material = global::ALConnect.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_borderless_material = global::ALConnect.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_check_material = global::ALConnect.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::ALConnect.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::ALConnect.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_colored_material = global::ALConnect.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::ALConnect.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_radio_material = global::ALConnect.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::ALConnect.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::ALConnect.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::ALConnect.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::ALConnect.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_cab_background_internal_bg = global::ALConnect.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_cab_background_top_material = global::ALConnect.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_dialog_material_background_dark = global::ALConnect.Droid.Resource.Drawable.abc_dialog_material_background_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_dialog_material_background_light = global::ALConnect.Droid.Resource.Drawable.abc_dialog_material_background_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_edit_text_material = global::ALConnect.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_star_black_16dp = global::ALConnect.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_star_black_36dp = global::ALConnect.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::ALConnect.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::ALConnect.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_item_background_holo_dark = global::ALConnect.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_item_background_holo_light = global::ALConnect.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_focused_holo = global::ALConnect.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_longpressed_holo = global::ALConnect.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::ALConnect.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_pressed_holo_light = global::ALConnect.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_holo_dark = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_list_selector_holo_light = global::ALConnect.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::ALConnect.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::ALConnect.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ratingbar_full_material = global::ALConnect.Droid.Resource.Drawable.abc_ratingbar_full_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::ALConnect.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_ratingbar_small_material = global::ALConnect.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::ALConnect.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::ALConnect.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_seekbar_thumb_material = global::ALConnect.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_seekbar_track_material = global::ALConnect.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::ALConnect.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::ALConnect.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_switch_thumb_material = global::ALConnect.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_tab_indicator_material = global::ALConnect.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_text_cursor_material = global::ALConnect.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ALConnect.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.abc_textfield_search_material = global::ALConnect.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.design_fab_background = global::ALConnect.Droid.Resource.Drawable.design_fab_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.design_snackbar_background = global::ALConnect.Droid.Resource.Drawable.design_snackbar_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_audiotrack = global::ALConnect.Droid.Resource.Drawable.ic_audiotrack;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_audiotrack_light = global::ALConnect.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_bluetooth_grey = global::ALConnect.Droid.Resource.Drawable.ic_bluetooth_grey;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_bluetooth_white = global::ALConnect.Droid.Resource.Drawable.ic_bluetooth_white;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_dark = global::ALConnect.Droid.Resource.Drawable.ic_cast_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_disabled_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_disabled_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_grey = global::ALConnect.Droid.Resource.Drawable.ic_cast_grey;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_off_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_off_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_on_0_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_on_0_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_on_1_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_on_1_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_on_2_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_on_2_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_on_light = global::ALConnect.Droid.Resource.Drawable.ic_cast_on_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_cast_white = global::ALConnect.Droid.Resource.Drawable.ic_cast_white;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_close_dark = global::ALConnect.Droid.Resource.Drawable.ic_close_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_close_light = global::ALConnect.Droid.Resource.Drawable.ic_close_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse = global::ALConnect.Droid.Resource.Drawable.ic_collapse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00000 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00000;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00001 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00001;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00002 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00002;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00003 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00003;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00004 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00004;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00005 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00005;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00006 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00006;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00007 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00007;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00008 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00008;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00009 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00009;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00010 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00010;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00011 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00011;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00012 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00012;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00013 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00013;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00014 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00014;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_collapse_00015 = global::ALConnect.Droid.Resource.Drawable.ic_collapse_00015;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand = global::ALConnect.Droid.Resource.Drawable.ic_expand;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00000 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00000;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00001 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00001;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00002 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00002;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00003 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00003;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00004 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00004;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00005 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00005;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00006 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00006;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00007 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00007;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00008 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00008;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00009 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00009;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00010 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00010;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00011 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00011;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00012 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00012;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00013 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00013;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00014 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00014;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_expand_00015 = global::ALConnect.Droid.Resource.Drawable.ic_expand_00015;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_pause = global::ALConnect.Droid.Resource.Drawable.ic_media_pause;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_play = global::ALConnect.Droid.Resource.Drawable.ic_media_play;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_disabled_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_disabled_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_off_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_off_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_on_0_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_on_0_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_on_1_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_on_1_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_on_2_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_on_2_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_media_route_on_mono_dark = global::ALConnect.Droid.Resource.Drawable.ic_media_route_on_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_pause_dark = global::ALConnect.Droid.Resource.Drawable.ic_pause_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_pause_light = global::ALConnect.Droid.Resource.Drawable.ic_pause_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_play_dark = global::ALConnect.Droid.Resource.Drawable.ic_play_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_play_light = global::ALConnect.Droid.Resource.Drawable.ic_play_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_speaker_dark = global::ALConnect.Droid.Resource.Drawable.ic_speaker_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_speaker_group_dark = global::ALConnect.Droid.Resource.Drawable.ic_speaker_group_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_speaker_group_light = global::ALConnect.Droid.Resource.Drawable.ic_speaker_group_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_speaker_light = global::ALConnect.Droid.Resource.Drawable.ic_speaker_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_tv_dark = global::ALConnect.Droid.Resource.Drawable.ic_tv_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.ic_tv_light = global::ALConnect.Droid.Resource.Drawable.ic_tv_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_dialog_material_background_dark = global::ALConnect.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_dialog_material_background_light = global::ALConnect.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_audiotrack_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_audiotrack_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_cast_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_cast_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_cast_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_cast_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_close_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_close_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_close_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_close_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_media_route_connecting_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_media_route_connecting_mono_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_media_route_connecting_mono_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_media_route_mono_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_media_route_mono_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_media_route_mono_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_media_route_mono_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_pause_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_pause_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_pause_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_pause_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_play_dark = global::ALConnect.Droid.Resource.Drawable.mr_ic_play_dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.mr_ic_play_light = global::ALConnect.Droid.Resource.Drawable.mr_ic_play_light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Drawable.notification_template_icon_bg = global::ALConnect.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action0 = global::ALConnect.Droid.Resource.Id.action0;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar = global::ALConnect.Droid.Resource.Id.action_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_activity_content = global::ALConnect.Droid.Resource.Id.action_bar_activity_content;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_container = global::ALConnect.Droid.Resource.Id.action_bar_container;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_root = global::ALConnect.Droid.Resource.Id.action_bar_root;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_spinner = global::ALConnect.Droid.Resource.Id.action_bar_spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_subtitle = global::ALConnect.Droid.Resource.Id.action_bar_subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_bar_title = global::ALConnect.Droid.Resource.Id.action_bar_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_context_bar = global::ALConnect.Droid.Resource.Id.action_context_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_divider = global::ALConnect.Droid.Resource.Id.action_divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_menu_divider = global::ALConnect.Droid.Resource.Id.action_menu_divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_menu_presenter = global::ALConnect.Droid.Resource.Id.action_menu_presenter;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_mode_bar = global::ALConnect.Droid.Resource.Id.action_mode_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_mode_bar_stub = global::ALConnect.Droid.Resource.Id.action_mode_bar_stub;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.action_mode_close_button = global::ALConnect.Droid.Resource.Id.action_mode_close_button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.activity_chooser_view_content = global::ALConnect.Droid.Resource.Id.activity_chooser_view_content;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.alertTitle = global::ALConnect.Droid.Resource.Id.alertTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.always = global::ALConnect.Droid.Resource.Id.always;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.beginning = global::ALConnect.Droid.Resource.Id.beginning;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.bottom = global::ALConnect.Droid.Resource.Id.bottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.buttonPanel = global::ALConnect.Droid.Resource.Id.buttonPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.cancel_action = global::ALConnect.Droid.Resource.Id.cancel_action;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.center = global::ALConnect.Droid.Resource.Id.center;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.center_horizontal = global::ALConnect.Droid.Resource.Id.center_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.center_vertical = global::ALConnect.Droid.Resource.Id.center_vertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.checkbox = global::ALConnect.Droid.Resource.Id.checkbox;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.chronometer = global::ALConnect.Droid.Resource.Id.chronometer;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.clip_horizontal = global::ALConnect.Droid.Resource.Id.clip_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.clip_vertical = global::ALConnect.Droid.Resource.Id.clip_vertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.collapseActionView = global::ALConnect.Droid.Resource.Id.collapseActionView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.contentPanel = global::ALConnect.Droid.Resource.Id.contentPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.custom = global::ALConnect.Droid.Resource.Id.custom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.customPanel = global::ALConnect.Droid.Resource.Id.customPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.decor_content_parent = global::ALConnect.Droid.Resource.Id.decor_content_parent;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.default_activity_button = global::ALConnect.Droid.Resource.Id.default_activity_button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.design_bottom_sheet = global::ALConnect.Droid.Resource.Id.design_bottom_sheet;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.design_menu_item_action_area = global::ALConnect.Droid.Resource.Id.design_menu_item_action_area;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.design_menu_item_action_area_stub = global::ALConnect.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.design_menu_item_text = global::ALConnect.Droid.Resource.Id.design_menu_item_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.design_navigation_view = global::ALConnect.Droid.Resource.Id.design_navigation_view;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.disableHome = global::ALConnect.Droid.Resource.Id.disableHome;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.edit_query = global::ALConnect.Droid.Resource.Id.edit_query;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.end = global::ALConnect.Droid.Resource.Id.end;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.end_padder = global::ALConnect.Droid.Resource.Id.end_padder;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.enterAlways = global::ALConnect.Droid.Resource.Id.enterAlways;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.enterAlwaysCollapsed = global::ALConnect.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.exitUntilCollapsed = global::ALConnect.Droid.Resource.Id.exitUntilCollapsed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.expand_activities_button = global::ALConnect.Droid.Resource.Id.expand_activities_button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.expanded_menu = global::ALConnect.Droid.Resource.Id.expanded_menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.fill = global::ALConnect.Droid.Resource.Id.fill;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.fill_horizontal = global::ALConnect.Droid.Resource.Id.fill_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.fill_vertical = global::ALConnect.Droid.Resource.Id.fill_vertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.@fixed = global::ALConnect.Droid.Resource.Id.@fixed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.home = global::ALConnect.Droid.Resource.Id.home;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.homeAsUp = global::ALConnect.Droid.Resource.Id.homeAsUp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.icon = global::ALConnect.Droid.Resource.Id.icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.ifRoom = global::ALConnect.Droid.Resource.Id.ifRoom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.image = global::ALConnect.Droid.Resource.Id.image;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.info = global::ALConnect.Droid.Resource.Id.info;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.item_touch_helper_previous_elevation = global::ALConnect.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.left = global::ALConnect.Droid.Resource.Id.left;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.line1 = global::ALConnect.Droid.Resource.Id.line1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.line3 = global::ALConnect.Droid.Resource.Id.line3;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.listMode = global::ALConnect.Droid.Resource.Id.listMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.list_item = global::ALConnect.Droid.Resource.Id.list_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.media_actions = global::ALConnect.Droid.Resource.Id.media_actions;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.middle = global::ALConnect.Droid.Resource.Id.middle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mini = global::ALConnect.Droid.Resource.Id.mini;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_art = global::ALConnect.Droid.Resource.Id.mr_art;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_chooser_list = global::ALConnect.Droid.Resource.Id.mr_chooser_list;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_chooser_route_desc = global::ALConnect.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_chooser_route_icon = global::ALConnect.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_chooser_route_name = global::ALConnect.Droid.Resource.Id.mr_chooser_route_name;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_close = global::ALConnect.Droid.Resource.Id.mr_close;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_control_divider = global::ALConnect.Droid.Resource.Id.mr_control_divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_control_play_pause = global::ALConnect.Droid.Resource.Id.mr_control_play_pause;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_control_subtitle = global::ALConnect.Droid.Resource.Id.mr_control_subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_control_title = global::ALConnect.Droid.Resource.Id.mr_control_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_control_title_container = global::ALConnect.Droid.Resource.Id.mr_control_title_container;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_custom_control = global::ALConnect.Droid.Resource.Id.mr_custom_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_default_control = global::ALConnect.Droid.Resource.Id.mr_default_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_dialog_area = global::ALConnect.Droid.Resource.Id.mr_dialog_area;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_expandable_area = global::ALConnect.Droid.Resource.Id.mr_expandable_area;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_group_expand_collapse = global::ALConnect.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_media_main_control = global::ALConnect.Droid.Resource.Id.mr_media_main_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_name = global::ALConnect.Droid.Resource.Id.mr_name;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_playback_control = global::ALConnect.Droid.Resource.Id.mr_playback_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_title_bar = global::ALConnect.Droid.Resource.Id.mr_title_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_volume_control = global::ALConnect.Droid.Resource.Id.mr_volume_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_volume_group_list = global::ALConnect.Droid.Resource.Id.mr_volume_group_list;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_volume_item_icon = global::ALConnect.Droid.Resource.Id.mr_volume_item_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.mr_volume_slider = global::ALConnect.Droid.Resource.Id.mr_volume_slider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.multiply = global::ALConnect.Droid.Resource.Id.multiply;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.navigation_header_container = global::ALConnect.Droid.Resource.Id.navigation_header_container;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.never = global::ALConnect.Droid.Resource.Id.never;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.none = global::ALConnect.Droid.Resource.Id.none;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.normal = global::ALConnect.Droid.Resource.Id.normal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.parallax = global::ALConnect.Droid.Resource.Id.parallax;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.parentPanel = global::ALConnect.Droid.Resource.Id.parentPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.pin = global::ALConnect.Droid.Resource.Id.pin;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.progress_circular = global::ALConnect.Droid.Resource.Id.progress_circular;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.progress_horizontal = global::ALConnect.Droid.Resource.Id.progress_horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.radio = global::ALConnect.Droid.Resource.Id.radio;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.right = global::ALConnect.Droid.Resource.Id.right;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.screen = global::ALConnect.Droid.Resource.Id.screen;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.scroll = global::ALConnect.Droid.Resource.Id.scroll;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.scrollIndicatorDown = global::ALConnect.Droid.Resource.Id.scrollIndicatorDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.scrollIndicatorUp = global::ALConnect.Droid.Resource.Id.scrollIndicatorUp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.scrollView = global::ALConnect.Droid.Resource.Id.scrollView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.scrollable = global::ALConnect.Droid.Resource.Id.scrollable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_badge = global::ALConnect.Droid.Resource.Id.search_badge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_bar = global::ALConnect.Droid.Resource.Id.search_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_button = global::ALConnect.Droid.Resource.Id.search_button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_close_btn = global::ALConnect.Droid.Resource.Id.search_close_btn;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_edit_frame = global::ALConnect.Droid.Resource.Id.search_edit_frame;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_go_btn = global::ALConnect.Droid.Resource.Id.search_go_btn;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_mag_icon = global::ALConnect.Droid.Resource.Id.search_mag_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_plate = global::ALConnect.Droid.Resource.Id.search_plate;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_src_text = global::ALConnect.Droid.Resource.Id.search_src_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.search_voice_btn = global::ALConnect.Droid.Resource.Id.search_voice_btn;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.select_dialog_listview = global::ALConnect.Droid.Resource.Id.select_dialog_listview;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.shortcut = global::ALConnect.Droid.Resource.Id.shortcut;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.showCustom = global::ALConnect.Droid.Resource.Id.showCustom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.showHome = global::ALConnect.Droid.Resource.Id.showHome;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.showTitle = global::ALConnect.Droid.Resource.Id.showTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.snackbar_action = global::ALConnect.Droid.Resource.Id.snackbar_action;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.snackbar_text = global::ALConnect.Droid.Resource.Id.snackbar_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.snap = global::ALConnect.Droid.Resource.Id.snap;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.spacer = global::ALConnect.Droid.Resource.Id.spacer;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.split_action_bar = global::ALConnect.Droid.Resource.Id.split_action_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.src_atop = global::ALConnect.Droid.Resource.Id.src_atop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.src_in = global::ALConnect.Droid.Resource.Id.src_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.src_over = global::ALConnect.Droid.Resource.Id.src_over;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.start = global::ALConnect.Droid.Resource.Id.start;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.status_bar_latest_event_content = global::ALConnect.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.submit_area = global::ALConnect.Droid.Resource.Id.submit_area;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.tabMode = global::ALConnect.Droid.Resource.Id.tabMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.text = global::ALConnect.Droid.Resource.Id.text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.text2 = global::ALConnect.Droid.Resource.Id.text2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.textSpacerNoButtons = global::ALConnect.Droid.Resource.Id.textSpacerNoButtons;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.time = global::ALConnect.Droid.Resource.Id.time;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.title = global::ALConnect.Droid.Resource.Id.title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.title_template = global::ALConnect.Droid.Resource.Id.title_template;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.top = global::ALConnect.Droid.Resource.Id.top;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.topPanel = global::ALConnect.Droid.Resource.Id.topPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.touch_outside = global::ALConnect.Droid.Resource.Id.touch_outside;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.up = global::ALConnect.Droid.Resource.Id.up;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.useLogo = global::ALConnect.Droid.Resource.Id.useLogo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.view_offset_helper = global::ALConnect.Droid.Resource.Id.view_offset_helper;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.volume_item_container = global::ALConnect.Droid.Resource.Id.volume_item_container;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.withText = global::ALConnect.Droid.Resource.Id.withText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Id.wrap_content = global::ALConnect.Droid.Resource.Id.wrap_content;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.abc_config_activityDefaultDur = global::ALConnect.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.abc_config_activityShortDur = global::ALConnect.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.abc_max_action_buttons = global::ALConnect.Droid.Resource.Integer.abc_max_action_buttons;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.bottom_sheet_slide_duration = global::ALConnect.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.cancel_button_image_alpha = global::ALConnect.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.design_snackbar_text_max_lines = global::ALConnect.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::ALConnect.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::ALConnect.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::ALConnect.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Integer.status_bar_notification_info_maxnum = global::ALConnect.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Interpolator.mr_fast_out_slow_in = global::ALConnect.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Interpolator.mr_linear_out_slow_in = global::ALConnect.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_bar_title_item = global::ALConnect.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_bar_up_container = global::ALConnect.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_bar_view_list_nav_layout = global::ALConnect.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_menu_item_layout = global::ALConnect.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_menu_layout = global::ALConnect.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_mode_bar = global::ALConnect.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_action_mode_close_item_material = global::ALConnect.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_activity_chooser_view = global::ALConnect.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::ALConnect.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::ALConnect.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_alert_dialog_material = global::ALConnect.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_dialog_title_material = global::ALConnect.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_expanded_menu_layout = global::ALConnect.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_list_menu_item_checkbox = global::ALConnect.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_list_menu_item_icon = global::ALConnect.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_list_menu_item_layout = global::ALConnect.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_list_menu_item_radio = global::ALConnect.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_popup_menu_item_layout = global::ALConnect.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_screen_content_include = global::ALConnect.Droid.Resource.Layout.abc_screen_content_include;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_screen_simple = global::ALConnect.Droid.Resource.Layout.abc_screen_simple;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::ALConnect.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_screen_toolbar = global::ALConnect.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ALConnect.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_search_view = global::ALConnect.Droid.Resource.Layout.abc_search_view;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.abc_select_dialog_material = global::ALConnect.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_bottom_sheet_dialog = global::ALConnect.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_layout_snackbar = global::ALConnect.Droid.Resource.Layout.design_layout_snackbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_layout_snackbar_include = global::ALConnect.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_layout_tab_icon = global::ALConnect.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_layout_tab_text = global::ALConnect.Droid.Resource.Layout.design_layout_tab_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_menu_item_action_area = global::ALConnect.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_item = global::ALConnect.Droid.Resource.Layout.design_navigation_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_item_header = global::ALConnect.Droid.Resource.Layout.design_navigation_item_header;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_item_separator = global::ALConnect.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_item_subheader = global::ALConnect.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_menu = global::ALConnect.Droid.Resource.Layout.design_navigation_menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.design_navigation_menu_item = global::ALConnect.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_chooser_dialog = global::ALConnect.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_chooser_list_item = global::ALConnect.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_controller_material_dialog_b = global::ALConnect.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_controller_volume_item = global::ALConnect.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_playback_control = global::ALConnect.Droid.Resource.Layout.mr_playback_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.mr_volume_control = global::ALConnect.Droid.Resource.Layout.mr_volume_control;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_media_action = global::ALConnect.Droid.Resource.Layout.notification_media_action;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_media_cancel_action = global::ALConnect.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_big_media = global::ALConnect.Droid.Resource.Layout.notification_template_big_media;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_big_media_narrow = global::ALConnect.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_lines = global::ALConnect.Droid.Resource.Layout.notification_template_lines;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_media = global::ALConnect.Droid.Resource.Layout.notification_template_media;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_part_chronometer = global::ALConnect.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.notification_template_part_time = global::ALConnect.Droid.Resource.Layout.notification_template_part_time;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.select_dialog_item_material = global::ALConnect.Droid.Resource.Layout.select_dialog_item_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.select_dialog_multichoice_material = global::ALConnect.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.select_dialog_singlechoice_material = global::ALConnect.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::ALConnect.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.ApplicationName = global::ALConnect.Droid.Resource.String.ApplicationName;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.Hello = global::ALConnect.Droid.Resource.String.Hello;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_bar_home_description = global::ALConnect.Droid.Resource.String.abc_action_bar_home_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_bar_home_description_format = global::ALConnect.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_bar_home_subtitle_description_format = global::ALConnect.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_bar_up_description = global::ALConnect.Droid.Resource.String.abc_action_bar_up_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_menu_overflow_description = global::ALConnect.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_action_mode_done = global::ALConnect.Droid.Resource.String.abc_action_mode_done;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_activity_chooser_view_see_all = global::ALConnect.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_activitychooserview_choose_application = global::ALConnect.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_capital_off = global::ALConnect.Droid.Resource.String.abc_capital_off;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_capital_on = global::ALConnect.Droid.Resource.String.abc_capital_on;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_search_hint = global::ALConnect.Droid.Resource.String.abc_search_hint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_searchview_description_clear = global::ALConnect.Droid.Resource.String.abc_searchview_description_clear;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_searchview_description_query = global::ALConnect.Droid.Resource.String.abc_searchview_description_query;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_searchview_description_search = global::ALConnect.Droid.Resource.String.abc_searchview_description_search;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_searchview_description_submit = global::ALConnect.Droid.Resource.String.abc_searchview_description_submit;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_searchview_description_voice = global::ALConnect.Droid.Resource.String.abc_searchview_description_voice;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_shareactionprovider_share_with = global::ALConnect.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_shareactionprovider_share_with_application = global::ALConnect.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.abc_toolbar_collapse_description = global::ALConnect.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.appbar_scrolling_view_behavior = global::ALConnect.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.bottom_sheet_behavior = global::ALConnect.Droid.Resource.String.bottom_sheet_behavior;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.character_counter_pattern = global::ALConnect.Droid.Resource.String.character_counter_pattern;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_button_content_description = global::ALConnect.Droid.Resource.String.mr_button_content_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_chooser_searching = global::ALConnect.Droid.Resource.String.mr_chooser_searching;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_chooser_title = global::ALConnect.Droid.Resource.String.mr_chooser_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_casting_screen = global::ALConnect.Droid.Resource.String.mr_controller_casting_screen;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_close_description = global::ALConnect.Droid.Resource.String.mr_controller_close_description;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_collapse_group = global::ALConnect.Droid.Resource.String.mr_controller_collapse_group;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_disconnect = global::ALConnect.Droid.Resource.String.mr_controller_disconnect;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_expand_group = global::ALConnect.Droid.Resource.String.mr_controller_expand_group;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_no_info_available = global::ALConnect.Droid.Resource.String.mr_controller_no_info_available;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_no_media_selected = global::ALConnect.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_pause = global::ALConnect.Droid.Resource.String.mr_controller_pause;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_play = global::ALConnect.Droid.Resource.String.mr_controller_play;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_controller_stop = global::ALConnect.Droid.Resource.String.mr_controller_stop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_system_route_name = global::ALConnect.Droid.Resource.String.mr_system_route_name;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.mr_user_route_category_name = global::ALConnect.Droid.Resource.String.mr_user_route_category_name;
+			global::Octane.Xam.VideoPlayer.Android.Resource.String.status_bar_notification_info_overflow = global::ALConnect.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.AlertDialog_AppCompat = global::ALConnect.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.AlertDialog_AppCompat_Light = global::ALConnect.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Animation_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::ALConnect.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::ALConnect.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_AlertDialog_AppCompat = global::ALConnect.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::ALConnect.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_CardView = global::ALConnect.Droid.Resource.Style.Base_CardView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::ALConnect.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::ALConnect.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::ALConnect.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::ALConnect.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::ALConnect.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::ALConnect.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::ALConnect.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::ALConnect.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::ALConnect.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::ALConnect.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::ALConnect.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V21_Theme_AppCompat = global::ALConnect.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ALConnect.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Theme_AppCompat = global::ALConnect.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::ALConnect.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::ALConnect.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::ALConnect.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::ALConnect.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Base_Widget_Design_TabLayout = global::ALConnect.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.CardView = global::ALConnect.Droid.Resource.Style.CardView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.CardView_Dark = global::ALConnect.Droid.Resource.Style.CardView_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.CardView_Light = global::ALConnect.Droid.Resource.Style.CardView_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_AppCompat = global::ALConnect.Droid.Resource.Style.Platform_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::ALConnect.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::ALConnect.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_V11_AppCompat = global::ALConnect.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_V11_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_V14_AppCompat = global::ALConnect.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_V14_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::ALConnect.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::ALConnect.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::ALConnect.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::ALConnect.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::ALConnect.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Button = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Large = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Small = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ALConnect.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Counter = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Error = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Hint = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Design_Tab = global::ALConnect.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_StatusBar_EventContent = global::ALConnect.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::ALConnect.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::ALConnect.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::ALConnect.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ALConnect.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ALConnect.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ALConnect.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat = global::ALConnect.Droid.Resource.Style.Theme_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Dialog = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::ALConnect.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design = global::ALConnect.Droid.Resource.Style.Theme_Design;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::ALConnect.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design_Light = global::ALConnect.Droid.Resource.Style.Theme_Design_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::ALConnect.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::ALConnect.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_Design_NoActionBar = global::ALConnect.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_MediaRouter = global::ALConnect.Droid.Resource.Style.Theme_MediaRouter;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_MediaRouter_Light = global::ALConnect.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::ALConnect.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::ALConnect.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.ThemeOverlay_AppCompat = global::ALConnect.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ALConnect.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ALConnect.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::ALConnect.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::ALConnect.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionButton = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActionMode = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Button_Small = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_EditText = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ImageButton = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ListView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_RatingBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_SearchView = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_SeekBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Spinner = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Toolbar = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::ALConnect.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_AppBarLayout = global::ALConnect.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::ALConnect.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::ALConnect.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::ALConnect.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_FloatingActionButton = global::ALConnect.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_NavigationView = global::ALConnect.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::ALConnect.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_Snackbar = global::ALConnect.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_TabLayout = global::ALConnect.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_Design_TextInputLayout = global::ALConnect.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::ALConnect.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar = global::ALConnect.Droid.Resource.Styleable.ActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_background = global::ALConnect.Droid.Resource.Styleable.ActionBar_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_backgroundSplit = global::ALConnect.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_backgroundStacked = global::ALConnect.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::ALConnect.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::ALConnect.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_contentInsetRight = global::ALConnect.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_contentInsetStart = global::ALConnect.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::ALConnect.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_displayOptions = global::ALConnect.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_divider = global::ALConnect.Droid.Resource.Styleable.ActionBar_divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_elevation = global::ALConnect.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_height = global::ALConnect.Droid.Resource.Styleable.ActionBar_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::ALConnect.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::ALConnect.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_homeLayout = global::ALConnect.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_icon = global::ALConnect.Droid.Resource.Styleable.ActionBar_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::ALConnect.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_itemPadding = global::ALConnect.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_logo = global::ALConnect.Droid.Resource.Styleable.ActionBar_logo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_navigationMode = global::ALConnect.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_popupTheme = global::ALConnect.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_progressBarPadding = global::ALConnect.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_progressBarStyle = global::ALConnect.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_subtitle = global::ALConnect.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::ALConnect.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_title = global::ALConnect.Droid.Resource.Styleable.ActionBar_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBar_titleTextStyle = global::ALConnect.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBarLayout = global::ALConnect.Droid.Resource.Styleable.ActionBarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::ALConnect.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMenuItemView = global::ALConnect.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::ALConnect.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMenuView = global::ALConnect.Droid.Resource.Styleable.ActionMenuView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode = global::ALConnect.Droid.Resource.Styleable.ActionMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_background = global::ALConnect.Droid.Resource.Styleable.ActionMode_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_backgroundSplit = global::ALConnect.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_closeItemLayout = global::ALConnect.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_height = global::ALConnect.Droid.Resource.Styleable.ActionMode_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::ALConnect.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActionMode_titleTextStyle = global::ALConnect.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActivityChooserView = global::ALConnect.Droid.Resource.Styleable.ActivityChooserView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::ALConnect.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::ALConnect.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog = global::ALConnect.Droid.Resource.Styleable.AlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_android_layout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_listItemLayout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_listLayout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::ALConnect.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout = global::ALConnect.Droid.Resource.Styleable.AppBarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_android_background = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_elevation = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_expanded = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_LayoutParams = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_LayoutParams;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::ALConnect.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatImageView = global::ALConnect.Droid.Resource.Styleable.AppCompatImageView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatImageView_android_src = global::ALConnect.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::ALConnect.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTextView = global::ALConnect.Droid.Resource.Styleable.AppCompatTextView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::ALConnect.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::ALConnect.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::ALConnect.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.BottomSheetBehavior_Params = global::ALConnect.Droid.Resource.Styleable.BottomSheetBehavior_Params;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.BottomSheetBehavior_Params_behavior_hideable = global::ALConnect.Droid.Resource.Styleable.BottomSheetBehavior_Params_behavior_hideable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.BottomSheetBehavior_Params_behavior_peekHeight = global::ALConnect.Droid.Resource.Styleable.BottomSheetBehavior_Params_behavior_peekHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ButtonBarLayout = global::ALConnect.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::ALConnect.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView = global::ALConnect.Droid.Resource.Styleable.CardView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_android_minHeight = global::ALConnect.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_android_minWidth = global::ALConnect.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardBackgroundColor = global::ALConnect.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardCornerRadius = global::ALConnect.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardElevation = global::ALConnect.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardMaxElevation = global::ALConnect.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::ALConnect.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::ALConnect.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_contentPadding = global::ALConnect.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_contentPaddingBottom = global::ALConnect.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_contentPaddingLeft = global::ALConnect.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_contentPaddingRight = global::ALConnect.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CardView_contentPaddingTop = global::ALConnect.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::ALConnect.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::ALConnect.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::ALConnect.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::ALConnect.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CompoundButton = global::ALConnect.Droid.Resource.Styleable.CompoundButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CompoundButton_android_button = global::ALConnect.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CompoundButton_buttonTint = global::ALConnect.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::ALConnect.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_keylines = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::ALConnect.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DesignTheme = global::ALConnect.Droid.Resource.Styleable.DesignTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::ALConnect.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::ALConnect.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DesignTheme_textColorError = global::ALConnect.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_color = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::ALConnect.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_elevation = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_fabSize = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::ALConnect.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ForegroundLinearLayout = global::ALConnect.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::ALConnect.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::ALConnect.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::ALConnect.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_divider = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::ALConnect.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ListPopupWindow = global::ALConnect.Droid.Resource.Styleable.ListPopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::ALConnect.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::ALConnect.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MediaRouteButton = global::ALConnect.Droid.Resource.Styleable.MediaRouteButton;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::ALConnect.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::ALConnect.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::ALConnect.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup = global::ALConnect.Droid.Resource.Styleable.MenuGroup;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_enabled = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_id = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuGroup_android_visible = global::ALConnect.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem = global::ALConnect.Droid.Resource.Styleable.MenuItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_actionLayout = global::ALConnect.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_actionProviderClass = global::ALConnect.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_actionViewClass = global::ALConnect.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_checkable = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_checked = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_enabled = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_icon = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_id = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_menuCategory = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_onClick = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_title = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_android_visible = global::ALConnect.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuItem_showAsAction = global::ALConnect.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView = global::ALConnect.Droid.Resource.Styleable.MenuView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_headerBackground = global::ALConnect.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::ALConnect.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_itemBackground = global::ALConnect.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::ALConnect.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::ALConnect.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_verticalDivider = global::ALConnect.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::ALConnect.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::ALConnect.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView = global::ALConnect.Droid.Resource.Styleable.NavigationView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_android_background = global::ALConnect.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::ALConnect.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_android_maxWidth = global::ALConnect.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_elevation = global::ALConnect.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_headerLayout = global::ALConnect.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_itemBackground = global::ALConnect.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_itemIconTint = global::ALConnect.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::ALConnect.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_itemTextColor = global::ALConnect.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.NavigationView_menu = global::ALConnect.Droid.Resource.Styleable.NavigationView_menu;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.PopupWindow = global::ALConnect.Droid.Resource.Styleable.PopupWindow;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::ALConnect.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::ALConnect.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.PopupWindowBackgroundState = global::ALConnect.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::ALConnect.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView = global::ALConnect.Droid.Resource.Styleable.RecyclerView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView_android_orientation = global::ALConnect.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView_layoutManager = global::ALConnect.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView_reverseLayout = global::ALConnect.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView_spanCount = global::ALConnect.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::ALConnect.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::ALConnect.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::ALConnect.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ScrollingViewBehavior_Params = global::ALConnect.Droid.Resource.Styleable.ScrollingViewBehavior_Params;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::ALConnect.Droid.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView = global::ALConnect.Droid.Resource.Styleable.SearchView;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_android_focusable = global::ALConnect.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_android_imeOptions = global::ALConnect.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_android_inputType = global::ALConnect.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_android_maxWidth = global::ALConnect.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_closeIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_commitIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_defaultQueryHint = global::ALConnect.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_goIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::ALConnect.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_layout = global::ALConnect.Droid.Resource.Styleable.SearchView_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_queryBackground = global::ALConnect.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_queryHint = global::ALConnect.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_searchHintIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_searchIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_submitBackground = global::ALConnect.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::ALConnect.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SearchView_voiceIcon = global::ALConnect.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SnackbarLayout = global::ALConnect.Droid.Resource.Styleable.SnackbarLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::ALConnect.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SnackbarLayout_elevation = global::ALConnect.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::ALConnect.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner = global::ALConnect.Droid.Resource.Styleable.Spinner;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::ALConnect.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner_android_entries = global::ALConnect.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner_android_popupBackground = global::ALConnect.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner_android_prompt = global::ALConnect.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Spinner_popupTheme = global::ALConnect.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat = global::ALConnect.Droid.Resource.Styleable.SwitchCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_android_textOff = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_android_textOn = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_android_thumb = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_showText = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_splitTrack = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_switchPadding = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.SwitchCompat_track = global::ALConnect.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabItem = global::ALConnect.Droid.Resource.Styleable.TabItem;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabItem_android_icon = global::ALConnect.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabItem_android_layout = global::ALConnect.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabItem_android_text = global::ALConnect.Droid.Resource.Styleable.TabItem_android_text;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout = global::ALConnect.Droid.Resource.Styleable.TabLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabBackground = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabContentStart = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabGravity = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabMinWidth = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabMode = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabPadding = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TabLayout_tabTextColor = global::ALConnect.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance = global::ALConnect.Droid.Resource.Styleable.TextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_textColor = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_textSize = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_textStyle = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_android_typeface = global::ALConnect.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextAppearance_textAllCaps = global::ALConnect.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout = global::ALConnect.Droid.Resource.Styleable.TextInputLayout;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_android_hint = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::ALConnect.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar = global::ALConnect.Droid.Resource.Styleable.Toolbar;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_android_gravity = global::ALConnect.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_android_minHeight = global::ALConnect.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::ALConnect.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_collapseIcon = global::ALConnect.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::ALConnect.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::ALConnect.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_contentInsetRight = global::ALConnect.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_contentInsetStart = global::ALConnect.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_logo = global::ALConnect.Droid.Resource.Styleable.Toolbar_logo;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_logoDescription = global::ALConnect.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::ALConnect.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::ALConnect.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_navigationIcon = global::ALConnect.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_popupTheme = global::ALConnect.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_subtitle = global::ALConnect.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::ALConnect.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::ALConnect.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_title = global::ALConnect.Droid.Resource.Styleable.Toolbar_title;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleMarginStart = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleMarginTop = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleMargins = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.Toolbar_titleTextColor = global::ALConnect.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View = global::ALConnect.Droid.Resource.Styleable.View;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View_android_focusable = global::ALConnect.Droid.Resource.Styleable.View_android_focusable;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View_android_theme = global::ALConnect.Droid.Resource.Styleable.View_android_theme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View_paddingEnd = global::ALConnect.Droid.Resource.Styleable.View_paddingEnd;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View_paddingStart = global::ALConnect.Droid.Resource.Styleable.View_paddingStart;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.View_theme = global::ALConnect.Droid.Resource.Styleable.View_theme;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewBackgroundHelper = global::ALConnect.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::ALConnect.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::ALConnect.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::ALConnect.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewStubCompat = global::ALConnect.Droid.Resource.Styleable.ViewStubCompat;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewStubCompat_android_id = global::ALConnect.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ALConnect.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Octane.Xam.VideoPlayer.Android.Resource.Styleable.ViewStubCompat_android_layout = global::ALConnect.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::PCLCrypto.Resource.String.ApplicationName = global::ALConnect.Droid.Resource.String.ApplicationName;
 			global::PCLCrypto.Resource.String.Hello = global::ALConnect.Droid.Resource.String.Hello;
 			global::PCLStorage.Resource.String.ApplicationName = global::ALConnect.Droid.Resource.String.ApplicationName;
@@ -1955,367 +3735,403 @@ namespace ALConnect.Droid
 			public const int addIcon = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int calendar = 2130837581;
+			public const int button_mute = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int contacts = 2130837582;
+			public const int button_next = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int design_fab_background = 2130837583;
+			public const int button_pause = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int design_snackbar_background = 2130837584;
+			public const int button_play = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ElectionPrayer = 2130837585;
+			public const int button_previous = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int emc2 = 2130837586;
+			public const int button_replay = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int events = 2130837587;
+			public const int button_seek_backward = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int Featured01 = 2130837588;
+			public const int button_seek_forward = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int Featured02 = 2130837589;
+			public const int button_shuffle = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int giving = 2130837590;
+			public const int button_stop = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int groups = 2130837591;
+			public const int button_unmute = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int hamburger = 2130837592;
+			public const int calendar = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_audiotrack = 2130837593;
+			public const int contacts = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_audiotrack_light = 2130837594;
+			public const int design_fab_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_bluetooth_grey = 2130837595;
+			public const int design_snackbar_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_bluetooth_white = 2130837596;
+			public const int ElectionPrayer = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_cast_dark = 2130837597;
+			public const int emc2 = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_cast_disabled_light = 2130837598;
+			public const int events = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_cast_grey = 2130837599;
+			public const int Featured01 = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_cast_light = 2130837600;
+			public const int Featured02 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_cast_off_light = 2130837601;
+			public const int giving = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_cast_on_0_light = 2130837602;
+			public const int groups = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_cast_on_1_light = 2130837603;
+			public const int hamburger = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_cast_on_2_light = 2130837604;
+			public const int ic_audiotrack = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_cast_on_light = 2130837605;
+			public const int ic_audiotrack_light = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_cast_white = 2130837606;
+			public const int ic_bluetooth_grey = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_close_dark = 2130837607;
+			public const int ic_bluetooth_white = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_close_light = 2130837608;
+			public const int ic_cast_dark = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_collapse = 2130837609;
+			public const int ic_cast_disabled_light = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_collapse_00000 = 2130837610;
+			public const int ic_cast_grey = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_collapse_00001 = 2130837611;
+			public const int ic_cast_light = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_collapse_00002 = 2130837612;
+			public const int ic_cast_off_light = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_collapse_00003 = 2130837613;
+			public const int ic_cast_on_0_light = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_collapse_00004 = 2130837614;
+			public const int ic_cast_on_1_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_collapse_00005 = 2130837615;
+			public const int ic_cast_on_2_light = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_collapse_00006 = 2130837616;
+			public const int ic_cast_on_light = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_collapse_00007 = 2130837617;
+			public const int ic_cast_white = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_collapse_00008 = 2130837618;
+			public const int ic_close_dark = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_collapse_00009 = 2130837619;
+			public const int ic_close_light = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_collapse_00010 = 2130837620;
+			public const int ic_collapse = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_collapse_00011 = 2130837621;
+			public const int ic_collapse_00000 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_collapse_00012 = 2130837622;
+			public const int ic_collapse_00001 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_collapse_00013 = 2130837623;
+			public const int ic_collapse_00002 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_collapse_00014 = 2130837624;
+			public const int ic_collapse_00003 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_collapse_00015 = 2130837625;
+			public const int ic_collapse_00004 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_expand = 2130837626;
+			public const int ic_collapse_00005 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_expand_00000 = 2130837627;
+			public const int ic_collapse_00006 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_expand_00001 = 2130837628;
+			public const int ic_collapse_00007 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_expand_00002 = 2130837629;
+			public const int ic_collapse_00008 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_expand_00003 = 2130837630;
+			public const int ic_collapse_00009 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_expand_00004 = 2130837631;
+			public const int ic_collapse_00010 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_expand_00005 = 2130837632;
+			public const int ic_collapse_00011 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_expand_00006 = 2130837633;
+			public const int ic_collapse_00012 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_expand_00007 = 2130837634;
+			public const int ic_collapse_00013 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_expand_00008 = 2130837635;
+			public const int ic_collapse_00014 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_expand_00009 = 2130837636;
+			public const int ic_collapse_00015 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_expand_00010 = 2130837637;
+			public const int ic_expand = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_expand_00011 = 2130837638;
+			public const int ic_expand_00000 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_expand_00012 = 2130837639;
+			public const int ic_expand_00001 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_expand_00013 = 2130837640;
+			public const int ic_expand_00002 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_expand_00014 = 2130837641;
+			public const int ic_expand_00003 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_expand_00015 = 2130837642;
+			public const int ic_expand_00004 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_media_pause = 2130837643;
+			public const int ic_expand_00005 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_media_play = 2130837644;
+			public const int ic_expand_00006 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_media_route_disabled_mono_dark = 2130837645;
+			public const int ic_expand_00007 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_media_route_off_mono_dark = 2130837646;
+			public const int ic_expand_00008 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_media_route_on_0_mono_dark = 2130837647;
+			public const int ic_expand_00009 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_media_route_on_1_mono_dark = 2130837648;
+			public const int ic_expand_00010 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_media_route_on_2_mono_dark = 2130837649;
+			public const int ic_expand_00011 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_media_route_on_mono_dark = 2130837650;
+			public const int ic_expand_00012 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_pause_dark = 2130837651;
+			public const int ic_expand_00013 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_pause_light = 2130837652;
+			public const int ic_expand_00014 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_play_dark = 2130837653;
+			public const int ic_expand_00015 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_play_light = 2130837654;
+			public const int ic_media_pause = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_speaker_dark = 2130837655;
+			public const int ic_media_play = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_speaker_group_dark = 2130837656;
+			public const int ic_media_route_disabled_mono_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_speaker_group_light = 2130837657;
+			public const int ic_media_route_off_mono_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_speaker_light = 2130837658;
+			public const int ic_media_route_on_0_mono_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_tv_dark = 2130837659;
+			public const int ic_media_route_on_1_mono_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_tv_light = 2130837660;
+			public const int ic_media_route_on_2_mono_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int icon = 2130837661;
+			public const int ic_media_route_on_mono_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int loading = 2130837662;
+			public const int ic_pause_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ministries = 2130837663;
+			public const int ic_pause_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int mr_dialog_material_background_dark = 2130837664;
+			public const int ic_play_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int mr_dialog_material_background_light = 2130837665;
+			public const int ic_play_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int mr_ic_audiotrack_light = 2130837666;
+			public const int ic_speaker_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int mr_ic_cast_dark = 2130837667;
+			public const int ic_speaker_group_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int mr_ic_cast_light = 2130837668;
+			public const int ic_speaker_group_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int mr_ic_close_dark = 2130837669;
+			public const int ic_speaker_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int mr_ic_close_light = 2130837670;
+			public const int ic_tv_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837671;
+			public const int ic_tv_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int mr_ic_media_route_connecting_mono_light = 2130837672;
+			public const int icon = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int mr_ic_media_route_mono_dark = 2130837673;
+			public const int loading = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int mr_ic_media_route_mono_light = 2130837674;
+			public const int ministries = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int mr_ic_pause_dark = 2130837675;
+			public const int mr_dialog_material_background_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int mr_ic_pause_light = 2130837676;
+			public const int mr_dialog_material_background_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int mr_ic_play_dark = 2130837677;
+			public const int mr_ic_audiotrack_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int mr_ic_play_light = 2130837678;
+			public const int mr_ic_cast_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int notesIcon = 2130837679;
-			
-			// aapt resource value: 0x7f0200c5
-			public const int notification_template_icon_bg = 2130837701;
+			public const int mr_ic_cast_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int prayers = 2130837680;
+			public const int mr_ic_close_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int reminders = 2130837681;
+			public const int mr_ic_close_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int returnIcon = 2130837682;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int sermons = 2130837683;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int settings = 2130837684;
+			public const int mr_ic_media_route_mono_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int shareButton = 2130837685;
+			public const int mr_ic_media_route_mono_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int shareIcon = 2130837686;
+			public const int mr_ic_pause_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int slide01 = 2130837687;
+			public const int mr_ic_pause_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int slide02 = 2130837688;
+			public const int mr_ic_play_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int slide03 = 2130837689;
+			public const int mr_ic_play_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int slide04 = 2130837690;
+			public const int notesIcon = 2130837690;
+			
+			// aapt resource value: 0x7f0200d1
+			public const int notification_template_icon_bg = 2130837713;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int slide05 = 2130837691;
+			public const int prayers = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int slide06 = 2130837692;
+			public const int reminders = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int slide07 = 2130837693;
+			public const int returnIcon = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int slide08 = 2130837694;
+			public const int sermons = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int slide09 = 2130837695;
+			public const int settings = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int slide10 = 2130837696;
+			public const int shareButton = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int slide11 = 2130837697;
+			public const int shareIcon = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int slide12 = 2130837698;
+			public const int slide01 = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int splash = 2130837699;
+			public const int slide02 = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int todo = 2130837700;
+			public const int slide03 = 2130837700;
+			
+			// aapt resource value: 0x7f0200c5
+			public const int slide04 = 2130837701;
+			
+			// aapt resource value: 0x7f0200c6
+			public const int slide05 = 2130837702;
+			
+			// aapt resource value: 0x7f0200c7
+			public const int slide06 = 2130837703;
+			
+			// aapt resource value: 0x7f0200c8
+			public const int slide07 = 2130837704;
+			
+			// aapt resource value: 0x7f0200c9
+			public const int slide08 = 2130837705;
+			
+			// aapt resource value: 0x7f0200ca
+			public const int slide09 = 2130837706;
+			
+			// aapt resource value: 0x7f0200cb
+			public const int slide10 = 2130837707;
+			
+			// aapt resource value: 0x7f0200cc
+			public const int slide11 = 2130837708;
+			
+			// aapt resource value: 0x7f0200cd
+			public const int slide12 = 2130837709;
+			
+			// aapt resource value: 0x7f0200ce
+			public const int splash = 2130837710;
+			
+			// aapt resource value: 0x7f0200cf
+			public const int todo = 2130837711;
+			
+			// aapt resource value: 0x7f0200d0
+			public const int Videos = 2130837712;
 			
 			static Drawable()
 			{

@@ -21,6 +21,7 @@ namespace ALConnect.Data
         {
             database = DataConnection.Instance().DataBase;
             database.CreateTable<FeatureEvent>();
+            ClearData();
         }
 
         public async Task<string> LoadAsync()
@@ -74,7 +75,7 @@ namespace ALConnect.Data
 
         internal void AddFeatureEvent(AWSNotification note)
         {
-            var filename = string.Format("{0}{1}/{2}/{3}", Constants.S3Path,Constants.Bucket, Constants.FeaturePath, note.FileNames[0]);
+             var filename = string.Format("{0}{1}/{2}/{3}", Constants.S3Path,Constants.Bucket, Constants.FeaturePath, note.FileNames[0]);
             var item = GetEventByName(note.Title, note.StartDate);
             item.IsFeatured = 1;
             item.Description = note.Message;
@@ -87,7 +88,11 @@ namespace ALConnect.Data
             item.Link = note.AudioUrl;
             item.StartDate = note.StartDate;
             item.Title = note.Title;
-            database.Insert(item);
+
+            if (item.Id > 0)
+                database.Update(item);
+            else
+                database.Insert(item);
         }
 
        
@@ -125,7 +130,7 @@ namespace ALConnect.Data
                 
                 foreach (var item in listFeatureResults)
                 {
-                    if (!item.IsVideo && item.IsFeatured == fi && item.EndDate >= currentDate && item.StartDate >= currentDate)
+                    if (item.IsFeatured == fi && item.EndDate >= currentDate && item.StartDate >= currentDate)
                     {
                         listFeatures.Add(item);
                     }
@@ -138,6 +143,27 @@ namespace ALConnect.Data
                 {
                     listFeatures.Add(new FeatureEvent { Title = "Welcome", Id = 0, Link = "http://www.alfc.us", EndDate = DateTime.Now.AddMonths(1), DisplayDate = string.Format("{0}", DateTime.Now.ToString("MMM dd")), Url = "https://s3-us-west-2.amazonaws.com/alcmobileapp/featureitem/newlogopacGreen.png"   });   
                 }
+                return listFeatures;
+            }
+        }
+
+        public IEnumerable<FeatureEvent> GetEvents(bool featured, bool isVideo)
+        {
+            lock (locker)
+            {
+                var fi = featured ? 1 : 0;
+                var currentDate = DateTime.Now;
+                var listFeatures = new List<FeatureEvent>();
+                var listFeatureResults = (from i in database.Table<FeatureEvent>() select i).ToList();
+
+                foreach (var item in listFeatureResults)
+                {
+                    if (item.IsFeatured == fi && item.IsVideo)
+                    {
+                        listFeatures.Add(item);
+                    }
+                }
+                
                 return listFeatures;
             }
         }

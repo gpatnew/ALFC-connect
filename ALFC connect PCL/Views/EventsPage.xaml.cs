@@ -5,6 +5,9 @@ using System;
 using System.Threading.Tasks;
 using Plugin.Share;
 using Xamarin.Forms;
+using Octane.Xam.VideoPlayer;
+using Octane.Xam.VideoPlayer.Constants;
+using Octane.Xam.VideoPlayer.Events;
 
 namespace ALConnect
 {
@@ -22,7 +25,28 @@ namespace ALConnect
             Timer();
         }
 
-        
+        /// <summary>
+        /// Handles the OnPlayerStateChanged event of the VideoPlayer control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="VideoPlayerStateChangedEventArgs"/> instance containing the event data.</param>
+        private void VideoPlayer_OnPlayerStateChanged(object sender, VideoPlayerStateChangedEventArgs e)
+        {
+            switch (e.CurrentState)
+            {
+                case PlayerState.Paused:
+                case PlayerState.Prepared:
+                case PlayerState.Completed:
+                case PlayerState.Initialized:
+                    PauseButton.IsVisible = false;
+                    PlayButton.IsVisible = true;
+                    break;
+                default:
+                    PlayButton.IsVisible = false;
+                    PauseButton.IsVisible = true;
+                    break;
+            }
+        }
 
         async void DisplayAlert()
         {
@@ -57,11 +81,7 @@ namespace ALConnect
             DisplayAlert("Featured", evm.FeaturedShare, "OK");
 
         }
-        private void RotateImage(Image img, double xRotate, uint yRotate)
-        {
-            var ease = Easing.BounceOut;
-            img.RotateTo(xRotate, yRotate, ease);
-        }
+       
 
         public async void EventClicked(object sender, EventArgs e)
         {
@@ -75,6 +95,40 @@ namespace ALConnect
         {
             EventsViewModel evm = (EventsViewModel)this.BindingContext;
             await CrossShare.Current.Share(evm.FeaturedShare, "ALC Feature Event");
+        }
+
+        /// <summary>
+        /// When overridden, allows application developers to customize behavior immediately prior to the <see cref="T:Xamarin.Forms.Page" /> becoming visible.
+        /// </summary>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            VideoPlayer.Play();
+
+            // We need to hide the main menu splash screen video when navigating to a new page
+            // due to the way Xamarin Forms layers pages on Android.
+            if (Device.OS == TargetPlatform.Android)
+                VideoPlayer.IsVisible = true;
+        }
+
+        /// <summary>
+        /// When overridden, allows the application developer to customize behavior as the <see cref="T:Xamarin.Forms.Page" /> disappears.
+        /// </summary>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            VideoPlayer.Pause();
+
+            // We need to hide the main menu splash screen video when navigating to a new page
+            // due to the way Xamarin Forms layers pages on Android.
+            if (Device.OS == TargetPlatform.Android)
+                VideoPlayer.IsVisible = false;
         }
     }
 }

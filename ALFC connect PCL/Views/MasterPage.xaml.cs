@@ -58,6 +58,14 @@ namespace ALConnect
             });
             masterPageItems.Add(new MasterPageItem
             {
+                Title = "Videos",
+                IconSource = "Videos.png",
+                TargetType = typeof(VideoListPage),
+                CommandParameter = "videos",
+
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
                 Title = "Settings",
                 IconSource = "settings.png",
                 TargetType = typeof(SettingsPage),
