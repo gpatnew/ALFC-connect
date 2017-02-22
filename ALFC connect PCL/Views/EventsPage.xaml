@@ -56,7 +56,8 @@
         x:Name="VideoPlayer"
         DisplayControls="False"
         FillMode="ResizeAspectFill"
-        AutoPlay="False" 
+        AutoPlay="False"
+        Volume="60"
         Source="{Binding FeaturedVideoSource}"
         PlayerStateChanged="VideoPlayer_OnPlayerStateChanged" />
         <StackLayout  BindingContext="{x:Reference VideoPlayer}" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5">
@@ -79,6 +80,12 @@
             <Image.GestureRecognizers>
               <TapGestureRecognizer Command="{Binding SeekCommand}" CommandParameter ="3"/>
             </Image.GestureRecognizers>
+          </Image>
+          <Image  x:Name="MuteButton" Source="button_unmute.png" HeightRequest="48" Aspect="AspectFit">
+
+          </Image>
+          <Image x:Name="UnMuteButton" Source="button_mute.png" IsVisible="False" HeightRequest="48" Aspect="AspectFit">
+
           </Image>
         </StackLayout> 
       </StackLayout>

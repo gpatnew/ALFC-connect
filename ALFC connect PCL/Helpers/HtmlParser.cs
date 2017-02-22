@@ -68,13 +68,15 @@ namespace ALConnect.Helpers
             var month = String.Format("{0:MMM}", DateTime.Now);
             var nextMonth = String.Format("{0:MMM}", DateTime.Now.AddMonths(1));
             var isCurrentMonth = cleanEventDate.Contains(month);
-            var day = isCurrentMonth ? cleanEventDate.Replace(month, "") : nextMonth.Replace(month, "");
+            var day = isCurrentMonth ? cleanEventDate.Replace(month, "") : cleanEventDate.Replace(nextMonth, "");
 
+            
             if (month == "Dec" && !isCurrentMonth)
             {
                 year += 1;
             }
-
+            if (!isCurrentMonth)
+                month = nextMonth;
             DateTime.TryParse(string.Format("{0} {1} {2}", day, month, year), out start);
             return start;
         }

@@ -21,7 +21,7 @@ namespace ALConnect.Data
         {
             database = DataConnection.Instance().DataBase;
             database.CreateTable<FeatureEvent>();
-            ClearData();
+            //ClearData();
         }
 
         public async Task<string> LoadAsync()
@@ -130,7 +130,8 @@ namespace ALConnect.Data
                 
                 foreach (var item in listFeatureResults)
                 {
-                    if (item.IsFeatured == fi && item.EndDate >= currentDate && item.StartDate >= currentDate)
+
+                    if (item.IsFeatured == fi  && item.StartDate >= currentDate)
                     {
                         listFeatures.Add(item);
                     }

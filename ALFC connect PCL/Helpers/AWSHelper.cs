@@ -90,7 +90,7 @@ namespace ALConnect.Helpers
             {
                 BucketName = Constants.Bucket.ToLowerInvariant(),
                 Prefix = "notifications",
-                MaxKeys = 10
+                 MaxKeys = 100
             });
 
             foreach(S3Object s3Object in response.S3Objects)
@@ -112,9 +112,6 @@ namespace ALConnect.Helpers
                             var note = ProcessNotification(notification);
                             if(note != null)
                                 {notes.Add(note);}
-                        
-
-                        
                 } 
             
                 }

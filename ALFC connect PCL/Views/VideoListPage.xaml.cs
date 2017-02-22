@@ -10,15 +10,16 @@ namespace ALConnect.Views
 {
     public partial class VideoListPage : ContentPage
     {
-
+        private int playVolume;
         /// <summary>
         /// Initializes a new instance of the <see cref="VideoListPage" /> class.
         /// </summary>
-        
         public VideoListPage()
         {
             InitializeComponent();
             Title = "Featured Videos";
+            MuteButton.GestureRecognizers.Add(MuteCommand());
+            UnMuteButton.GestureRecognizers.Add(UnMuteCommand());
         }
 
         /// <summary>
@@ -70,6 +71,74 @@ namespace ALConnect.Views
                 VideoPlayer.Source = vm.FeaturedVideoSource;
                 ((ListView)sender).SelectedItem = null; // de-select the row
             }
+        }
+
+
+        public TapGestureRecognizer UnMuteCommand()
+        {
+            var tapIt = new TapGestureRecognizer();
+            tapIt.Tapped += ((sender, e) =>
+            {
+                 try
+                {
+                    /// todo make this volume a setting
+                    VideoPlayer.Volume = playVolume > 0 ? playVolume : 75;
+                    MuteButton.IsVisible = true;
+                    UnMuteButton.IsVisible = false;
+                }
+                catch { }
+            });
+            return tapIt;
+        }
+        public TapGestureRecognizer MuteCommand()
+        {
+            var tapIt = new TapGestureRecognizer();
+            tapIt.Tapped += ((sender, e) =>
+            {
+                try
+                {
+                    playVolume = VideoPlayer.Volume;
+                    VideoPlayer.Volume = 0;
+                    MuteButton.IsVisible = false;
+                    UnMuteButton.IsVisible = true;
+                }
+                catch { }
+            });
+            return tapIt;
+        }
+
+        /// <summary>
+        /// When overridden, allows application developers to customize behavior immediately prior to the <see cref="T:Xamarin.Forms.Page" /> becoming visible.
+        /// </summary>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            VideoPlayer.Play();
+
+            // We need to hide the main menu splash screen video when navigating to a new page
+            // due to the way Xamarin Forms layers pages on Android.
+            if (Device.OS == TargetPlatform.Android)
+                VideoPlayer.IsVisible = true;
+        }
+
+        /// <summary>
+        /// When overridden, allows the application developer to customize behavior as the <see cref="T:Xamarin.Forms.Page" /> disappears.
+        /// </summary>
+        /// <remarks>
+        /// To be added.
+        /// </remarks>
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            VideoPlayer.Pause();
+
+            // We need to hide the main menu splash screen video when navigating to a new page
+            // due to the way Xamarin Forms layers pages on Android.
+            if (Device.OS == TargetPlatform.Android)
+                VideoPlayer.IsVisible = false;
         }
     }
 }

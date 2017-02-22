@@ -42,14 +42,10 @@
             </Image.GestureRecognizers>
           </Image>
           <Image  x:Name="MuteButton" Source="button_unmute.png" HeightRequest="48" Aspect="AspectFit">
-            <Image.GestureRecognizers>
-              <TapGestureRecognizer Command="{Binding MuteCommand}" />
-            </Image.GestureRecognizers>
+            
           </Image>
           <Image x:Name="UnMuteButton" Source="button_mute.png" IsVisible="False" HeightRequest="48" Aspect="AspectFit">
-            <Image.GestureRecognizers>
-              <TapGestureRecognizer Command="{Binding UnMuteCommand}" />
-            </Image.GestureRecognizers>
+            
           </Image>
         </StackLayout>
 

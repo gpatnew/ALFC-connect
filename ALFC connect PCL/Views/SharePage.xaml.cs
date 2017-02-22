@@ -25,10 +25,8 @@ namespace ALConnect.Views
         public void MakeMessage(object sender, EventArgs e)
         {
             SermonSlide slide = (SermonSlide)this.BindingContext;
-
             MessageTitle.Text = shareTitleSwitch.IsToggled ? slide.Title : "I want to share my ALFC note:";
-
-            
+      
             if (shareMessageSwitch.IsToggled && shareMyNoteSwitch.IsToggled)
             {
                 MessageText.Text = string.Format("{0}  {1}", slide.Message, slide.Note);
@@ -43,6 +41,9 @@ namespace ALConnect.Views
 
             if (shareImageSwitch.IsToggled)
                 MessageText.Text += slide.ImageUrl;
+
+            if (shareAllNoteSwitch.IsToggled)
+                MessageText.Text = BuildFromSermon(slide.SermonId);
         }
         async void OnReturnButtonClicked(object sender, EventArgs e)
         {
@@ -53,6 +54,13 @@ namespace ALConnect.Views
         {
             await CrossShare.Current.Share(MessageText.Text, MessageTitle.Text);
             await Navigation.PopModalAsync();
+        }
+
+        private string BuildFromSermon(int sermonId)
+        {
+            var message = "";
+
+            return message;
         }
    }
 }

@@ -15,13 +15,17 @@ namespace ALConnect
     {
         
         private double xRotate;
-        private uint yRotate;
+        private int playVolume;
         
 
         
         public EventsPage()
         {
             InitializeComponent();
+            MuteButton.GestureRecognizers.Add(VolumeCommand());
+            MuteButton.GestureRecognizers.Add(MuteCommand());
+            
+            UnMuteButton.GestureRecognizers.Add(UnMuteCommand());
             Timer();
         }
 
@@ -77,9 +81,7 @@ namespace ALConnect
         public void OnFeaturedTapped(object sender, EventArgs arg)
         {
             EventsViewModel evm = (EventsViewModel)this.BindingContext;
-
             DisplayAlert("Featured", evm.FeaturedShare, "OK");
-
         }
        
 
@@ -97,6 +99,59 @@ namespace ALConnect
             await CrossShare.Current.Share(evm.FeaturedShare, "ALC Feature Event");
         }
 
+
+        public TapGestureRecognizer UnMuteCommand()
+        {
+            var tapIt = new TapGestureRecognizer();
+            
+            tapIt.Tapped += ((sender, e) =>
+            {
+                try
+                {
+                    /// todo make this volume a setting
+                    VideoPlayer.Volume = playVolume > 0 ? playVolume : 75;
+                    MuteButton.IsVisible = true;
+                    UnMuteButton.IsVisible = false;
+                }
+                catch { }
+            });
+            return tapIt;
+        }
+        public TapGestureRecognizer MuteCommand()
+        {
+            var tapIt = new TapGestureRecognizer();
+            tapIt.NumberOfTapsRequired = 1;
+            tapIt.Tapped += ((sender, e) =>
+            {
+                try
+                {
+                    playVolume = VideoPlayer.Volume;
+                    VideoPlayer.Volume = 0;
+                    MuteButton.IsVisible = false;
+                    UnMuteButton.IsVisible = true;
+                }
+                catch { }
+            });
+            return tapIt;
+        }
+        public TapGestureRecognizer VolumeCommand()
+        {
+            var tapIt = new TapGestureRecognizer();
+            tapIt.NumberOfTapsRequired = 2;
+            tapIt.Tapped += ((sender, e) =>
+            {
+                try
+                {
+                    playVolume = VideoPlayer.Volume;
+                    if (playVolume < 100)
+                        playVolume += 5;
+
+                    VideoPlayer.Volume = playVolume;
+                }
+                catch { }
+            });
+            return tapIt;
+        }
         /// <summary>
         /// When overridden, allows application developers to customize behavior immediately prior to the <see cref="T:Xamarin.Forms.Page" /> becoming visible.
         /// </summary>
