@@ -42,9 +42,8 @@
   <ContentPage.Content>
     <ScrollView  Padding="0,10,0,0">
     <StackLayout>
-        <StackLayout Padding="0,0,0,0" HeightRequest="160">
-          <Label  Text="{Binding CurrentSlideTitle}" TextColor="Black"  MinimumHeightRequest="40" HorizontalOptions="Center" />
-          <Image  Source="{Binding CurrentSlideImageUrl}" MinimumHeightRequest="200"  MinimumWidthRequest="400"   >
+        <StackLayout Padding="0,0,0,2"  HeightRequest="200">
+          <Image Source="{Binding CurrentSlideImageUrl}" MinimumHeightRequest="200" Aspect="Fill" >
             <Image.GestureRecognizers>
               <PanGestureRecognizer  PanUpdated="OnPanUpdated" />
               <TapGestureRecognizer Tapped="OnImageTapped"  />
@@ -54,7 +53,7 @@
       <StackLayout IsVisible ="{Binding IsVideo}"  Padding="0,0,0,5"  MinimumHeightRequest="400"  BackgroundColor="#DBF0FF"  >
         <o:VideoPlayer
         x:Name="VideoPlayer"
-        DisplayControls="False"
+        DisplayControls="True"
         FillMode="ResizeAspectFill"
         AutoPlay="False"
         Volume="60"

@@ -60,7 +60,7 @@ namespace ALConnect.Views
                 VideoPlayer.AutoPlay = true;
                 var item = e.SelectedItem as FeatureEvent;
 
-                if (item.Url.Contains("youtube"))
+                if (item.Url.Contains("youtu"))
                     vm.FeaturedVideoSource = YouTubeVideoIdExtension.Convert(item.Url);
                 
                 else if (item.Url.Contains("vimeo"))
@@ -69,6 +69,7 @@ namespace ALConnect.Views
                     vm.FeaturedVideoSource = item.Url;
 
                 VideoPlayer.Source = vm.FeaturedVideoSource;
+                VideoPlayer.Play();
                 ((ListView)sender).SelectedItem = null; // de-select the row
             }
         }

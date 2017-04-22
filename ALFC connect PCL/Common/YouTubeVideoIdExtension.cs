@@ -101,6 +101,8 @@ namespace ALConnect.Common
         public static VideoSource Convert(string videoUrl)
         {
             string videoId = videoUrl.Substring(videoUrl.LastIndexOf("v=") +2);
+            if (videoUrl.Contains("youtu.be"))
+                videoId = videoUrl.Substring(videoUrl.LastIndexOf('/') + 1);
             var markupExtension = new YouTubeVideoIdExtension { VideoId = videoId };
             return (VideoSource)markupExtension.ProvideValue(null);
         }

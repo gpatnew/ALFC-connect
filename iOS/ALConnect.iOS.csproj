@@ -11,6 +11,7 @@
     <AssemblyName>ALConnect</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>C:\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -72,6 +72,7 @@
     <CodesignKey>iPhone Distribution: Pat Newsome (FSZ2CC4P3Q)</CodesignKey>
     <BuildIpa>True</BuildIpa>
     <IpaIncludeArtwork>False</IpaIncludeArtwork>
+    <CodesignProvision>68611532-d8ca-4d0a-8747-7bcb1da5babc</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -96,7 +97,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignKey>iPhone Distribution: Pat Newsome (FSZ2CC4P3Q)</CodesignKey>
+    <CodesignKey>iPhone Developer: Pat Newsome (X8VYP4K5H5)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <BuildIpa>True</BuildIpa>
     <IpaIncludeArtwork>False</IpaIncludeArtwork>
@@ -275,8 +276,6 @@
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\hamburger.png" />
     <BundleResource Include="Resources\hamburger%402x.png" />
-    <BundleResource Include="Resources\contacts.png" />
-    <BundleResource Include="Resources\contacts%402x.png" />
     <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\reminders.png" />
     <BundleResource Include="Resources\reminders%402x.png" />
@@ -341,7 +340,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\about.png" />
-    <BundleResource Include="Resources\calendar.png" />
     <BundleResource Include="Resources\events.png" />
     <BundleResource Include="Resources\giving.png" />
     <BundleResource Include="Resources\groups.png" />
@@ -354,6 +352,18 @@
     <BundleResource Include="Resources\Icon-72%402x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
     <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\button_mute.png" />
+    <BundleResource Include="Resources\button_next.png" />
+    <BundleResource Include="Resources\button_pause.png" />
+    <BundleResource Include="Resources\button_play.png" />
+    <BundleResource Include="Resources\button_previous.png" />
+    <BundleResource Include="Resources\button_replay.png" />
+    <BundleResource Include="Resources\button_seek_backward.png" />
+    <BundleResource Include="Resources\button_seek_forward.png" />
+    <BundleResource Include="Resources\button_shuffle.png" />
+    <BundleResource Include="Resources\button_stop.png" />
+    <AndroidResource Include="Resources\button_unmute.png" />
+    <BundleResource Include="Resources\Videos.png" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.CognitoIdentity.3.3.1.1\analyzers\dotnet\cs\AWSSDK.CognitoIdentity.CodeAnalysis.dll" />

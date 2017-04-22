@@ -19,33 +19,27 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
               <RowDefinition Height="0.1*"/>
-              <RowDefinition Height="0.3*" />
-              <RowDefinition Height="0.2*"/>
-              <RowDefinition Height="0.2*"/>
+              <RowDefinition Height="0.4*"/>
+              <RowDefinition Height="0.3*"/>
               <RowDefinition Height="0.1*"/>
             </Grid.RowDefinitions>
             <StackLayout  Grid.Row="0" Grid.Column="1">
-              <Label  Text="{Binding Title}" HeightRequest="30" FontSize="12" TextColor="#303030"  HorizontalOptions="Center" />
+              <Label  Text="{Binding Title}" HeightRequest="30" FontSize="12" TextColor="#303030" HorizontalOptions="Center" />
             </StackLayout>
-            <StackLayout Padding="0,0,0,5" Grid.Row="1" Grid.ColumnSpan="3" >
-              <helper:PinchToZoomContainer>
-                <helper:PinchToZoomContainer.Content>
-                  <Image Source="{Binding ImageUrl}" HorizontalOptions="CenterAndExpand"  MinimumHeightRequest="300" MinimumWidthRequest="450" IsVisible="{Binding ImageIsVisible}">
+            <StackLayout Padding="0,0,0,5" Grid.Row="1" Grid.ColumnSpan="3" BackgroundColor="Silver"  >
+                <Image Source="{Binding ImageUrl}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="{Binding ImageIsVisible}">
                     <Image.GestureRecognizers>
                       <TapGestureRecognizer Tapped="OnSermonTapped"  />
                     </Image.GestureRecognizers>
                   </Image>
-                </helper:PinchToZoomContainer.Content>
-              </helper:PinchToZoomContainer>
+              <Label Text="{Binding Message}" TextColor="#303030" HorizontalOptions="Center" />
             </StackLayout>
-            <StackLayout Padding="0,5,0,5" Grid.Row="2" Grid.ColumnSpan="3">
-            <Label Text="{Binding Message}" TextColor="#303030" HorizontalOptions="Center" />
+            <StackLayout Grid.Row="2" Grid.ColumnSpan="3">
+              <Label Text="Note:" FontSize="8" TextColor="#303030" />
+                <Editor x:Name="slideNote" Text="{Binding Note, Mode=TwoWay}" HeightRequest="180" MinimumWidthRequest="300"  BackgroundColor="Silver" />
             </StackLayout>
-              <StackLayout Grid.Row="3" Grid.ColumnSpan="3">
-                <Editor x:Name="slideNote" Text="{Binding Note, Mode=TwoWay}" MinimumHeightRequest="200" MinimumWidthRequest="300"  BackgroundColor="Silver" />
-            </StackLayout>
-            <Button Grid.Row="4" Grid.Column="0" Image="shareIcon.png" HeightRequest="30" Clicked="OnShareButtonClicked" BackgroundColor="White" CommandParameter="{Binding Id}" />
-            <Button Grid.Row="4" Grid.Column="2" Image="returnIcon.png" HeightRequest="30" Clicked="OnSaveButtonClicked" BackgroundColor="White" />
+            <Button Grid.Row="3" Grid.Column="0" Image="shareIcon.png" HeightRequest="30" Clicked="OnShareButtonClicked" BackgroundColor="White" CommandParameter="{Binding Id}" />
+            <Button Grid.Row="3" Grid.Column="2" Image="returnIcon.png" HeightRequest="30" Clicked="OnSaveButtonClicked" BackgroundColor="White" />
           </Grid>
         </StackLayout>
       </ContentPage>

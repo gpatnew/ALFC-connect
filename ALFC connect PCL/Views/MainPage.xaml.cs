@@ -32,8 +32,15 @@ namespace ALConnect
             {
                 if (item.TargetType == typeof(WebPage))
                 {
-                    Page page = new WebPage(item.CommandParameter);
-                    Detail = new NavigationPage(page);
+                    if (Device.OS == TargetPlatform.iOS && item.Title == "Giving")
+                    {
+                        Device.OpenUri(new Uri(item.CommandParameter));
+                    }
+                    else
+                    { 
+                        Page page = new WebPage(item.CommandParameter);
+                        Detail = new NavigationPage(page);
+                    }
                 }
                 else
                 {

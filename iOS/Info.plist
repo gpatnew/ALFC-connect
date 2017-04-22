@@ -5,11 +5,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>ALConnect</string>
 	<key>CFBundleIdentifier</key>
-	<string>us.alfc.connect</string>
+	<string>com.phil413.ALConnect</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.3</string>
+	<string>1.0.12</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -35,6 +35,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ITSAppleUsesNonExemptEncryption</key>
+	<false/>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon@2x.png</string>

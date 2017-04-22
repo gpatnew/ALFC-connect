@@ -11,28 +11,28 @@ namespace ALConnect
         
         public ListView ListView { get { return listView; } }
 
-		public MasterPage ()
-		{
-            InitializeComponent ();
-            
+        public MasterPage()
+        {
+            InitializeComponent();
+
             this.BackgroundColor = AppColors.White;
-			var masterPageItems = new List<MasterPageItem> ();
-            
-			masterPageItems.Add (new MasterPageItem {
-				Title = "ALFC Connect",
-				IconSource = "events.png",
-				TargetType = typeof(EventsPage)
-                
-			});
-			masterPageItems.Add (new MasterPageItem {
-				Title = "Sermons",
-				IconSource = "sermons.png",
-				TargetType = typeof(SermonsPage)
-			});
-			masterPageItems.Add (new MasterPageItem {
-				Title = "Groups",
-				IconSource = "groups.png",
-				TargetType = typeof(WebPage),
+            var masterPageItems = new List<MasterPageItem>();
+
+            masterPageItems.Add(new MasterPageItem {
+                Title = "ALC Connect",
+                IconSource = "events.png",
+                TargetType = typeof(EventsPage)
+
+            });
+            masterPageItems.Add(new MasterPageItem {
+                Title = "Sermons",
+                IconSource = "sermons.png",
+                TargetType = typeof(SermonsPage)
+            });
+            masterPageItems.Add(new MasterPageItem {
+                Title = "Groups",
+                IconSource = "groups.png",
+                TargetType = typeof(WebPage),
                 CommandParameter = Constants.GroupsUrl
             });
             masterPageItems.Add(new MasterPageItem
@@ -47,7 +47,7 @@ namespace ALConnect
                 Title = "Prayer",
                 IconSource = "prayers.png",
                 TargetType = typeof(WebPage),
-                CommandParameter = Constants.PrayersUrl
+                CommandParameter =  Device.OS == TargetPlatform.iOS ? Constants.PrayerIOS :Constants.PrayersUrl
             });
             masterPageItems.Add(new MasterPageItem
             {
@@ -64,14 +64,17 @@ namespace ALConnect
                 CommandParameter = "videos",
 
             });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Settings",
-                IconSource = "settings.png",
-                TargetType = typeof(SettingsPage),
-                CommandParameter = "settingsdata",
-                
-            });
+            if (Device.OS == TargetPlatform.Android)
+            { 
+                masterPageItems.Add(new MasterPageItem
+                {
+                    Title = "Settings",
+                    IconSource = "settings.png",
+                    TargetType = typeof(SettingsPage),
+                    CommandParameter = "settingsdata",
+
+                });
+            }
             listView.ItemsSource = masterPageItems;
             listView.BackgroundColor = AppColors.White;
 		}

@@ -7,8 +7,8 @@ namespace ALConnect.Common
 {
     public class Constants
     {
-        public const string BaseUrl = "http://www.alfc.us/";
-        public const string DevBaseUrl = "http://dev.alfc.us/";
+        public const string BaseUrl = "https://www.alfc.us/";
+        public const string DevBaseUrl = "http://www.alfc.us/";
         public const string EventsPath = "events/feed/?post_type=slide";
         public const string SlidesPath = "feed/?post_type=slide";
         public const string SermonsPath = "sermons/feed";
@@ -16,9 +16,10 @@ namespace ALConnect.Common
         public const string SearchURLbase = "http://www.biblegateway.com/";
         public const string BibleGatewayURL = "http://www.biblegateway.com/";
         public const string DonateUrl = "https://alfc.ccbchurch.com/w_give_online.php";
-        public const string MinistriesUrl = "ministry";
+        public const string MinistriesUrl = "ministry/missions/";
         public const string NewsUrl = "http://alfc.us/";
-        public const string PrayersUrl = "ministry/prayer#request";
+        public const string PrayerIOS = "ministry/prayer/";
+        public const string PrayersUrl = "https://alfc.ccbchurch.com/form_response.php?id=90";
         public const string GroupsUrl = "connect/finder";
         //Settings //
         //MobileAppUser

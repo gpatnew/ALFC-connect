@@ -154,7 +154,7 @@ namespace ALConnect.ViewModels
 
         private void SetVideoSource(FeatureEvent featuredEvent)
         {
-            FeaturedVideoSource = featuredEvent.Url.Contains("youtube.com") ? YouTubeVideoIdExtension.Convert(featuredEvent.Url) : VimeoVideoIdExtension.Convert(featuredEvent.Url);
+            FeaturedVideoSource = featuredEvent.Url.Contains("youtube.com") || featuredEvent.Url.Contains("youtu.be") ? YouTubeVideoIdExtension.Convert(featuredEvent.Url) : VimeoVideoIdExtension.Convert(featuredEvent.Url);
         }
 
         private HtmlWebViewSource BuildHtmlSource(FeatureEvent featuredEvent)

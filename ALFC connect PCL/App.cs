@@ -26,9 +26,13 @@ namespace ALConnect
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-
-            EventsMessage = "Loading...";
-            BuildCaches();
+            try
+            {
+                EventsMessage = "Loading...";
+                BuildCaches();
+            }
+            finally { EventsMessage = "Load error"; }
+            
 		}
 
 		protected override void OnSleep ()
@@ -38,8 +42,9 @@ namespace ALConnect
 
 		protected override void OnResume ()
 		{
-			// Handle when your app resumes
-		}
+            // Handle when your app resumes
+            EventsMessage = string.Empty;
+        }
 
         private async void BuildCaches()
         {
@@ -61,18 +66,18 @@ namespace ALConnect
             EventsMessage = string.Empty;
         }
 
-        public static SermonsData Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new SermonsData();
-                }
-                return database;
+        //public static SermonsData Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            database = new SermonsData();
+        //        }
+        //        return database;
 
-            }
-        }
+        //    }
+        //}
     }
 }
 

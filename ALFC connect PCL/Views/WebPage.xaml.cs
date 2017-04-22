@@ -54,9 +54,10 @@ namespace ALConnect.Views
                     Url = WebUrl
                 },
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.Fill
+                HorizontalOptions = LayoutOptions.FillAndExpand
+                
             };
-
+            webView.IsVisible = true;
 
             return webView;
         }

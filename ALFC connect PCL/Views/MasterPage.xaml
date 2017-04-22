@@ -4,13 +4,14 @@
 			 x:Class="ALConnect.MasterPage"
 			 Padding="0,40,0,0"
 			 Icon="hamburger.png"
-			 Title="ALFC">
+			 Title="ALC"  >
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand">
 			<ListView x:Name="listView" VerticalOptions="FillAndExpand"   >
 				<ListView.ItemTemplate SeparatorColor="#FBB040" SeparatorVisibility="0" >
 					<DataTemplate>
-						<ImageCell ImageSource="{Binding IconSource}"  />
+						<ImageCell ImageSource="{Binding IconSource}"  TextColor="#059BD2"  Text="{Binding Title}" />
+           
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>

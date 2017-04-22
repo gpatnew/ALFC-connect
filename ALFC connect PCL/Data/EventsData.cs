@@ -31,7 +31,7 @@ namespace ALConnect.Data
             try
             {
                 HtmlParser parser = new HtmlParser();
-                var nodesTask = await parser.ParsingEvents(Constants.BaseUrl);
+                var nodesTask = await parser.ParsingEvents(Constants.DevBaseUrl);
                 if (nodesTask.Count > 0) ClearData();
                 foreach (HtmlNode nodeEvents in nodesTask)
                 {

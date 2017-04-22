@@ -62,12 +62,12 @@
   <ContentPage.Content>
     <ScrollView>
     <StackLayout Padding="0,0,0,0">
-      <StackLayout Padding="10,0,10,0" VerticalOptions="StartAndExpand">
+      <StackLayout Padding="10,0,10,0" VerticalOptions="Fill">
         <Label Text="{Binding PageTitle}"  TextColor="#303030" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         <ListView x:Name="SermonsList" ItemTemplate="{StaticResource SermonDataTemplateSelector}" ItemsSource="{Binding SermonsListItems}" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" Refreshing="OnRefreshSermons" ></ListView>     
       </StackLayout>
       
-      <StackLayout Padding="0,0,0,0">
+      <StackLayout Padding="0,10,0,0" >
           <Grid BackgroundColor="#346B80">
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="0.8*"/>
